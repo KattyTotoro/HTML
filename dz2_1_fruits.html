@@ -9,45 +9,33 @@
     .decoration {
       max-width: 800px;
       margin: 0 auto;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-size: 20px;
       color: #f4f0e6;
     }
 
     .grey {
       background-color: #f5f5f5;
-      padding: 20px;
-    }
-
-    .pink {
-      background-color: #ed9eae;
-      padding: 20px;
-    }
-
-    .list_back {
-      background-color: #c66376;
-      padding: 10px;
+      padding: 10px 25px;
     }
 
     ol {
+      background-color: #ed9eae;
       list-style-position: inside;
-      padding: 10px;
+      padding: 20px;
     }
 
-    /* .list_back li {
+    ol li {
       background-color: #c66376;
-    }  */
-
-    li {
+      padding: 15px 20px 12px;
       margin: 10px;
     }
 
-.li_back {
-  background-color: #9e354a;
-  padding: 5px;
-}
-    /* ol li::marker {
-      background-color: #c66376;
-    } */
+    .li_back {
+      background-color: #9e354a;
+      padding: 15px 25px 12px;
+      margin-left: 6px;
+    }
   </style>
 </head>
 
@@ -55,15 +43,13 @@
   <p><a href="index.html"><b>&#8656; Back</b></a></p>
 
   <div class="grey">
-    <div class="pink">
-      <ol class="list_back">
-        <li><span class="li_back">Apple</span></li>
-        <li>Orange</li>        
-        <li>Pineapple</li>
-        <li>Pear</li>
-        <li>Cherry</li>
-      </ol>
-    </div>
+    <ol>
+      <li><span class="li_back">Apple</span></li>
+      <li><span class="li_back">Orange</span></li>
+      <li><span class="li_back">Pineapple</span></li>
+      <li><span class="li_back">Pear</span></li>
+      <li><span class="li_back">Cherry</span></li>
+    </ol>
   </div>
 
 </body>
