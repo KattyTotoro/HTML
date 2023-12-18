@@ -6,8 +6,10 @@
     <title>ToDoList</title>
     <style>
 .decor {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 700px;
     margin: 0 auto;
+    font-size: 16px;
 }
 
 .backgr {
@@ -17,11 +19,24 @@
 
 ul {
   list-style-image: url(icons/unchecked_16.png);
+  
+}
+
+ul li {
+  padding: 15px;
 }
 
 .checked {
   list-style-image: url(icons/checked_16.png);
 }
+
+.del {
+  color: #8b070d;
+  font-weight: bold;
+  font-size: small;
+  padding-left: 15px;
+}
+
 
 /* 
 #a5ccda
@@ -36,21 +51,21 @@ ul {
   <p><a href="index.html"><b>&#8656; Back</b></a></p>
 
   <div class="backgr">
-  <h1>My To Do List</h1>
+  <h2>My To Do List</h2>
   
   <ul>
-    <li>Hit the gym</li>
-    <li class="checked"><s>Pays bills</s></li>
-    <li>Meet John</li>
-    <li>Buy eggs</li>
-    <li class="checked"><s>Read a book</s></li>
-    <li>Organize office</li>
-    <li>Eat dinner</li>
-    <li>Buy apples</li>
-    <li>Meet George</li>
-    <li>Feed the cat</li>
-    <li class="checked"><s>Write a letter</s></li>
-    <li>Run 1 km</li>
+    <li>Hit the gym <span class="del">&#10006;</span></li>
+    <li class="checked"><s>Pays bills</s> <span class="del">&#10006;</span></li>
+    <li>Meet John <span class="del">&#10006;</span></li>
+    <li>Buy eggs <span class="del">&#10006;</span></li>
+    <li class="checked"><s>Read a book</s> <span class="del">&#10006;</span></li>
+    <li>Organize office <span class="del">&#10006;</span></li>
+    <li>Eat dinner <span class="del">&#10006;</span></li>
+    <li>Buy apples <span class="del">&#10006;</span></li>
+    <li>Meet George <span class="del">&#10006;</span></li>
+    <li>Feed the cat <span class="del">&#10006;</span></li>
+    <li class="checked"><s>Write a letter</s> <span class="del">&#10006;</span></li>
+    <li>Run 1 km <span class="del">&#10006;</span></li>
   </ul>
 </div>
 </body>
