@@ -6,7 +6,69 @@
   <title>Table</title>
   <style>
     table {
-      border-collapse: collapse;
+      width: 1000px;
+      border-collapse: collapse;      
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    thead {
+      font-size: 22px;
+      color: white;
+    }
+
+    tbody,tfoot {
+      text-align: center;      
+    }
+
+    tbody th {
+      text-align: left;
+      padding: 10px 40px;
+    }
+
+    tr {
+     height: 50px;
+    }
+
+    .col1 {
+      width: 300px;
+      height: 150px;
+      background-color: #7887ab;
+    }
+
+    .col2 {
+      background-color: #4f628e;
+    }
+
+    .col3 {
+      background-color: #2e4172;
+    }
+
+    .col4 {
+      background-color: #162955;
+    }
+
+    .col5 {
+      background-color: #061539;
+    }
+
+    /* .col2, .col3, .col3, .col4, .col5 {
+      width: 180px;
+    } */
+
+    .big {
+      font-size: 36px;
+    }
+
+    button {
+      padding: 10px 25px;
+      text-transform: uppercase;
+      background-color: #d3d3d3;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: grey;
     }
   </style>
 </head>
@@ -17,12 +79,12 @@
   <table>
     <thead>
       <tr>
-        <th>Choose your plan</th>
-        <th>starter <br> $ 10 <br> per month 
+        <th class="col1">Choose your plan</th>
+        <th class="col2">starter <br><br> <span class="big">$ 10</span> <br> per month 
         </th>
-        <th>econom <br> $ 30<br> per month</th>  
-        <th>standart <br> $ 59 <br> per month</th>
-        <th> professional <br> $ 99 <br> per month </th>
+        <th class="col3">econom <br><br> <span class="big">$ 30</span><br> per month</th>  
+        <th class="col4">standart <br><br> <span class="big">$ 59</span><br> per month</th>
+        <th class="col5"> professional <br><br> <span class="big">$ 99</span><br> per month </th>
       </tr>
     </thead>
     <tbody>
@@ -67,22 +129,15 @@
       <td>6</td>
       <td>14</td>
       <td>20</td>
-    </tr>
-    <tr>
-      <th></th>
-      <td>start</td>
-      <td>start</td>
-      <td>start</td>
-      <td>start</td>
-    </tr>
+    </tr>    
   </tbody>
   <tfoot>
     <tr>
       <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <td><button>start</button></td>
+      <td><button>start</button></td>
+      <td><button>start</button></td>
+      <td><button>start</button></td>
     </tr>
   </tfoot>
   </table>
