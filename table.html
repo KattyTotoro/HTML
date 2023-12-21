@@ -9,6 +9,7 @@
     .decor {
       max-width: 1100px;
       margin: auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .backgr {
@@ -36,11 +37,19 @@
 
     tbody th {
       text-align: left;
-      padding: 10px 40px;
+      padding: 10px 30px;
+    }
+
+    tbody td {
+      font-weight: 500;
     }
 
     tr {
       height: 50px;
+    }
+
+    tfoot tr {
+      height: 70px;
     }
 
     .col1 {
@@ -73,9 +82,20 @@
       background-color: #e7e7e7;
     }
 
-    /* .col2, .col3, .col3, .col4, .col5 {
+    .row1 {
+      background-color: #ececec;
+    }
+
+    .row2 {
+      background-color: #f3f3f3;
+    }
+
+    .col2,
+    .col3,
+    .col4,
+    .col5 {
       width: 180px;
-    } */
+    }
 
     .big {
       font-size: 36px;
@@ -84,15 +104,15 @@
     button {
       padding: 10px 25px;
       text-transform: uppercase;
+      font-weight: 600;
       background-color: #d3d3d3;
       border-radius: 3px;
+      border-color: #b2b2b2;
     }
 
     button:hover {
       background-color: grey;
     }
-
-
   </style>
 </head>
 
@@ -102,11 +122,11 @@
   <div class="backgr">
     <table>
       <colgroup>
-      <col class="cell-color1">
-      <col class="cell-color2">
-      <col class="cell-color1">
-      <col class="cell-color2">
-      <col class="cell-color1">
+        <col class="cell-color1">
+        <col class="cell-color2">
+        <col class="cell-color1">
+        <col class="cell-color2">
+        <col class="cell-color1">
       </colgroup>
       <thead>
         <tr>
@@ -126,11 +146,11 @@
           <td>110GB</td>
           <td>Unlimeted</td>
         </tr>
-        <tr>
+        <tr class="row1">
           <th>Bandwidth per month</th>
-          <td>120GB</td>
+          <td class="row2">120GB</td>
           <td>240GB</td>
-          <td>610GB</td>
+          <td class="row2">610GB</td>
           <td>1300GB</td>
         </tr>
         <tr>
@@ -140,25 +160,25 @@
           <td>60</td>
           <td>Unlimeted</td>
         </tr>
-        <tr>
+        <tr class="row1">
           <th>MySQL databases</th>
-          <td>1</td>
+          <td class="row2">1</td>
           <td>15</td>
-          <td>60</td>
+          <td class="row2">60</td>
           <td>Unlimeted</td>
         </tr>
         <tr>
-          <th>25th support</th>
+          <th>25h support</th>
           <td>No</td>
           <td>Yes</td>
           <td>Yes</td>
           <td>Yes</td>
         </tr>
-        <tr>
+        <tr class="row1">
           <th>Suppotr tickets per month</th>
-          <td>2</td>
+          <td class="row2">2</td>
           <td>6</td>
-          <td>14</td>
+          <td class="row2">14</td>
           <td>20</td>
         </tr>
       </tbody>
