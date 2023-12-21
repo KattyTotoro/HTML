@@ -24,13 +24,19 @@
       align-items: center;
     }
 
-    div div:hover {
+    div:hover {
       filter: brightness(.5);
+      transition: filter 2s;
     }
 
-    /* img {
-  width: 300px;
-} */
+    div img {
+      transition: transform 1s;
+    }
+
+    div:hover img {
+      transform: scale(1.5);
+      transition: transform 1s;
+    }
   </style>
 </head>
 
