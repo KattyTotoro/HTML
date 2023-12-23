@@ -1,22 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ДЗ 3.1. Groceries</title>
 
   <style>
+    .decor {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #f6f6f6;
+    }
 
+    .center {
+      text-align: center;
+    }
+
+    img {
+      width: 100px;
+    }
+
+    .flex {
+      display: flex;
+      align-content: center;
+      gap: 10px;
+    }
+
+    div div {
+      width: 200px;
+      border: 1px solid grey;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+    }
   </style>
 </head>
 
-<body>
+<body class="decor">
   <p><a href="index.html" style="color: black;"><b>&#8656; Back</b></a></p>
-  
+
+
+
+  <h3 class="center">What do I have in my fridge</h3>
+
+  <div class="flex">
+    <div class="food">
+      <img src="icons/Food_C247-128.png" alt="">
+      <p>Papper</p>
+    </div>
+    <div>
+      <img src="icons/Food_C240-128.png" alt="">
+      <p>Apple</p>
+    </div>
+    <div>
+      <img src="icons/Food_C217-128.png" alt="">
+      <p>Cheese</p>
+    </div>
+    <div>
+      <img src="icons/Food_C245-128.png" alt="">
+      <p>Corn</p>
+    </div>
+    <div>
+      <img src="icons/Food_C239-128.png" alt="">
+      <p>Mushroom</p>
+    </div>
+    <div>
+      <img src="icons/Food_C238-128.png" alt="">
+      <p>Garlic</p>
+    </div>
+    <div>
+      <img src="icons/Food_C225-128.png" alt="">
+      <p>Beef</p>
+    </div>
+    <div>
+      <img src="icons/Food_C205-128.png" alt="">
+      <p>Fish</p>
+    </div>
+    <div>
+      <img src="icons/Food_C203-128.png" alt="">
+      <p>Eggs</p>
+    </div>
+    <div>
+      <img src="icons/Food_C235-128.png" alt="">
+      <p>Coriander</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="center">
+    <p>... that's all ...</p>
+  </div>
 
 
 
 
-  
+
 </body>
+
 </html>
