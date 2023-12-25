@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DZ 3.4. Footer</title>
   <style>
+    .decor {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
     footer {
       background-color: #2a4f6e;
       color: white;
@@ -15,21 +20,33 @@
     .flex {
       display: flex;
       justify-content: space-around;
-      gap: 20px ;
+      gap: 20px;
     }
 
     .flex p {
       margin: 6px 0;
     }
 
+    img {
+      width: 40px;
+    }
+
     a {
       color: white;
       text-decoration: none;
     }
+
+    .social1 {
+      margin-right: 15px;
+    }
+
+    .social2 {
+      padding-top: 20px;
+    }
   </style>
 </head>
 
-<body>
+<body class="decor">
   <p><a href="index.html" style="color: black;"><b>&#8656; Back</b></a></p>
 
   <footer>
@@ -46,14 +63,14 @@
         <p><a href="#">Contacts</a></p>
         <p><a href="#">Privacy & cookies</a></p>
       </div>
-      <div>
-        <a href="#"><img src="icons/fb.png" alt=""></a>
-        <a href="#"><img src="icons/insta.png" alt=""></a>
+      <div class="social2">
+        <a class="social1" href="#"><img src="icons/fb.png" alt=""></a>
+        <a class="social1" href="#"><img src="icons/insta.png" alt=""></a>
         <a href="#"><img src="icons/youtube.png" alt=""></a>
       </div>
     </div>
     <hr>
-    <p style="text-align: center;">Copyright Company 2018 - 2019</p>
+    <p style="text-align: center;">Copyright &#169; Company 2018 - 2019</p>
 
   </footer>
 
