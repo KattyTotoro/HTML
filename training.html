@@ -6,6 +6,332 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Training</title>
   <style>
+body {
+  background: url(images/sn12.png), url(images/124.jpg) center;
+  color: white;
+}
+
+.snowflakes {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.snowflake1 {
+top: 2%;
+left: 20%;
+animation-name: s1;
+animation-duration: 25s;
+}
+.snowflake2 {
+top: 1%;
+left: 50%;
+animation-name: s2;
+animation-duration: 35s;
+}
+.snowflake3 {
+top: 3%;
+left: 80%;
+animation-name: s3;
+animation-duration: 33s;
+}
+.snowflake4 {
+top: 2%;
+left: 30%;
+animation-name: s4;
+animation-duration: 48s;
+}
+
+@keyframes s1 {
+  0% {
+    top: 2%;
+left: 20%;
+  }
+  10% {
+    top: 14%;
+left: 22%;
+  }
+  15% {
+    top: 18%;
+left: 21%;
+  }
+  20% {
+    top: 22%;
+left: 20%;
+  }
+  25% {
+    top: 28%;
+left: 23%;
+  }
+  30% {
+    top: 34%;
+left: 24%;
+  }
+  35% {
+    top: 40%;
+left: 25%;
+  }
+  40% {
+    top: 48%;
+left: 23%;
+  }
+  45% {
+    top: 56%;
+left: 22%;
+  }
+  50% {
+    top: 56%;
+left: 22%;
+  }
+  55% {
+    top: 60%;
+left: 21%;
+  }
+  60% {
+    top: 68%;
+left: 20%;
+  }
+  70% {
+    top: 75%;
+left: 19%;
+  }
+  80% {
+    top: 85%;
+left: 20%;
+  }
+  90% {
+    top: 90%;
+left: 21%;
+  }
+  95% {
+    top: 95%;
+left: 20%;
+  }  
+  100% {
+    top: 98%;
+left: 20%;
+opacity: 0;
+  }  
+}
+
+@keyframes s2 {
+  0% {
+    top: 1%;
+left: 50%;
+  }
+  10% {
+    top: 6%;
+left: 51%;
+  }
+  15% {
+    top: 12%;
+left: 52%;
+  }
+  20% {
+    top: 20%;
+left: 53%;
+  }
+  25% {
+    top: 28%;
+left: 52%;
+  }
+  30% {
+    top: 34%;
+left: 52%;
+  }
+  35% {
+    top: 40%;
+left: 51%;
+  }
+  40% {
+    top: 48%;
+left: 51%;
+  }
+  45% {
+    top: 56%;
+left: 52%;
+  }
+  50% {
+    top: 56%;
+left: 53%;
+  }
+  55% {
+    top: 60%;
+left: 54%;
+  }
+  60% {
+    top: 68%;
+left: 53%;
+  }
+  70% {
+    top: 75%;
+left: 53%;
+  }
+  80% {
+    top: 85%;
+left: 52%;
+  }
+  90% {
+    top: 90%;
+left: 51%;
+  }
+  95% {
+    top: 95%;
+left: 52%;
+  }  
+  100% {
+    top: 98%;
+left: 52%;
+opacity: 0;
+  }  
+}
+
+@keyframes s3 {
+  0% {
+    top: 3%;
+left: 80%;
+  }
+  10% {
+    top: 10%;
+left: 81%;
+  }
+  15% {
+    top: 15%;
+left: 82%;
+  }
+  20% {
+    top: 20%;
+left: 82%;
+  }
+  25% {
+    top: 28%;
+left: 83%;
+  }
+  30% {
+    top: 34%;
+left: 82%;
+  }
+  35% {
+    top: 40%;
+left: 82%;
+  }
+  40% {
+    top: 48%;
+left: 82%;
+  }
+  45% {
+    top: 56%;
+left: 81%;
+  }
+  50% {
+    top: 56%;
+left: 82%;
+  }
+  55% {
+    top: 60%;
+left: 83%;
+  }
+  60% {
+    top: 68%;
+left: 84%;
+  }
+  70% {
+    top: 75%;
+left: 83%;
+  }
+  80% {
+    top: 85%;
+left: 82%;
+  }
+  90% {
+    top: 90%;
+left: 82%;
+  }
+  95% {
+    top: 95%;
+left: 81%;
+  }  
+  100% {
+    top: 98%;
+left: 81%;
+opacity: 0;
+  }  
+}
+
+@keyframes s4 {
+  0% {
+    top: 2%;
+left: 30%;
+  }
+  10% {
+    top: 14%;
+left: 30%;
+  }
+  15% {
+    top: 18%;
+left: 31%;
+  }
+  20% {
+    top: 22%;
+left: 31%;
+  }
+  25% {
+    top: 28%;
+left: 30%;
+  }
+  30% {
+    top: 35%;
+left: 30%;
+  }
+  35% {
+    top: 42%;
+left: 29%;
+  }
+  40% {
+    top: 50%;
+left: 30%;
+  }
+  45% {
+    top: 55%;
+left: 30%;
+  }
+  50% {
+    top: 58%;
+left: 31%;
+  }
+  55% {
+    top: 62%;
+left: 31%;
+  }
+  60% {
+    top: 68%;
+left: 32%;
+  }
+  70% {
+    top: 76%;
+left: 32%;
+  }
+  80% {
+    top: 85%;
+left: 33%;
+  }
+  90% {
+    top: 90%;
+left: 21%;
+  }
+  95% {
+    top: 95%;
+left: 20%;
+  }  
+  100% {
+    top: 98%;
+left: 20%;
+opacity: 0;
+  }  
+}
+
     h1 {
       font-family: 'Courier New', Courier, monospace;
     }
@@ -450,6 +776,25 @@
 
   <!-- overfloe: hidden
 увеличение изображения при наведении trnsform scale -->
+
+
+<!-- <div><img src="images/sn1.png" alt=""></div>
+<div><img src="images/sn2.png" alt=""></div>
+<div><img src="images/sn3.png" alt=""></div>
+<div><img src="images/sn4.png" alt=""></div>
+<div><img src="images/sn5.png" alt=""></div>
+<div><img src="images/sn6.png" alt=""></div>
+<div><img src="images/sn7.png" alt=""></div> -->
+
+
+<div class="It-is-snowing">
+  <div class="snowflakes snowflake1">&#10052;</div>
+  <div class="snowflakes snowflake2">&#10053;</div>
+  <div class="snowflakes snowflake3">&#10054;</div>
+  <div class="snowflakes snowflake4"><img src="images/sn7.png" alt="" width="30px"></div>
+</div>
+
+
 </body>
 
 </html>
