@@ -59,7 +59,6 @@
         } */
 
         .snowflakes {
-            font-size: 30px;
             color: white;
             position: absolute;
             animation-timing-function: linear;
@@ -86,11 +85,26 @@
             animation-duration: 45s;
         }
 
+        .snowflake8 {
+            top: 1%;
+            left: 60%;
+            animation-name: s7;
+            animation-duration: 15s;
+        }
+
         .snowflake3 {
             top: 3%;
             left: 80%;
             animation-name: s3;
             animation-duration: 18s;
+        }
+
+        .snowflake12 {
+            font-size: 50px;
+            top: 3%;
+            left: 85%;
+            animation-name: s3;
+            animation-duration: 26s;
         }
 
         .snowflake4 {
@@ -665,6 +679,97 @@
                 opacity: 0;
             }
         }
+
+        @keyframes s7 {
+            0% {
+                top: 1%;
+                left: 60%;
+                opacity: 1;
+            }
+
+            10% {
+                top: 6%;
+                left: 60%;
+            }
+
+            15% {
+                top: 12%;
+                left: 61%;
+            }
+
+            20% {
+                top: 20%;
+                left: 62%;
+            }
+
+            25% {
+                top: 28%;
+                left: 62%;
+            }
+
+            30% {
+                top: 34%;
+                left: 62%;
+            }
+
+            35% {
+                top: 40%;
+                left: 61%;
+            }
+
+            40% {
+                top: 48%;
+                left: 61%;
+            }
+
+            45% {
+                top: 56%;
+                left: 62%;
+            }
+
+            50% {
+                top: 56%;
+                left: 63%;
+            }
+
+            55% {
+                top: 60%;
+                left: 64%;
+            }
+
+            60% {
+                top: 68%;
+                left: 63%;
+            }
+
+            70% {
+                top: 75%;
+                left: 62%;
+                opacity: 0.8;
+            }
+
+            80% {
+                top: 80%;
+                left: 62%;
+            }
+
+            90% {
+                top: 85%;
+                left: 61%;
+                opacity: 0.9;
+            }
+
+            95% {
+                top: 87%;
+                left: 61%;
+            }
+
+            100% {
+                top: 90%;
+                left: 60%;
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 
@@ -728,6 +833,9 @@
         <div class="snowflakes snowflake9"><img src="images/sn5.png" alt="" width="50px"></div>
         <div class="snowflakes snowflake10"><img src="images/sn10.png" alt="" width="50px"></div>
         <div class="snowflakes snowflake11"><img src="images/sn11.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake12">&#10052;</div>
+        <div class="snowflakes snowflake13">&#10053;</div>
+        <div class="snowflakes snowflake14">&#10054;</div>
     </div>
 </body>
 
