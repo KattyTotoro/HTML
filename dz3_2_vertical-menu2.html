@@ -22,31 +22,47 @@
       padding: 20px;
     }
 
-    img {
-      width: 70px;
+    ul {
+      list-style-type: none;
     }
-   
-    
 
-
-li {
-  max-width: 230px;
+    li {
+      max-width: 230px;
       background-color: #808080;
       text-transform: uppercase;
       padding: 12px 15px;
-}
+    }
 
-   .backgr a {
+    ul a {
       text-decoration: none;
       color: white;
+      display: block;
+      padding: 20px 0 20px 80px;
     }
 
     .edit {
       background: url(icons/edit.png);
     }
 
-    li:hover {
+    ul a:hover {
       background-color: #5e5e5e;
+      transition: 1s;
+    }
+
+    .edit {
+      background: url(icons/edit.png) left center/contain no-repeat;
+    }
+    .favorites {
+      background: url(icons/favorites.png) left center/contain no-repeat;
+    }
+    .history {
+      background: url(icons/history.png) left center/contain no-repeat;
+    }
+    .security {
+      background: url(icons/security.png) left center/contain no-repeat;
+    }
+    .settings {
+      background: url(icons/settings.png) left center/contain no-repeat;
     }
   </style>
 </head>
@@ -57,15 +73,15 @@ li {
   <div class="backgr">
     <nav>
       <ul>
-        <li class="edit"><a href="#">edit</a></li>
-        <li class="menu"><a href="#">favorites</a></li>
-        <li class="menu"><a href="#">history</a></li>
-        <li class="menu"><a href="#">security</a></li>
-        <li class="menu"><a href="#">settings</a></li>
+        <li><a href="#"><a class="edit" href="#">edit</a></li>
+        <li><a href="#"><a class="favorites" href="#">favorites</a></li>
+        <li><a href="#"><a class="history" href="#">history</a></li>
+        <li><a href="#"><a class="security" href="#">security</a></li>
+        <li><a href="#"><a class="settings" href="#">settings</a></li>
       </ul>
     </nav>
   </div>
-<!-- меню сделать списком 
+  <!-- меню сделать списком 
 в строе ссылка а, у а свойство display: block 
 картинки как baclground-->
 </body>
