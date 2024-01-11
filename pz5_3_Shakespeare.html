@@ -15,6 +15,8 @@
       display: flex;
       background: #a23645;
       list-style: none;
+      padding: 20px;
+
     }
 
     .menu a {
@@ -36,9 +38,10 @@
       background: #f5f5f5;
     }
 
-    /* .article-decor {
-
-    } */
+    .article-decor {
+      text-align: justify;
+      padding: 20px;
+    }
 
     .adress-decor {
       font-style: normal;
@@ -56,9 +59,21 @@
     table td:first-child {
       min-width: 60px;
       vertical-align: top;
+      font-weight: bold;
     }
+
     table td:last-child {
       min-width: 150px;
+    }
+
+    .footer-decor {
+      display: flex;
+      background: #f5f5f5;
+      border: 1px solid grey;
+    }
+
+    .footer-decor img {
+      width: 100px;
     }
   </style>
 </head>
@@ -79,7 +94,7 @@
   </header>
 
   <main class="main-decor">
-    <article>
+    <article class="article-decor">
       <h1>William Shakespeare</h1>
       <hr>
       <address class="adress-decor">From Wikipedia, the free encyclopedia</address>
@@ -160,8 +175,31 @@
 
 
 
-  <footer>
-
+  <footer class="footer-decor">
+    <div>
+      <img src="icons/Anne_Hathaway.jpg" alt="">
+      <p>Anne Hathaway</p>
+    </div>
+    <div>
+      <img src="icons/Dickens_Gurney.jpg" alt="">
+      <p>Charles Dickens</p>
+    </div>
+    <div>
+      <img src="icons/Oscar_Wilde_Sarony.jpg" alt="">
+      <p>Oscar Wilde</p>
+    </div>
+    <div>
+      <img src="icons/Cervantes_Jauregui.jpg" alt="">
+      <p>Miguel de Cervantes</p>
+    </div>
+    <div>
+      <img src="icons/Edgar_Allan_Poe.jpg" alt="">
+      <p>Edgar Allan Poe</p>
+    </div>
+    <div>
+      <img src="icons/WilliamWordsworth.jpg" alt="">
+      <p>William Wordsworth</p>
+    </div>
   </footer>
 
 
