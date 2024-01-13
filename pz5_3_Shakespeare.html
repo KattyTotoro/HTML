@@ -7,9 +7,9 @@
   <title>pz5_3_Shakespeare</title>
   <style>
     .decor {
-      max-width: 900px;
+      max-width: 1050px;
       margin: 0 auto;
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .menu {
@@ -28,6 +28,8 @@
 
     .menu li:first-child {
       text-transform: uppercase;
+      font-weight: bold;
+      padding-left: 40px;
     }
 
     .menu a:hover {
@@ -37,11 +39,11 @@
     .main-decor {
       display: flex;
       background: #f5f5f5;
+      padding: 0 80px 10px;
     }
 
     .article-decor {
       text-align: justify;
-      padding: 20px;
     }
 
     .adress-decor {
@@ -52,52 +54,52 @@
     .aside-decor {
       background: #e7e7e7;
       font-size: small;
-      padding: 20px 5px 10px 20px;
-      margin: 20px;
+      padding: 20px;
+      margin: 20px 0 0 30px;
       height: fit-content;
     }
 
     .aside-decor img {
-      width: 200px;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
+      object-fit: cover;
+      object-position: center center;
     }
 
     table td:first-child {
       min-width: 60px;
+      height: 30px;
       vertical-align: top;
       font-weight: bold;
     }
 
     table td:last-child {
       min-width: 150px;
+      vertical-align: top;
     }
 
     .footer-decor {
+      background: #f5f5f5;
+      padding: 0 80px 20px;
+    }
+
+    .footer-decor h3 {
+      margin-top: 0;
+    }
+
+    .footer-flex {
       display: flex;
       align-content: space-around;
       background: #f5f5f5;
       border: 1px solid grey;
       padding: 20px;
-      margin: 20px;
       gap: 20px;
       text-align: center;
     }
 
-    .footer-decor div {
-      width: 200px;
-      height: 150px;
-    }
-
     .footer-decor img {
-      width: 100px;
-      height: 150px;
+      object-fit: cover;
+      object-position: center center;
     }
-
-    .hathaway {
-      background: url(icons/Anne_Hathaway.jpg) center/cover no-repeat;
-    }
-    
-
   </style>
 </head>
 
@@ -165,7 +167,7 @@
     </article>
 
     <aside class="aside-decor">
-      <img src="icons/Shakespeare.jpg" alt="">
+      <img width="220px" src="icons/Shakespeare.jpg" alt="William Shakespeare" title="Photo by William Shakespeare">
       <table>
         <tr>
           <td>Born</td>
@@ -196,41 +198,41 @@
       </table>
     </aside>
 
-    
-    
   </main>
 
-  <h3>Similar authors:</h3>
 
   <footer class="footer-decor">
-    <div class="hathaway">
-      <!-- <img src="icons/Anne_Hathaway.jpg" alt=""> -->
-      <p>Anne Hathaway</p>
-    </div>
-    <div>
-      <img src="icons/Dickens_Gurney.jpg" alt="">
-      <p>Charles Dickens</p>
-    </div>
-    <div>
-      <img src="icons/Oscar_Wilde_Sarony.jpg" alt="">
-      <p>Oscar Wilde</p>
-    </div>
-    <div>
-      <img src="icons/Cervantes_Jauregui.jpg" alt="">
-      <p>Miguel de Cervantes</p>
-    </div>
-    <div>
-      <img src="icons/Edgar_Allan_Poe.jpg" alt="">
-      <p>Edgar Allan Poe</p>
-    </div>
-    <div>
-      <img src="icons/WilliamWordsworth.jpg" alt="">
-      <p>William Wordsworth</p>
-    </div>
-   
-  </footer>
-  
 
+    <h3>Similar authors:</h3>
+
+    <div class="footer-flex">
+      <div>
+        <img width="120px" height="150px" src="icons/Anne_Hathaway.jpg" alt="Anne Hathaway" title="Photo by Anne Hathaway">
+        <p>Anne Hathaway</p>
+      </div>
+      <div>
+        <img width="120px" height="150px" src="icons/Dickens_Gurney.jpg" alt="Charles Dickens" title="Photo by Charles Dickens">
+        <p>Charles Dickens</p>
+      </div>
+      <div>
+        <img width="120px" height="150px" src="icons/Oscar_Wilde_Sarony.jpg" alt="Oscar Wilde" title="Photo by Oscar Wilde">
+        <p>Oscar Wilde</p>
+      </div>
+      <div>
+        <img width="120px" height="150px" src="icons/Cervantes_Jauregui.jpg" alt="Miguel de Cervantes" title="Photo by Miguel de Cervantes">
+        <p>Miguel de Cervantes</p>
+      </div>
+      <div>
+        <img width="120px" height="150px" src="icons/Edgar_Allan_Poe.jpg" alt="Edgar Allan Poe" title="Photo by Edgar Allan Poe">
+        <p>Edgar Allan Poe</p>
+      </div>
+      <div>
+        <img width="120px" height="150px" src="icons/WilliamWordsworth.jpg" alt="William Wordsworth" title="Photo by William Wordsworth">
+        <p>William Wordsworth</p>
+      </div>
+    </div>
+
+  </footer>
 
 </body>
 
