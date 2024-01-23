@@ -66,6 +66,49 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+    .hideOnDesktop {
+      display: none;
+    }
+    @media screen and (max-width:1200px) {
+      nav input {
+        display: none;
+      }
+      .hideOnDesktop {
+        display: inline;
+      }
+      header .flex {
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      aside {
+        width: 110px;
+      }
+      main {
+        padding: 0 10px;
+      }
+    }
+
+    @media screen and (max-width:768px) {
+      .logo {
+        padding: 5px 60px 5px 5px;
+      }
+      header .flex {
+        align-items: flex-start;
+      }
+      nav {
+        margin: 5px 0;
+      }
+      aside:first-of-type {
+      display: none;
+    }
+    aside:last-of-type {
+      margin-top: 10px;
+    }
+    .content {
+      flex-direction: column;
+    }
+
+    }
   </style>
 </head>
 <body>
@@ -74,6 +117,7 @@
       <div class="border logo">
         <span>Logo</span>
       </div>
+      <input class="hideOnDesktop" type="text">
     </div>
     <nav class="border flex">
       <ul class="flex">
