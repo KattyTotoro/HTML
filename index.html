@@ -13,17 +13,23 @@
             font-family: cursive;
         }
 
-        .tag {
+        .flex {
             display: flex;
-            justify-content: space-around;
-            max-width: 800px;
+            justify-content: space-between;
+            max-width: 900px;
             margin: 0 auto;
             margin-top: 60px;
-            background-color: #dcd9d48e;
-            padding: 0 30px 10px;
-            border-radius: 50px;
             font-size: 20px;
+            gap: 30px;
             /* color: #445175; !!! Цвет */
+        }
+        
+        .flex div {
+            width: 400px;
+            background-color: #dcd9d48e;
+            padding: 0 20px 10px;
+            border-radius: 50px;
+            box-shadow: 5px -5px 5px #e6eaee, -5px 5px 5px #e6eaee;
         }
 
         h2 {
@@ -32,17 +38,19 @@
             font-style: oblique;
             text-shadow: 1px -1px 1px rgb(127, 167, 169), 2px -2px 2px rgb(89, 119, 124);
             /* letter-spacing: 3px; */
+            text-align: center;
 
         }
 
         p {
             max-width: fit-content;
             max-height: fit-content;
-            padding: 2px 5px;
+            padding: 2px 10px;
             margin: 5px;
+            margin-left: 20px;
             text-shadow: 1px 1px grey;
             background-color: #dcd9d48e;
-            border-radius: 10px;
+            border-radius: 8px 20px;
         }
 
         a {
@@ -51,8 +59,8 @@
             font-weight: bold;
             color: #398ba5;
             text-decoration: none;
-            border-radius: 10px;
-            padding: 2px 5px;
+            border-radius: 8px 20px;
+            padding: 2px 10px;
         }
 
         a:hover {
@@ -1149,7 +1157,7 @@
 
 <body id="main_background">
 
-    <div class="tag">
+    <div class="flex">
         <div>
             <h2>Домашняя работ а</h2>
 
