@@ -1200,29 +1200,33 @@
 
 
   <style>
-    .ul {
+    .ul li{
       list-style-image: url(icons/list-icon.png);
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
-    .ul ul li {
+    .ul ol li {
       list-style-image: none;
       list-style: inside square;
+    }
+
+    ul li:not(ol li):hover {
+      list-style-image: url(markers/check.png);
     }
   </style>
 
 <ul class="ul">
   <li> Булочка
-    <ul>
+    <ol>
       <li>С маком</li>
       <li>С корицей</li>
-    </ul>
+    </ol>
   </li>
   <li> Пицца
-    <ul>
+    <ol>
       <li>Пипперони</li>
       <li>Маргарита</li>
-    </ul>
+    </ol>
   </li>
 </ul>
 
