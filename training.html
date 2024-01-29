@@ -440,6 +440,10 @@
     ol[reversed] {
       color: chartreuse;
     }
+
+    p::selection {
+      background-color: rgb(162, 188, 165);
+    }
   </style>
 </head>
 
@@ -1250,11 +1254,20 @@
       content: counter(number) ') ';
       counter-increment: number;
     }
+
+    .before ol ul {
+      list-style: inside url(markers/football.png);
+    }
   </style>
   <ol class="before" type="I">
     <li>
       <ol>
-        <li></li>
+        <li>
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
         <li></li>
         <li></li>
       </ol>
