@@ -62,6 +62,45 @@
       background: #123123bf;
       margin: 20px;
     }
+
+    .blockquote1 {
+      position: relative;
+      width: 350px;
+      margin: 50px auto;
+      text-align: justify;
+    }
+
+    .blockquote1::before {
+      content: '<<';
+      position: absolute;
+      left: -40px;
+    }
+
+    .blockquote1::after {
+      content: '>>';
+      position: absolute;
+      right: -40px;
+    }
+
+    .blockquote2 {
+      position: relative;
+      width: 700px;
+      margin: 30px auto;
+      text-align: justify;
+    }
+    
+    .blockquote2::before {
+      content: '<<';
+      position: absolute;
+      left: -30px;
+    }
+
+    .blockquote2::after {
+      position: absolute;
+      content: '>>';
+      right: -30px;
+    }
+
   </style>
 </head>
 
@@ -200,6 +239,15 @@
     </details>
 
   </div>
+
+
+  <blockquote class="blockquote1">
+    Я иногда спрашиваю себя: какого черта мы так крутимся? Чтобы заработать деньги? Но на кой черт нам деньги, если мы только и делаем, что крутимся?
+  </blockquote>
+
+  <blockquote class="blockquote2">
+    Делам надо поклоняться, а не статуям. А может быть, даже и делам поклоняться не надо. Потому что каждый делает, что в его силах. Один — революцию, другой — свистульку. У меня, может, сил только на одну свистульку и хватает, так что же я — говно теперь?
+  </blockquote>
 </body>
 
 </html>
