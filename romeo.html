@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcard icon" href="images/pikachu.png">
     <title>Romeo and Juliet</title>
     <style>
         .decoration {
@@ -13,7 +14,7 @@
             background-image: url(images/back1.jpg);
         }
 
-        .tag {            
+        .tag {
             background-color: #f5f5f5;
             padding: 20px;
         }
@@ -23,15 +24,37 @@
             color: #463989;
             text-align: center;
         }
-        
+
         span {
             color: #728495;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+        }
+
+        .nav a {
+            padding: 10px;
+            color: #463989;
+            box-shadow: -5px -5px 10px #7d7b66;
+            border-radius: 20px;
+        }
+
+        .nav a:hover {
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px #7d7b66;
         }
     </style>
 </head>
 
 <body class="decoration">
-    <p><a href="index.html"><b>&#9668; Back</b></a></p>
+    <div class="nav">
+        <p><a href="index.html"><b>На главную</b></a></p>
+        <p><a href="index.html"><b>&#9668; Back</b></a></p>
+        <p><a href="dz1_2_card_game.html"><b>Next &#9658;</b></a></p>
+    </div>
 
     <div class="tag">
         <h1><strong>Romeo and Juliet</strong></h1>

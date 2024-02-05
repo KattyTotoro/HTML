@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcard icon" href="images/pikachu.png">
   <title>DZ 5.3 Subscription plan</title>
   <style>
     .main-decor {
@@ -23,7 +24,8 @@
     .flex div {
       padding: 5px 0 20px;
       border-radius: 15px;
-      box-shadow: 4px -4px 4px #a1a1a1, -4px 4px 4px #a1a1a1;
+      box-shadow: 4px -4px 4px #a1a1a1, -4px 4px 4px #a1a1a1, 0 0 10px #a1a1a188;
+      transition: transform 2s;
     }
 
     h3,
@@ -54,6 +56,10 @@
       color: white;
       padding: 10px 30px;
       border-radius: 5px;
+    }
+
+    button:hover {
+      cursor: pointer;
     }
 
     .enterprise hr {
@@ -91,11 +97,41 @@
       background: #63bb34;
       border: #63bb34;
     }
+
+    .flex div:hover {
+      transform: scale(1.2);
+      transition: transform 2s;
+    }
+
+    .nav {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+
+    .nav a {
+      padding: 10px;
+      color: #686868;
+      box-shadow: -5px -5px 10px #7d7b66;
+      border-radius: 20px;
+    }
+
+    .nav a:hover {
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px #7d7b66;
+    }
   </style>
 </head>
 
 <body class="main-decor">
-  <p><a href="index.html" style="color: black;"><b>&#8656; Back</b></a></p>
+  <div class="nav">
+    <p><a href="index.html"><b>На главную</b></a></p>
+    <p><a href="dz5_1_table.html"><b>&#8656; Back</b></a></p>
+    <p><a href="practic1.html"><b>Next is practical work</b></a></p>
+  </div>
 
   <div class="flex">
 

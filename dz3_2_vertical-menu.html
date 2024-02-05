@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcard icon" href="images/pikachu.png">
   <title>DZ_3_2_Vertical menu</title>
   <style>
     .decor {
@@ -15,7 +16,6 @@
     .backgr {
       background-color: #f5f5f5;
       padding: 10px 10px 45px;
-
     }
 
     nav {
@@ -27,18 +27,18 @@
     }
 
     .menu {
-      display: flex;      
+      display: flex;
       max-width: 230px;
       background-color: #808080;
       text-transform: uppercase;
       padding: 12px 15px;
     }
 
-p {
-  padding: 7px 0 0 20px;
-}
+    p {
+      padding: 7px 0 0 20px;
+    }
 
-   .backgr a {
+    .backgr a {
       text-decoration: none;
       color: white;
     }
@@ -46,11 +46,34 @@ p {
     .menu:hover {
       background-color: #5e5e5e;
     }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+
+    .nav a {
+      padding: 10px;
+      color: #686868;
+      box-shadow: -5px -5px 10px #7d7b66;
+      border-radius: 20px;
+    }
+
+    .nav a:hover {
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px #7d7b66;
+    }
   </style>
 </head>
 
 <body class="decor">
-  <p><a href="index.html"><b>&#8656; Back</b></a></p>
+  <div class="nav">
+    <p><a href="index.html"><b>На главную</b></a></p>
+    <p><a href="dz3_1_groceries.html"><b>&#8656; Back</b></a></p>
+    <p><a href="dz3_3_structure.html"><b>Next &#8658;</b></a></p>
+  </div>
 
   <div class="backgr">
 

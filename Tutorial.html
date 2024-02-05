@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcard icon" href="images/pikachu.png">
     <title>Tutorial</title>
     <style>
         .decoration {
@@ -43,19 +44,42 @@
         .code {
             background-color: #e7e7e7;
         }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+
+        .nav a {
+            padding: 10px;
+            color: #686868;
+            box-shadow: -5px -5px 10px #7d7b66;
+            border-radius: 20px;
+        }
+
+        .nav a:hover {
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px #7d7b66;
+        }
     </style>
 </head>
 
 <body class="decoration">
 
-    <p><a href="index.html"><b>&#8656; Back</b></a></p>
+    <div class="nav">
+        <p><a href="index.html"><b>На главную</b></a></p>
+        <p><a href="dz1_2_card_game.html"><b>&#8656; Back</b></a></p>
+        <p><a href="dz2_1_fruits.html"><b>Next &#8658;</b></a></p>
+    </div>
 
     <div class="tag">
-       
+
         <h1>
             HTML Tutorial
         </h1>
-        
+
         <hr>
         <h2>What is HTML?</h2>
 
@@ -81,7 +105,8 @@
             of <abbr title="HyperText Markup Language">HTML</abbr> pages. With <abbr
                 title="HyperText Markup Language">HTML</abbr> constructs, images and other
             objects such as
-            interactive forms may be embedded into the rendered page. <abbr title="HyperText Markup Language">HTML</abbr> provides a means to create structured documents
+            interactive forms may be embedded into the rendered page. <abbr
+                title="HyperText Markup Language">HTML</abbr> provides a means to create structured documents
             by
             denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
             <abbr title="HyperText Markup Language">HTML</abbr>
@@ -91,7 +116,8 @@
             content into the page. Other tags such as <span class="tag2">&lt;p&gt;</span> surround and provide
             information about document text and may
             include
-            other tags as sub-elements. Browsers do not display the <abbr title="HyperText Markup Language">HTML</abbr> tags, but use them to interpret the content of the
+            other tags as sub-elements. Browsers do not display the <abbr title="HyperText Markup Language">HTML</abbr>
+            tags, but use them to interpret the content of the
             page.
         </p>
         <hr>
@@ -113,7 +139,8 @@
                 tags</i>).<br>
         </p>
         <p>
-            Another important component is the <abbr title="HyperText Markup Language">HTML</abbr> <i>document type declaration</i>, which triggers standards mode rendering.<br>
+            Another important component is the <abbr title="HyperText Markup Language">HTML</abbr> <i>document type
+                declaration</i>, which triggers standards mode rendering.<br>
         </p>
         <p>
             The following is an example of the classic "Hello, World!" program:
