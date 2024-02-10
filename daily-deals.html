@@ -31,18 +31,25 @@
     }
 
     header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 30px 15px;
     }
 
     #slogan {
       font-style: italic;
-      font-weight: normal;
-      font-size: .7rem;
+      font-weight: bold;
+      font-size: 1rem;
       text-align: right;
       color: #909090;
       width: 30%;
     }
 
+    #main {
+      border-left: 2px solid #ddd;
+      border-right: 2px solid #ddd;
+    }
 
     .floatleft {
       float: left;
@@ -54,9 +61,41 @@
       margin-left: 15px;
     }
 
-    img {
-      vertical-align: middle;
+    .block {
+      padding: 30px;
+      clear: both;
     }
+
+    .block:first-child,
+    .block:last-child {
+      text-align: center;
+    }
+
+    .block img {
+      border: 2px solid #ddd;
+      border-radius: 50%;
+    }
+
+    /* /* .block::before {
+      content: '';
+      clear: both;
+    } */
+
+    .block::after {
+      content: '';
+
+      clear: both;
+    }
+
+    .block:nth-child(odd) {
+      background-color: #f8f8f8;
+      border-bottom: 2px solid #ddd;
+      border-top: 2px solid #ddd;
+    }
+
+    /* img {
+      vertical-align: middle;
+    } */
   </style>
 </head>
 
