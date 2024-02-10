@@ -76,6 +76,8 @@
     }
 
     .blockquote1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: italic;
       position: relative;
       width: 350px;
       margin: 50px auto;
@@ -123,12 +125,12 @@
       box-shadow: -10px -10px 10px;
     }
 
-    .shadow:hover, 
-    .block1:hover, 
-    .block2:hover, 
-    .block3:hover, 
-    .block4:hover, 
-    .block5:hover, 
+    .shadow:hover,
+    .block1:hover,
+    .block2:hover,
+    .block3:hover,
+    .block4:hover,
+    .block5:hover,
     .block6:hover {
       box-shadow: 10px 10px 10px;
       cursor: pointer;
@@ -363,9 +365,27 @@
     <img src="images/image26.jpg" width="1500px" alt="Time Machine">
   </div>
 
-  <div style="background: url(images/back3.jpg) no-repeat; background-size: 100%;">
-    <img style="display: block; margin: auto;" class="shadow" src="images/master.jpg" width="380" alt="Master Yoda">
-  </div>
+  <figure
+    style="background: url(images/back3.jpg) no-repeat; background-size: 100%; max-width: 90%; margin: auto; margin-top: 20px;">
+    <img style="display: block; margin: auto;" class="shadow" src="images/master.jpg" width="300" alt="Master Yoda">
+    <figcaption style="max-width: 50%; margin: auto; text-align: justify;">
+      <blockquote class="blockquote1">Размер не имеет значения. Посмотри на меня. По размеру меня судишь, так? Гмм?
+        Гмм. А не должен ты. Ибо мой союзник — Сила, и могущественный союзник она.
+      </blockquote>
+      <p>
+        — Йода — Люку Скайуокеру (источник)
+        Йода (англ. Yoda) — гранд-мастер Ордена джедаев, был одним из самых сильных и мудрых джедаев своего времени.
+        Место в Совете получил спустя примерно сотню лет после рождения. Обладая долголетием, он достиг титула
+        гранд-мастера в возрасте примерно 600 лет. Йода сумел выжить во время приказа 66. После неудачной дуэли с Дартом
+        Сидиусом ушел в добровольное изгнание на планету Дагоба, где и умер естественной смертью в 4 ПБЯ. Родная планета
+        и раса Йоды неизвестны.
+      </p>
+      <p>
+        Магистр Йода был одним из сильнейших джедаев своего времени. Он был самым мудрым из них. Во владении световым
+        мечом с Йодой могли сравниться только Мейс Винду, Энакин Скайуокер, Оби-Ван Кеноби, граф Дуку и Дарт Сидиус.
+      </p>
+    </figcaption>
+  </figure>
 
   <div style="width: 500px; 
 height: 200px; 
@@ -379,15 +399,39 @@ background: green;
 margin: 50px;
 border-radius: 50%/150% 100px;"></div>
 
-  <div style="width: 800px; 
-height: 500px; 
-background: url(images/back22.jpg);
-margin: 50px;
-border-radius: 50%/150% 100px; text-align: center;">
-    <img src="images/pikachu.png" width="300" alt="Pikachu">
-  </div>
+  <figure style="background: url(images/back22.jpg);
+margin: 50px; 
+border-radius: 50%/150% 100px; border: 5px double rgb(35, 93, 132); text-align: center; padding: 20px;  box-shadow: 0 0 40px rgb(104, 123, 190);">
+    <img src="images/pikachu.png" height="300" alt="Pikachu">
+    <img src="images/pikachu2.png" height="300" alt="Pikachu">
+    <img src="images/pikachu3.png" height="300" alt="Pikachu">
+    <img src="images/pikachu4.png" height="300" alt="Pikachu">
 
+    <figcaption
+      style="background: rgba(104, 153, 226, 0.555); width: 50%; margin: auto; color: rgb(2, 15, 31); font-size: 22px; text-shadow: 2px 2px 2px rgb(191, 199, 211); font-weight: bold;">
+      <p> Пикачу́ (яп. ピカチュウ Пикатю:, англ. Pikachu) — существо из серии игр, манги и аниме «Покемон», принадлежащей
+        компаниям Nintendo и Game Freak. Пикачу, являющийся одним из особенных существ вымышленной вселенной —
+        покемоном, был создан японским игровым дизайнером Кэном Сугимори вместе с командой разработчиков Game Freak и
+        впервые появился в компьютерных играх Pokémon Red и Blue, а затем и в последующих сиквелах. Пикачу считается
+        одним из самых узнаваемых и популярных покемонов, так как является официальным талисманом франшизы, и в
+        последние годы он стал иконой японской поп-культуры[1].
+      </p>
+      <p>
+        Пикачу эволюционирует из другого покемона, Пичу, а сам Пикачу впоследствии может эволюционировать в Райчу. В
+        вымышленном мире покемонов Пикачу часто живут в домах, лесах, на равнинах, иногда в горах и на островах, а также
+        на заброшенных электростанциях по всему миру[2]. Будучи покемоном электрического типа, Пикачу может накапливать
+        в своих щёчках электричество и при необходимости атаковать с его помощью[3]. Внутриигровой Покедекс, а также
+        Покедекс в аниме утверждает, что Пикачу является покемоном-мышью.
+      </p>
+    </figcaption>
+  </figure>
 
+  <figure>
+    <img src="images/mister-snail.jpg" width="500" alt="Мистер Улитка">
+    <figcaption>
+      Мистер Улитка
+    </figcaption>
+  </figure>
 </body>
 
 </html>
