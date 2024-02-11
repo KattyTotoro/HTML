@@ -35,6 +35,7 @@
     }
 
     .food {
+      margin: initial;
       width: 100px;
       border: 1px solid grey;
       border-radius: 25px;
@@ -42,6 +43,11 @@
       text-align: center;
     }
 
+    figcaption {
+      margin: 16px 0;
+    }
+
+    /* Навигация по другим страницам */
     .nav {
       max-width: 850px;
       margin: auto;
@@ -66,12 +72,12 @@
 </head>
 
 <body class="decor">
+  <!-- Навигация по другим страницам -->
   <div class="nav">
     <p><a href="index.html"><b>На главную</b></a></p>
     <p><a href="dz2_3_tag.html"><b>&#8656; Back</b></a></p>
     <p><a href="dz3_2_vertical-menu.html"><b>Next &#8658;</b></a></p>
   </div>
-
 
 
   <h2 class="center">What do I have in my fridge?</h2>
@@ -83,10 +89,10 @@
       <p>Papper</p>
     </div>
 
-    <div class="food">
+    <figure class="food">
       <img src="icons/Food_C240-128.png" alt="Apple" title="Apple image">
-      <p>Apple</p>
-    </div>
+      <figcaption>Apple</figcaption>
+    </figure>
 
     <div class="food">
       <img src="icons/Food_C217-128.png" alt="Cheese" title="Cheese image">
