@@ -7,6 +7,10 @@
   <link rel="shortcard icon" href="images/pikachu.png">
   <title>Training3</title>
   <style>
+    body {
+      margin: 50px;
+    }
+
     .back1 {
       background-color: rgb(14, 87, 196);
     }
@@ -46,6 +50,100 @@
 
     .back9 {
       background-image: url(images/flower-bg.jpg);
+    }
+
+    .back10 {
+      background-image: url(images/lemons.jpg);
+      background-repeat: no-repeat;
+    }
+
+    .back11 {
+      background-position: top;
+    }
+
+    .back12 {
+      background-position: right;
+    }
+
+    .back13 {
+      background-position: bottom;
+    }
+
+    .back14 {
+      background-position: left;
+    }
+
+    .back15 {
+      background-position: center;
+    }
+
+    .back16 {
+      background-position: right top;
+    }
+
+    .back17 {
+      background-position: 20% 80%;
+    }
+
+    .back18 {
+      background-position: -20% -30%;
+    }
+
+    .back19 {
+      background-position: 20% 150%;
+    }
+
+    .back20 {
+      background-image: url(images/bg_sa.jpg);
+      background-repeat: no-repeat;
+    }
+
+    .back21 {
+      background-size: auto;
+    }
+
+    .back22 {
+      background-size: 100%;
+    }
+
+    .back23 {
+      background-size: 100% 100%;
+    }
+
+    .back24 {
+      background-size: auto 100%;
+    }
+
+    .back25 {
+      background-size: contain;
+    }
+
+    .back26 {
+      background-size: cover;
+    }
+
+    .back27 {
+      background: url(images/bg_sa.jpg) center/contain no-repeat;
+    }
+
+    .back28 {
+      background-image: url(images/bg_sa.jpg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+    }
+    .back29 {
+      background-image: url(images/bg_sa.jpg);
+      background-repeat: no-repeat;
+      background-size: 90% 90%;
+    }
+    .back30 {
+      background-image: url(images/bg_sa.jpg);
+      background-repeat: no-repeat;
+      background-size: 50% 50%;
+    }
+    .back31 {
+      background-image: url(images/back5_1.jpg);
     }
 
     .width1 {
@@ -101,7 +199,12 @@
     }
 
     div {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
       border: 3px solid rgb(2, 4, 7);
+      box-sizing: border-box;
+      text-shadow: 1px 1px white;
     }
   </style>
 </head>
@@ -150,8 +253,127 @@
     background-image: url(images/flower-bg.jpg);
   </div>
 
+  <div class="back10 width3 height2">
+    background-image: url(images/lemons.jpg);
+    background-repeat: no-repeat;
+  </div>
 
+  <div class="back10 back11 width3 height2">
+    background-image: url(images/lemons.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+  </div>
 
+  <div class="back10 back12 width3 height2">
+    background-image: url(images/lemons.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+  </div>
+
+  <div class="back10 back13 width3 height2">
+    background-image: url(images/lemons.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  </div>
+
+  <div class="back10 back14 width3 height2">
+    background-image: url(images/lemons.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+  </div>
+
+  <div class="back10 back15 width3 height2">
+    background-image: url(images/lemons.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  </div>
+
+  <div class="back10 back16 width3 height2">
+    background-image: url(images/lemons.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+  </div>
+
+  <div class="back10 back17 width3 height2">
+    background-image: url(images/lemons.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 80%;
+  </div>
+
+  <div class="back10 back18 width3 height2">
+    background-image: url(images/lemons.jpg);
+    background-repeat: no-repeat;
+    background-position: -20% -30%;
+  </div>
+
+  <div class="back10 back19 width3 height2">
+    background-image: url(images/lemons.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 150%;
+  </div>
+
+  <div class="back20 back21 width3 height2">
+    background-image: url(images/bg_sa.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+  </div>
+
+  <div class="back20 back22 width3 height2">
+    background-image: url(images/bg_sa.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  </div>
+
+  <div class="back20 back23 width3 height2">
+    background-image: url(images/bg_sa.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  </div>
+
+  <div class="back20 back24 width3 height2">
+    background-image: url(images/bg_sa.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  </div>
+
+  <div class="back20 back25 width3 height2">
+    background-image: url(images/bg_sa.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  </div>
+
+  <div class="back20 back26 width3 height2">
+    background-image: url(images/bg_sa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  </div>
+
+  <div class="back27 width3 height2">
+    background: url(images/bg_sa.jpg) center/contain no-repeat;
+  </div>
+
+  <div class="back28 width3 height2">
+    background-image: url(images/bg_sa.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+  </div>
+
+  <div class="back29 width3 height2">
+    background-image: url(images/bg_sa.jpg);
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+  </div>
+  
+  <div class="back30 width3 height2">
+    background-image: url(images/bg_sa.jpg);
+      background-repeat: no-repeat;
+      background-size: 50% 50%;
+  </div>
+
+  <div class="back31 width10 height8">
+    
+  </div>
 </body>
 
 </html>
