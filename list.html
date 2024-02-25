@@ -11,21 +11,23 @@
       width: 500px;
       margin: 0 auto;
       /* background: url(images/back14.jpg) center/cover no-repeat; */
-      background: url(images/list/ball2.png) 0/500px no-repeat fixed, 
-      url(images/list/ball1.png) repeat-y 90%/50px, 
-      url(images/back14.jpg) center/cover no-repeat;
+      background: url(images/list/ball2.png) 0/500px no-repeat fixed,
+        url(images/list/ball1.png) repeat-y 90%/50px,
+        url(images/back14.jpg) center/cover no-repeat;
       /* background: url(images/list/ball1.png) repeat-y 90%/50px; */
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-size: 26px;
     }
 
     ul {
-      background: rgba(255, 255, 255, 0.847) url(images/list/ball3.png) 100% 0%/250px no-repeat border-box;
+      background: rgba(255, 255, 255, 0.847) url(images/list/ball3.png) 99% 1%/250px no-repeat border-box;
       padding: 200px 20px 20px;
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
     }
 
     ul ul {
       background: none;
+      margin-top: 20px;
       padding: 20px;
     }
 
@@ -33,6 +35,10 @@
       list-style-position: inside;
       list-style-image: url(markers/football.png);
       padding-left: 60px;
+    }
+
+    .ul > li {
+      margin-top: 50px;
     }
 
     #poland {
@@ -105,7 +111,7 @@
 
   <!-- <img src="images/image27.jpg" alt=""> -->
 
-  <ul>
+  <ul class="ul">
     <li>Группа A
       <ul>
         <li id="poland">Польша</li>
