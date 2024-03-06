@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,53 @@
   <title>pz 3.3 Cats gallery</title>
   <style>
     .main-decor {
-      max-width: 700px;
+      max-width: 800px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0 auto;
       background: #f5f5f5;
+      padding-bottom: 50px;
     }
-    
+
     h2 {
       text-transform: uppercase;
       text-align: center;
     }
-    
-    hr {      
+
+    hr {
       border: 1px solid #e4e4e4;
       opacity: .5;
     }
 
-    .large-image {
-      margin: auto;
-      text-align: center;
+    .catGalery {
+      width: 692px;
+      margin: 0 auto;
+      margin-top: 50px;
       border: 2px solid #e4e4e4;
     }
 
-    .large-image img {
-        padding: 50px;
+    iframe {
+      display: block;
+      width: 256px;
+      margin: 60px auto;
     }
 
-    a img {
+    .catGalery a {
+      display: inline-block;
+      border-right: 2px solid #e4e4e4;
+      border-top: 2px solid #e4e4e4;
+      padding: 25px;
+    }
+
+    img:hover {
+      filter: drop-shadow(4px 4px 10px rgb(89, 97, 103));
+    }
+
+    /* a img {
       display: inline-block;
       border-left: 2px solid #e4e4e4;
       border-bottom: 2px solid #e4e4e4;
-      padding: 25.4px;
-    }
+      padding: 25px;
+    } */
 
     .nav {
       display: flex;
@@ -68,17 +84,22 @@
     <p><a href="table.html"><b>Next &#8658;</b></a></p>
   </div>
 
-  <p style="background-color: #dbd8b5; font-size: 28px; text-align: center;">(в работе)</p>
-    
-<div class="large-image">
-  <h2>Cats gallery</h2>
-  <hr>
-  <img src="icons/cat_tied_256.png" alt="cat_tied_256">
-</div>
+  <!-- <p style="background-color: #dbd8b5; font-size: 28px; text-align: center;">(в работе)</p> -->
 
-<div class="gallery">
-  <a href="#"><img src="icons/cat_tied_64.png" alt="cat_tied_64"></a><a href="#"><img src="icons/cat_eyes_64.png" alt="cat_eyes_64"></a><a href="#"><img src="icons/cat_purr_64.png" alt="cat_purr_64"></a><a href="#"><img src="icons/cat_cage_64.png" alt="cat_cage_64"></a><a href="#"><img src="icons/cat_clean_64.png" alt="cat_clean_64"></a><a href="#"><img style="border-right: 2px solid #e4e4e4;" src="icons/cat_box_64.png" alt="cat_box_64"></a>
-</div>
+  <div class="catGalery">
+    <h2>Cats gallery</h2>
+    <hr>
+    <iframe width="256" height="256" src="icons/cat_tied_256.png" frameborder="0" name="bigCat">
+    </iframe>
+
+    <a href="#"><img src="icons/cat_tied_64.png" alt="cat_tied_64"></a><a href="#"><img src="icons/cat_eyes_64.png"
+        alt="cat_eyes_64"></a><a href="#"><img src="icons/cat_purr_64.png" alt="cat_purr_64"></a><a href="#"><img
+        src="icons/cat_cage_64.png" alt="cat_cage_64"></a><a href="#"><img src="icons/cat_clean_64.png"
+        alt="cat_clean_64"></a><a href="#" style="border-right: none;"><img src="icons/cat_box_64.png"
+        alt="cat_box_64"></a>
+
+  </div>
 
 </body>
+
 </html>
