@@ -8,15 +8,18 @@
   <title>DZ_3_2_Vertical menu 2</title>
   <style>
     .decor {
-      max-width: 500px;
+      background: url(images/back10.jpg) center/cover no-repeat;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0 auto;
     }
 
     .backgr {
+      /* background: url(images/bg15.png) bottom/cover no-repeat; */
+      max-width: 500px;
+      margin: 0 auto;
+      margin-top: 20px;
       background-color: #f5f5f5;
       padding: 10px 10px 45px;
-
+      box-shadow: 0 0 16px rgba(254, 254, 254, 0.7);
     }
 
     nav {
@@ -25,13 +28,16 @@
 
     ul {
       list-style-type: none;
+      padding: 0;
+      margin: 0;
     }
 
     li {
-      max-width: 230px;
       background-color: #808080;
+      max-width: 230px;
       text-transform: uppercase;
-      padding: 12px 15px;
+      padding: 15px 10px 15px 20px;
+      transition: 1s;
     }
 
     ul a {
@@ -41,46 +47,73 @@
       padding: 20px 0 20px 80px;
     }
 
-    ul a:hover {
+    ul li:hover {
       background-color: #5e5e5e;
       transition: 1s;
     }
 
     .edit {
-      background: url(icons/edit.png) left center/contain no-repeat;
+      background: #808080 url(icons/edit.png) 5% center/70px no-repeat;
     }
+
     .favorites {
-      background: url(icons/favorites.png) left center/contain no-repeat;
+      background: #808080 url(icons/favorites.png) 5% center/70px no-repeat;
     }
+
     .history {
-      background: url(icons/history.png) left center/contain no-repeat;
+      background: #808080 url(icons/history.png) 5% center/70px no-repeat;
     }
+
     .security {
-      background: url(icons/security.png) left center/contain no-repeat;
+      background: #808080 url(icons/security.png) 5% center/70px no-repeat;
     }
+
     .settings {
-      background: url(icons/settings.png) left center/contain no-repeat;
+      background: #808080 url(icons/settings.png) 5% center/70px no-repeat;
+    }
+
+    .nav {
+      max-width: 850px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      padding: 20px;
+    }
+
+    .nav a {
+      padding: 10px;
+      color: #686868;
+      box-shadow: -5px -5px 10px #7d7b66;
+      border-radius: 20px;
+    }
+
+    .nav a:hover {
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px #7d7b66;
     }
   </style>
 </head>
 
 <body class="decor">
-  <p><a href="index.html"><b>&#8656; Back</b></a></p>
+  <div class="nav">
+    <p><a href="index.html"><b>На главную</b></a></p>
+    <p><a href="dz3_1_groceries.html"><b>&#8656; Back</b></a></p>
+    <p><a href="dz3_3_structure.html"><b>Next &#8658;</b></a></p>
+  </div>
 
   <div class="backgr">
     <nav>
       <ul>
-        <li><a href="#"><a class="edit" href="#">edit</a></li>
-        <li><a href="#"><a class="favorites" href="#">favorites</a></li>
-        <li><a href="#"><a class="history" href="#">history</a></li>
-        <li><a href="#"><a class="security" href="#">security</a></li>
-        <li><a href="#"><a class="settings" href="#">settings</a></li>
+        <li class="edit"><a href="#">edit</a></li>
+        <li class="favorites"><a href="#">favorites</a></li>
+        <li class="history"><a href="#">history</a></li>
+        <li class="security"><a href="#">security</a></li>
+        <li class="settings"><a href="#">settings</a></li>
       </ul>
     </nav>
   </div>
-  <!-- меню сделать списком 
-в строе ссылка а, у а свойство display: block 
-картинки как baclground-->
+
 </body>
 
 </html>
