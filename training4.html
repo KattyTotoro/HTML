@@ -219,6 +219,31 @@
       padding: 50px;
     }
 
+    .div3 {
+      height: 200px;
+      background: rgb(210, 162, 73);
+      display: grid;
+      place-items: center;
+      min-block-size: 100%;
+      /* overflow: hidden; */
+    }
+
+    .button1 {
+      padding: 10px 20px;
+      background-color: rgb(43, 101, 226);
+      font-size: 24px;
+      font-weight: 300;
+      border: none;
+      transition-property: padding;
+      transition-duration: .5s;
+      transition-timing-function: cubic-bezier(.52, 0, .27, 2);
+    }
+
+    .button1:hover {
+      padding: 20px 30px;
+      cursor: pointer;
+    }
+
     /* cubic-bezier(0.25, 0.1, 0.25, 1.0) */
   </style>
 </head>
@@ -249,7 +274,15 @@
     <div class="div2">Эээээ</div>
   </div>
 
+  <div class="div3">
+    <button class="button1">
+      Наведи на меня
+    </button>
+  </div>
 
+  <div>
+    <button></button>
+  </div>
 </body>
 
 </html>
