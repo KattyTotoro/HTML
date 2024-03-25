@@ -244,7 +244,33 @@
       cursor: pointer;
     }
 
+    .rotate {
+      max-width: fit-content;
+      transition: transform 10s;
+      /* transform: translate(10px, 10px); */
+    }
+
+    .rotate:hover {
+      transform: rotate(3600deg);
+      /* transform: translate(10px, 20px); */
+      transform-origin: 50% 50%;
+      /* transform: scale(-1,1); */
+    }
+
     /* cubic-bezier(0.25, 0.1, 0.25, 1.0) */
+
+    .div4 {
+      width: 300px;
+      height: 300px;
+      background: url(images/training/img.png) center/cover no-repeat;
+      transition: transform 20s;
+   
+    }
+    
+    .div4:hover {
+      transform: rotate(3600deg);
+      transform-origin: 50% 50%;
+    }
   </style>
 </head>
 
@@ -283,6 +309,11 @@
   <div>
     <button></button>
   </div>
+
+
+  <div class="link2 rotate"><a href="#">Ссылка 2_2</a></div>
+
+<div class="div4"></div>
 </body>
 
 </html>
