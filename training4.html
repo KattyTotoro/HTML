@@ -39,6 +39,7 @@
       border-radius: 5px;
       transition-property: opacity, box-shadow;
       transition-duration: 1s;
+      transform: rotate(-15deg);
     }
 
     .link2 a:hover {
@@ -140,6 +141,7 @@
 
     .link8 a {
       display: inline-block;
+      width: 300px;
       height: 100px;
       background: rgb(75, 164, 15) url(images/bg12.png) left bottom/50px no-repeat;
       text-decoration: none;
@@ -147,7 +149,7 @@
       color: rgb(1, 31, 1);
       padding: 20px;
       border-radius: 5px;
-      transition: all 2s linear .5s;
+      transition: all 2s linear .2s;
     }
 
     .link8 a:hover {
@@ -246,15 +248,15 @@
 
     .rotate {
       max-width: fit-content;
-      transition: transform 10s;
+      transition: transform 3s;
       /* transform: translate(10px, 10px); */
     }
 
     .rotate:hover {
-      transform: rotate(3600deg);
+      /* transform: rotate(3600deg); */
       /* transform: translate(10px, 20px); */
       transform-origin: 50% 50%;
-      /* transform: scale(-1,1); */
+      transform: scaleX(-1);
     }
 
     /* cubic-bezier(0.25, 0.1, 0.25, 1.0) */
