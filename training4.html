@@ -272,13 +272,13 @@
       cursor: pointer;
     }
 
-    .rotate {
+    .link2_2 {
       max-width: fit-content;
       transition: transform 3s;
       /* transform: translate(10px, 10px); */
     }
 
-    .rotate:hover {
+    .link2_2:hover {
       /* transform: rotate(3600deg); */
       /* transform: translate(10px, 20px); */
       transform-origin: 50% 50%;
@@ -435,7 +435,7 @@
   </div>
 
 
-  <div class="link2 rotate"><a href="#">Ссылка 2_2</a></div>
+  <div class="link2 link2_2"><a href="#">Ссылка 2_2</a></div>
 
   <div class="div4"></div>
 
@@ -524,6 +524,182 @@
    <div class="block bl-2">
     <a href="#">Раздел сайта №2</a>
    </div>
+
+
+
+   
+<style>
+   /*Стили для квадрата с разными по цвету границами*/
+.example {
+ width: 200px;
+ height: 200px;
+ border: 3px solid black;
+ border-top-color: blue;
+ border-right-color: yellow;
+ border-bottom-color: red;
+ transition: transform;
+}
+/*Стили для точки в центре*/
+
+.point {
+  width: 3px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+ 
+}
+
+.example:hover {
+  transform: translate(10px, 10px);
+
+}
+
+</style>
+
+<div class="example">
+    <div class="point"></div> <!-- Центральная точка -->
+   </div>
+
+
+   <style>
+    .button2 {
+      width: 100px;
+      height: 50px;
+      border-radius: 5px;
+      background: violet;
+      transition: .2s;
+    }
+
+    .button2:hover {
+      transform: scale(1.2, 1.2);
+      cursor: pointer;
+      /* transition-timing-function: cubic-bezier(.52, 0, .27, 2); */
+    }
+
+    .button3 {
+      width: 100px;
+      height: 50px;
+      border-radius: 5px;
+      background: rgb(191, 130, 238);
+      transition: .2s;
+    }
+
+    .button3:hover {
+      transform: scaleX(1.2);
+      cursor: pointer;
+      /* transition-timing-function: cubic-bezier(.52, 0, .27, 2); */
+    }
+
+    .button4 {
+      width: 100px;
+      height: 50px;
+      border-radius: 5px;
+      background: rgb(130, 144, 238);
+      transition: .2s;
+    }
+
+    .button4:hover {
+      transform: scaleY(1.2);
+      cursor: pointer;
+      /* transition-timing-function: cubic-bezier(.52, 0, .27, 2); */
+    }
+
+    .button5 {
+      width: 100px;
+      height: 50px;
+      border-radius: 5px;
+      background: rgb(130, 238, 170);
+      transition: .2s;
+    }
+
+    .button5:hover {
+      transform: scale(.8, .8);
+      cursor: pointer;
+      /* transition-timing-function: cubic-bezier(.52, 0, .27, 2); */
+    }
+
+    .button6 {
+      width: 100px;
+      height: 50px;
+      border-radius: 5px;
+      background: rgb(96, 200, 226);
+      transition: .2s;
+    }
+
+    .button6:hover {
+      transform: scaleX(.8);
+      cursor: pointer;
+      /* transition-timing-function: cubic-bezier(.52, 0, .27, 2); */
+    }
+
+    .button7 {
+      width: 100px;
+      height: 50px;
+      border-radius: 5px;
+      background: rgb(35, 132, 236);
+      transition: .2s;
+    }
+
+    .button7:hover {
+      transform: scaleY(.8);
+      cursor: pointer;
+      /* transition-timing-function: cubic-bezier(.52, 0, .27, 2); */
+    }
+
+    .button8 {
+      width: 100px;
+      height: 50px;
+      border-radius: 5px;
+      background: rgb(113, 226, 125);
+      transition: .2s;
+    }
+
+    .button8:hover {
+      transform: scale(-1.2, -1.2);
+      cursor: pointer;
+      /* transition-timing-function: cubic-bezier(.52, 0, .27, 2); */
+    }
+
+    .button9 {
+      width: 100px;
+      height: 50px;
+      border-radius: 5px;
+      background: rgb(198, 238, 130);
+      transition: .2s;
+    }
+
+    .button9:hover {
+      transform: scaleX(-1.2);
+      cursor: pointer;
+      /* transition-timing-function: cubic-bezier(.52, 0, .27, 2); */
+    }
+
+    .button10 {
+      width: 100px;
+      height: 50px;
+      border-radius: 5px;
+      background: rgb(238, 227, 130);
+      transition: .2s;
+    }
+
+    .button10:hover {
+      transform: scaleY(-1.2);
+      cursor: pointer;
+      /* transition-timing-function: cubic-bezier(.52, 0, .27, 2); */
+    }
+   </style>
+
+   <button class="button2">Нажать</button>
+   <button class="button3">Нажать</button>
+   <button class="button4">Нажать</button>
+   <button class="button5">Нажать</button>
+   <button class="button6">Нажать</button>
+   <button class="button7">Нажать</button>
+   <button class="button8">Нажать</button>
+   <button class="button9">Нажать</button>
+   <button class="button10">Нажать</button>
 
 
 </body>
