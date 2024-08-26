@@ -756,6 +756,67 @@
   <!-- <div class="feedback2"><p>Обратная связь</p></div> -->
 
 
+
+  <style>
+    .skew1 {
+      display: inline-block;
+      background: rgb(141, 197, 58);
+      width: 200px;
+      height: 100px;
+      border: 1px solid;
+      transform: skew(15deg, 0);
+    }
+
+    .skew2 {
+      display: inline-block;
+      background: rgb(58, 197, 79);
+      width: 200px;
+      height: 100px;
+      border: 1px solid;
+      transform: skew(-15deg, 0);
+    }
+
+    .skew3 {
+      display: inline-block;
+      background: rgb(58, 197, 190);
+      width: 200px;
+      height: 100px;
+      border: 1px solid;
+      transform: skew(0, 15deg);
+    }
+
+    .skew4 {
+      display: inline-block;
+      background: rgb(83, 58, 197);
+      width: 200px;
+      height: 100px;
+      border: 1px solid;
+      transform: skew(0, -15deg);
+    }
+
+    .skew5 {
+      display: inline-block;
+      background: rgb(251, 205, 229) url(images/bg12.png) center/cover;
+      width: 100px;
+      height: 100px;
+      border: 1px solid;
+      margin-left: 50px;
+      padding: 5px;
+      transition: 1s;
+      transform: skew(45deg, -45deg);
+    }
+    
+    .skew5:hover {
+      background: rgb(251, 205, 229) url(images/bg12.png) right bottom/200px;
+    }
+    </style>
+
+  <div class="skew1"><p>transform: skew(15deg, 0);</p></div>
+  <div class="skew2"><p>transform: skew(-15deg, 0);</p></div>
+  <div class="skew3"><p>transform: skew(0, 15deg);</p></div>
+  <div class="skew4"><p>transform: skew(0, -15deg);</p></div>
+  <div class="skew5"><p>transform: skew(45deg, -45deg);</p></div>
+
 </body>
 
 </html>
