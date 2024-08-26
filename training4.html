@@ -723,15 +723,39 @@
       width: 500px;
       height: 200px;
       background: rgb(86, 112, 86);
-      color: white;
       text-align: left;
-      padding: 20px;
       font-weight: 800;
-      font-size: 32px;
+      font-size: 22px;
+      position: relative;
+    }
+    
+    .feedback p {
+      padding: 20px;
+      color: white;
+    }
+
+    .feedback::after {
+      content: 'Обратная связь';
+      background: #ffc0cb;
+      text-align: center;
+      border-radius:  0 0 8px 8px;
+      padding: 5px 0;
+      width: 200px;
+      position: absolute;
+      left: 500px;
+      top: 200px;
+      transform-origin: 0 0;
+      transform: rotate(-90deg);
     }
    </style>
 
-  <div class="feedback">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iusto dolorem repellat voluptas obcaecati quas pariatur, fugit dolores eius voluptate!</div>
+  <div class="feedback">
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iusto dolorem repellat voluptas obcaecati quas pariatur, fugit dolores eius voluptate!
+    </p>
+  </div>
+  <!-- <div class="feedback2"><p>Обратная связь</p></div> -->
+
+
 </body>
 
 </html>
