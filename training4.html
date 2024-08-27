@@ -353,60 +353,68 @@
 
 
     /* Добавляем стили для блока, содержащего в себе ссылку */
-.block{
- display: inline-block;
- height: 80px;
- width: 20vw;
- position: relative;
-}
-/* Добавляем стили для ссылки в блоках */
-.block a{
- display: block;
- width: 100%;
- height: 100%;
- color: #fff;
- text-align: center;
- text-decoration: none;
- padding: 2em 0;
- position: absolute;
- z-index: 2;
-}
-/* Цвет фона для каждого блока */
-.bl-1{
- background: #686E8F;
-}
-.bl-2{
- background: #FCCC41;
-}
-/* 
+    .block {
+      display: inline-block;
+      height: 80px;
+      width: 20vw;
+      position: relative;
+    }
+
+    /* Добавляем стили для ссылки в блоках */
+    .block a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      padding: 2em 0;
+      position: absolute;
+      z-index: 2;
+    }
+
+    /* Цвет фона для каждого блока */
+    .bl-1 {
+      background: #686E8F;
+    }
+
+    .bl-2 {
+      background: #FCCC41;
+    }
+
+    /* 
  С помощью псевдоэлемента ::before добавим «подни-
  мающуюся шторку» для каждого блока со своим цветом
 */
-.bl-1::before {
- content: '';
- background-color: rgba(252, 204, 65, 0.7);
- position: absolute;
- bottom: 0;
- left: 0;
- right: 0;
- height: 0%;
- transition: 1s;
-}
-.bl-2::before {
- content: '';
- background-color: rgba(104, 110, 143, 0.7);
- position: absolute;
- bottom: 0;
- left: 0;
- right: 0;
- height: 0%;
- transition: 1s;
-}
-/* При наведении «шторка» будет высотой 100% */
-.bl-1:hover::before, .bl-2:hover::before{
- height: 100%;
-}
-/* Свойство transition добавлено для исходного, невыделенного элемента */
+    .bl-1::before {
+      content: '';
+      background-color: rgba(252, 204, 65, 0.7);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0%;
+      transition: 1s;
+    }
+
+    .bl-2::before {
+      content: '';
+      background-color: rgba(104, 110, 143, 0.7);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0%;
+      transition: 1s;
+    }
+
+    /* При наведении «шторка» будет высотой 100% */
+    .bl-1:hover::before,
+    .bl-2:hover::before {
+      height: 100%;
+    }
+
+    /* Свойство transition добавлено для исходного, невыделенного элемента */
   </style>
 </head>
 
@@ -457,7 +465,7 @@
 
   <div class="div5">
     <div class="div5_1">
-       
+
       <p>Раз шёл я по берегу нашего ручья и под кустом заметил ежа. Он тоже заметил меня, свернулся и затукал:
         тук-тук-тук. Очень похоже было, как если бы вдали шёл автомобиль. Я прикоснулся к нему кончиком сапога – он
         страшно фыркнул и поддал своими иголками в сапог.</p>
@@ -527,7 +535,7 @@
 
       <p>Так вот и устроился у меня жить ёжик. А сейчас я, как чай пить, непременно его к себе на стол и то молока ему
         налью в блюдечко – выпьет, то булочки дам – съест.</p>
-      </div>
+    </div>
   </div>
 
 
@@ -535,50 +543,50 @@
 
   <div class="block bl-1">
     <a href="#">Раздел сайта №1</a>
-   </div>
-   <div class="block bl-2">
+  </div>
+  <div class="block bl-2">
     <a href="#">Раздел сайта №2</a>
-   </div>
+  </div>
 
 
 
-   
-<style>
-   /*Стили для квадрата с разными по цвету границами*/
-.example {
- width: 200px;
- height: 200px;
- border: 3px solid black;
- border-top-color: blue;
- border-right-color: yellow;
- border-bottom-color: red;
- transition: transform;
-}
-/*Стили для точки в центре*/
 
-.point {
-  width: 3px;
-  height: 3px;
-  background-color: black;
-  position: relative;
-  top: 50%;
-  left: 50%;
- 
-}
+  <style>
+    /*Стили для квадрата с разными по цвету границами*/
+    .example {
+      width: 200px;
+      height: 200px;
+      border: 3px solid black;
+      border-top-color: blue;
+      border-right-color: yellow;
+      border-bottom-color: red;
+      transition: transform;
+    }
 
-.example:hover {
-  transform: translate(10px, 10px);
+    /*Стили для точки в центре*/
 
-}
+    .point {
+      width: 3px;
+      height: 3px;
+      background-color: black;
+      position: relative;
+      top: 50%;
+      left: 50%;
 
-</style>
+    }
 
-<div class="example">
+    .example:hover {
+      transform: translate(10px, 10px);
+
+    }
+  </style>
+
+  <div class="example">
     <div class="point"></div> <!-- Центральная точка -->
-   </div>
+  </div>
 
 
-   <style>
+  <style>
     .button2 {
       width: 100px;
       height: 50px;
@@ -704,21 +712,21 @@
       cursor: pointer;
       /* transition-timing-function: cubic-bezier(.52, 0, .27, 2); */
     }
-   </style>
+  </style>
 
-   <button class="button2">Нажать</button>
-   <button class="button3">Нажать</button>
-   <button class="button4">Нажать</button>
-   <button class="button5">Нажать</button>
-   <button class="button6">Нажать</button>
-   <button class="button7">Нажать</button>
-   <button class="button8">Нажать</button>
-   <button class="button9">Нажать</button>
-   <button class="button10">Нажать</button>
+  <button class="button2">Нажать</button>
+  <button class="button3">Нажать</button>
+  <button class="button4">Нажать</button>
+  <button class="button5">Нажать</button>
+  <button class="button6">Нажать</button>
+  <button class="button7">Нажать</button>
+  <button class="button8">Нажать</button>
+  <button class="button9">Нажать</button>
+  <button class="button10">Нажать</button>
 
 
 
-   <style>
+  <style>
     .feedback {
       width: 500px;
       height: 200px;
@@ -730,7 +738,7 @@
       transform: translateX(-550px);
       transition: 1s;
     }
-    
+
     .feedback p {
       padding: 20px;
       color: white;
@@ -740,7 +748,7 @@
       content: 'Обратная связь';
       background: #ffc0cb;
       text-align: center;
-      border-radius:  0 0 8px 8px;
+      border-radius: 0 0 8px 8px;
       padding: 5px 0;
       width: 200px;
       position: absolute;
@@ -754,10 +762,11 @@
       transform: translateX(-80px);
       transition: 1s;
     }
-   </style>
+  </style>
 
   <div class="feedback">
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iusto dolorem repellat voluptas obcaecati quas pariatur, fugit dolores eius voluptate!
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iusto dolorem repellat voluptas obcaecati quas
+      pariatur, fugit dolores eius voluptate!
     </p>
   </div>
   <!-- <div class="feedback2"><p>Обратная связь</p></div> -->
@@ -813,43 +822,53 @@
       transform: skew(45deg, -45deg);
       transition: 1s;
     }
-    
+
     .skew5:hover {
       background: rgb(251, 205, 229) url(images/bg12.png) right bottom/200px no-repeat;
       scale: 2;
       rotate: 15deg;
       transition: 1s;
     }
-    </style>
+  </style>
 
-  <div class="skew1"><p>transform: skew(15deg, 0);</p></div>
-  <div class="skew2"><p>transform: skew(-15deg, 0);</p></div>
-  <div class="skew3"><p>transform: skew(0, 15deg);</p></div>
-  <div class="skew4"><p>transform: skew(0, -15deg);</p></div>
-  <div class="skew5"><p>transform: skew(45deg, -45deg);</p></div>
+  <div class="skew1">
+    <p>transform: skew(15deg, 0);</p>
+  </div>
+  <div class="skew2">
+    <p>transform: skew(-15deg, 0);</p>
+  </div>
+  <div class="skew3">
+    <p>transform: skew(0, 15deg);</p>
+  </div>
+  <div class="skew4">
+    <p>transform: skew(0, -15deg);</p>
+  </div>
+  <div class="skew5">
+    <p>transform: skew(45deg, -45deg);</p>
+  </div>
 
 
-<style>
-#call_us {
-  display: block;
- max-width: fit-content;
-  background: rgb(65, 65, 106);
-  color: rgb(255, 255, 255);
-  padding: 20px;
-  margin-top: 50px;
-  font-size: 22px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 15px;
-  text-transform: uppercase;
-  transition: .5s;
-}
+  <style>
+    #call_us {
+      display: block;
+      max-width: fit-content;
+      background: rgb(65, 65, 106);
+      color: rgb(255, 255, 255);
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 15px;
+      text-transform: uppercase;
+      transition: .5s;
+    }
 
-#call_us:hover {
-  transform: scale(1.2);
-  transition: .5s;
-}
-</style>
+    #call_us:hover {
+      transform: scale(1.2);
+      transition: .5s;
+    }
+  </style>
   <a id="call_us" href="#">Позвонить</a>
 </body>
 
