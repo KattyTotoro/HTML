@@ -727,6 +727,8 @@
       font-weight: 800;
       font-size: 22px;
       position: relative;
+      transform: translateX(-550px);
+      transition: 1s;
     }
     
     .feedback p {
@@ -746,6 +748,11 @@
       top: 200px;
       transform-origin: 0 0;
       transform: rotate(-90deg);
+    }
+
+    .feedback:hover {
+      transform: translateX(-80px);
+      transition: 1s;
     }
    </style>
 
@@ -802,14 +809,15 @@
       border: 1px solid;
       margin-left: 50px;
       padding: 5px;
-      transition: 1s;
       transform: skew(45deg, -45deg);
+      transition: 1s;
     }
     
     .skew5:hover {
       background: rgb(251, 205, 229) url(images/bg12.png) right bottom/200px;
       scale: 2;
       rotate: 15deg;
+      transition: 1s;
     }
     </style>
 
@@ -819,6 +827,29 @@
   <div class="skew4"><p>transform: skew(0, -15deg);</p></div>
   <div class="skew5"><p>transform: skew(45deg, -45deg);</p></div>
 
+
+<style>
+#call_us {
+  display: block;
+ max-width: fit-content;
+  background: rgb(65, 65, 106);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 15px;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+#call_us:hover {
+  transform: scale(1.2);
+  transition: .5s;
+}
+</style>
+  <a id="call_us" href="#">Позвонить</a>
 </body>
 
 </html>
