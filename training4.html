@@ -1053,6 +1053,103 @@
   </div>
 
 
+  <style>
+    h1 {
+      background: #FCCC41;
+      width: 100px;
+      color: rgb(56, 39, 39);
+      padding: 5px;
+      text-align: center;
+      border-radius: 3px;
+      animation: sweater 15s linear alternate infinite;
+    }
+
+    @keyframes sweater {
+      from {
+        margin-left: 0px;
+      }
+
+      to {
+        margin-left: 1000px;
+      }
+    }
+  </style>
+
+  <h1>свитер</h1>
+
+
+  <style>
+    .div6 {
+      width: 300px;
+      height: 300px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      background: url(images/training/img.png) center/cover no-repeat;
+      transition: transform 20s;
+      animation: div6 25s ease alternate infinite;
+    }
+
+    @keyframes div6 {
+      from {
+        margin-left: 0px;
+      }
+
+      to {
+        margin-left: 1100px;
+        transform: rotate(2600deg);
+        transform-origin: 50% 50%;
+      }
+    }
+  </style>
+
+  <div class="div6"></div>
+
+
+  <style>
+    .bg1 {
+      background: rgb(73, 69, 69);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50vh;
+      padding: 50px;
+    }
+
+    .child-one {
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      animation-name: circle-to-square;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in;
+    }
+
+    @keyframes circle-to-square {
+      from {
+        width: 50px;
+        height: 50px;
+        background-color: #F498AD;
+      }
+
+      50% {
+        width: 50px;
+        height: 200px;
+        background-color: #7F6EDB;
+      }
+
+      to {
+        width: 200px;
+        height: 200px;
+        background-color: #2E9AFF;
+      }
+    }
+  </style>
+
+  <div class="bg1">
+    <div class="child-one"></div>
+  </div>
 </body>
 
 </html>
