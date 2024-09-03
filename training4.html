@@ -7,13 +7,23 @@
   <link rel="shortcard icon" href="images/pikachu.png">
   <title>Training4</title>
   <style>
-    body {
+    /* body {
       margin: 20px;
+    } */
+
+    .flexLinks {
+      display: flex;
+      max-height: 300px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 100px;
     }
 
     .link1 {
       display: inline-block;
       margin: 20px;
+      margin-top: 50px;
     }
 
     .link1 a {
@@ -264,7 +274,7 @@
       background: rgb(210, 162, 73);
       display: grid;
       place-items: center;
-      min-block-size: 100%;
+      /* min-block-size: 100%; */
       margin: 20px;
       /* overflow: hidden; */
     }
@@ -436,19 +446,24 @@
   </style>
 </head>
 
-<body>
+<body class="clouds2">
 
-  <div class="link1"><a href="#">Ссылка 1</a></div>
+  <div class="flexLinks">
 
-  <div class="link2"><a href="#">Ссылка 2</a></div>
+    <div class="link1"><a href="#">Ссылка 1</a></div>
 
-  <div class="link3"><a href="#">Ссылка 3</a></div>
+    <div class="link2"><a href="#">Ссылка 2</a></div>
 
-  <div class="link4"><a href="#">Ссылка 4</a></div>
+    <div class="link3"><a href="#">Ссылка 3</a></div>
 
-  <div class="link5"><a href="#">Ссылка 5</a></div>
+    <div class="link4"><a href="#">Ссылка 4</a></div>
 
-  <div class="link6"><a href="#">Ссылка 6</a></div>
+    <div class="link5"><a href="#">Ссылка 5</a></div>
+
+    <div class="link6"><a href="#">Ссылка 6</a></div>
+
+
+  </div>
 
   <div class="link7"><a href="#">Ссылка 7</a></div>
 
@@ -456,13 +471,20 @@
 
   <div class="link8_8"></div>
 
-  <div class="link9"><a href="#">Ссылка</a></div>
+  <div class="flexLinks">
 
-  <div class="div1">Эээээ1</div>
+    <div class="link9"><a href="#">Ссылка</a></div>
 
-  <div style="width: 200px;">
-    <div class="div2">Эээээ</div>
+    <div class="div1">Эээээ1</div>
+
+
+
+    <div style="width: 200px;">
+      <div class="div2">Эээээ</div>
+    </div>
   </div>
+
+
 
   <div class="div3">
     <button class="button1">
@@ -470,12 +492,12 @@
     </button>
   </div>
 
-  <div>
+  <!-- <div>
     <button></button>
-  </div>
+  </div> -->
 
 
-  <div class="link2 link2_2"><a href="#">Ссылка 2_2</a></div>
+  <div class="link2 link2_2" style="margin: 150px;"><a href="#">Ссылка 2_2</a></div>
 
   <div class="div4"></div>
   <div class="div4_1"></div>
@@ -763,7 +785,7 @@
       font-size: 22px;
       margin: 20px;
       position: relative;
-      transform: translateX(-540px);
+      transform: translateX(-525px);
       transition: 1s;
     }
 
@@ -788,7 +810,7 @@
     }
 
     .feedback:hover {
-      transform: translateX(-60px);
+      transform: translateX(-40px);
       transition: 1s;
     }
   </style>
@@ -1161,9 +1183,9 @@
       height: 550px;
       animation: cloud 15s linear infinite, cloud 15s linear infinite;
     }
-    
+
     @keyframes cloud {
-      from{
+      from {
         background-position-x: -500px;
       }
 
@@ -1172,7 +1194,7 @@
 
       }
 
-      to{
+      to {
         background-position-x: 1500px;
       }
     }
@@ -1189,18 +1211,18 @@
     }
 
     @keyframes cloud2 {
-      from{
+      from {
         background-position-x: -1000px, -800px, -500px;
       }
 
-      to{
+      to {
         background-position-x: 2000px, 1800px, 1500px;
       }
     }
   </style>
 
-<div class="clouds2"></div>
-<div class="clouds"></div>
+  <div class="clouds2"></div>
+  <div class="clouds"></div>
 </body>
 
 </html>
