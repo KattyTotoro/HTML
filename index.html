@@ -9,9 +9,20 @@
 
     <style>
         #main_background {
-            background: url(images/sn12.png), url(images/back7.jpg) center/cover no-repeat;
-            background-attachment: fixed;
+            background: url(images/sn12.png), url(images/back7.jpg) center/85% no-repeat fixed;
+            /* background-attachment: fixed; */
             font-family: cursive;
+            animation: backgroundSnows 100s linear infinite;
+        }
+
+        @keyframes backgroundSnows {
+            from {
+                background-position-y: -500px, 0px;
+            }
+
+            to {
+                background-position-y: 500px, 0px;
+            }
         }
 
         .flex {
@@ -92,6 +103,10 @@
         /* .border {
             border-style: double;
         } */
+
+        .filterImg {
+      filter: drop-shadow(4px 4px 10px rgb(49, 47, 47));
+        }
 
         .snowflakes {
             color: white;
@@ -1240,8 +1255,8 @@
         </div>
     </div>
 
-    <img src="images/gingerbread.png" width="250px" alt="">
-    <img src="images/gingerbread2.png" width="150px" alt="">
+    <img class="filterImg" src="images/gingerbread.png" width="250px" alt="">
+    <img class="filterImg" src="images/gingerbread2.png" width="150px" alt="">
 
     <div class="addition">
         <h2>Дополнительно</h2>

@@ -1232,13 +1232,15 @@
       background-color: #f3edd7;
       margin: 0;
     }
+
     /*стили для родительского контейнера предзагрузчика-индикатора*/
-    .loader-container{
+    .loader-container {
       width: 50vw;
       height: 50vh;
     }
+
     /*Стили для предзагрузчика-индикатора, видно его не будет на странице*/
-    .loader{
+    .loader {
       width: 10px;
       height: 10px;
       position: relative;
@@ -1246,6 +1248,7 @@
       margin: auto;
       animation: loader 1s ease infinite;
     }
+
     /*В ключевых кадрах, добавляем по 4-е тени для каждого кадра.
       полностью белая тень будет в той позиции box-shadow, которая
       соответствует порядку ключевого кадра. Значения X и Y для
@@ -1253,19 +1256,69 @@
       каждая тень в углу.
     */
     @keyframes loader {
-0%, 100% {
-  box-shadow: -10px 15px 0 #ffffff, 10px 15px 0 rgba(255, 255, 255, 0.2), 10px 36px 0 rgba(255, 255, 255, 0.2), -10px 36px 0 rgba(255, 255, 255, 0.2); }
-25% {
-  box-shadow: -10px 15px 0 rgba(255, 255, 255, 0.2), 10px 15px 0 #ffffff, 10px 36px 0 rgba(255, 255, 255, 0.2), -10px 36px 0 rgba(255, 255, 255, 0.2); }
-50% {
-  box-shadow: -10px 15px 0 rgba(255, 255, 255, 0.2), 10px 15px 0 rgba(255, 255, 255, 0.2), 10px 36px 0 #ffffff, -10px 36px 0 rgba(255, 255, 255, 0.2); }
-75% {
-  box-shadow: -10px 15px 0 rgba(255, 255, 255, 0.2), 10px 15px 0 rgba(255, 255, 255, 0.2), 10px 36px 0 rgba(255, 255, 255, 0.2), -10px 36px 0 #ffffff; } }
+
+      0%,
+      100% {
+        box-shadow: -10px 15px 0 #ffffff, 10px 15px 0 rgba(255, 255, 255, 0.2), 10px 36px 0 rgba(255, 255, 255, 0.2), -10px 36px 0 rgba(255, 255, 255, 0.2);
+      }
+
+      25% {
+        box-shadow: -10px 15px 0 rgba(255, 255, 255, 0.2), 10px 15px 0 #ffffff, 10px 36px 0 rgba(255, 255, 255, 0.2), -10px 36px 0 rgba(255, 255, 255, 0.2);
+      }
+
+      50% {
+        box-shadow: -10px 15px 0 rgba(255, 255, 255, 0.2), 10px 15px 0 rgba(255, 255, 255, 0.2), 10px 36px 0 #ffffff, -10px 36px 0 rgba(255, 255, 255, 0.2);
+      }
+
+      75% {
+        box-shadow: -10px 15px 0 rgba(255, 255, 255, 0.2), 10px 15px 0 rgba(255, 255, 255, 0.2), 10px 36px 0 rgba(255, 255, 255, 0.2), -10px 36px 0 #ffffff;
+      }
+    }
   </style>
 
   <div class="divLoader">
     <div class="loader-container">
       <div class="loader"></div>
+    </div>
+  </div>
+
+
+  <style>
+    .watch {
+      background: url(images/training/clock_face.png) center/cover no-repeat;
+      width: 500px;
+      height: 500px;    
+      position: relative;
+    }
+    
+    .hours {
+      position: absolute;
+      left: calc(45% - (3px/2));
+      top: 80px;
+      transform-origin: bottom center;
+      animation: time 60s linear infinite;
+
+      /* transform: rotate(-90deg); */
+      
+    }
+
+    @keyframes time {
+      from {
+        transform: rotate(0);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <div>
+    <div class="watch">
+
+    <div class="hours"><img src="images/training/Hour.png" height="180px" alt=""></div>
+
+
     </div>
   </div>
 </body>
