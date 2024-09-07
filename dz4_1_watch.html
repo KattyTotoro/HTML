@@ -34,7 +34,7 @@
 
     .hours {
       position: absolute;
-      left: calc(46% - (3px/2));
+      left: calc(47% - (3px/2));
       top: 112px;
       transform-origin: 50% 86%;
       animation: time 86400s linear infinite;
@@ -42,7 +42,7 @@
 
     .minutes {
       position: absolute;
-      left: calc(46% - (3px/2));
+      left: 47%;
       top: 80px;
       transform-origin: 50% 89%;
       animation: time 3600s linear infinite;
@@ -50,10 +50,11 @@
 
     .seconds {
       position: absolute;
-      left: calc(47% - (3px/2));
+      left: calc(47% + (3px/2));
       top: 30px;
       transform-origin: 50% 92%;
       animation: time 60s linear infinite;
+      /* animation: time 60s steps(60) infinite; */
     }
 
     @keyframes time {
