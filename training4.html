@@ -1207,7 +1207,7 @@
       background-size: 100%, 50%, 40%;
       /* background: url(images/training/cloud.png) 0 0/500px no-repeat, url(images/bg10.png) 100% 100%/350px no-repeat #b6cbe8; */
       height: 850px;
-      animation: cloud2 180s linear infinite;
+      animation: cloud2 280s linear infinite;
     }
 
     @keyframes cloud2 {
@@ -1287,19 +1287,32 @@
     .watch {
       background: url(images/training/clock_face.png) center/cover no-repeat;
       width: 500px;
-      height: 500px;    
+      height: 500px;
       position: relative;
     }
-    
+
     .hours {
       position: absolute;
-      left: calc(45% - (3px/2));
-      top: 80px;
-      transform-origin: bottom center;
-      animation: time 60s linear infinite;
+      left: calc(46% - (3px/2));
+      top: 112px;
+      transform-origin: 50% 86%;
+      animation: time 86400s linear infinite;
+    }
 
-      /* transform: rotate(-90deg); */
-      
+    .minutes {
+      position: absolute;
+      left: calc(46% - (3px/2));
+      top: 80px;
+      transform-origin: 50% 89%;
+      animation: time 3600s linear infinite;
+    }
+
+    .seconds {
+      position: absolute;
+      left: calc(47% - (3px/2));
+      top: 30px;
+      transform-origin: 50% 92%;
+      animation: time 60s linear infinite;
     }
 
     @keyframes time {
@@ -1315,12 +1328,12 @@
 
   <div>
     <div class="watch">
-
-    <div class="hours"><img src="images/training/Hour.png" height="180px" alt=""></div>
-
-
+      <div class="hours"><img src="images/training/Hour.png" height="150px" alt=""></div>
+      <div class="minutes"><img src="images/training/minutes.png" height="180px" alt=""></div>
+      <div class="seconds"><img src="images/training/seconds.png" height="230px" alt=""></div>
     </div>
   </div>
+
 </body>
 
 </html>
