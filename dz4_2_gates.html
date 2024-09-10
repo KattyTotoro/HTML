@@ -9,8 +9,15 @@
   <style>
     .gates {
       display: flex;
-      gap: 20px;
-      /* position: relative; */
+      gap: 5px;
+      position: relative;
+    }
+
+    .gates p {
+      font-size: 58px;
+      top: 30%;
+      left: 30%;
+      position: absolute;
     }
 
     .gateLeft {
@@ -35,12 +42,10 @@
       transform: skewY(-15deg);
     }
 
-    p {
-      font-size: 58px;
-    }
 
-     /* Навигация по другим страницам */
-     .nav {
+
+    /* Навигация по другим страницам */
+    .nav {
       max-width: 850px;
       margin: auto;
       display: flex;
@@ -48,7 +53,7 @@
       text-transform: uppercase;
       padding: 10px;
     }
-    
+
     .nav a {
       font-size: 18px;
       padding: 10px;
@@ -65,8 +70,8 @@
 </head>
 
 <body>
-   <!-- Навигация по другим страницам -->
-   <div class="nav">
+  <!-- Навигация по другим страницам -->
+  <div class="nav">
     <p><a href="index.html"><b>На главную</b></a></p>
     <p><a href="dz4_1_watch.html"><b>&#8656; Back</b></a></p>
     <p><a href="dz4_3_blocks.html"><b>Next &#8658;</b></a></p>
@@ -76,8 +81,10 @@
 
   <div class="gates">
     <p>Hello!</p>
-    <div class="gateLeft"></div>
-    <div class="gateRight"></div>
+
+      <div class="gateLeft"></div>
+      <div class="gateRight"></div>
+
   </div>
 
 </body>
