@@ -10,12 +10,29 @@
     .gates {
       display: flex;
       gap: 20px;
+      /* position: relative; */
     }
 
-    .gate {
+    .gateLeft {
       width: 500px;
       height: 350px;
       background-color: rgb(6, 49, 6);
+    }
+
+    .gateRight {
+      width: 500px;
+      height: 350px;
+      background-color: rgb(6, 49, 6);
+    }
+
+    .gates:hover .gateLeft {
+      transform-origin: 0 0;
+      transform: skewY(15deg);
+    }
+
+    .gates:hover .gateRight {
+      transform-origin: 100% 100%;
+      transform: skewY(-15deg);
     }
 
     p {
@@ -59,8 +76,8 @@
 
   <div class="gates">
     <p>Hello!</p>
-    <div class="gate"></div>
-    <div class="gate"></div>
+    <div class="gateLeft"></div>
+    <div class="gateRight"></div>
   </div>
 
 </body>
