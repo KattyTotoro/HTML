@@ -7,9 +7,9 @@
   <link rel="shortcard icon" href="images/pikachu.png">
   <title>Training4</title>
   <style>
-    /* body {
-      margin: 20px;
-    } */
+    body {
+      margin: 0 auto;
+    }
 
     .flexLinks {
       display: flex;
@@ -1340,28 +1340,22 @@
     .anim1 {
       background: url(images/training/bg6.png) 0% 0% no-repeat;
       width: 200px;
-      height: 100px;
-      animation: cat 1s linear infinite;
+      height: 110px;
+      animation: cat 1s steps(1) infinite;
     }
 
-    /* 
+    
 @keyframes cat {
   0% {
     background: url(images/training/bg6.png) 0% 0% no-repeat;
   }
-  10% {
-    background: url(images/training/bg6.png) 0% 30% no-repeat;
+  50% {
+    background: url(images/training/bg6.png) 50% 0% no-repeat;
   }
-  20% {
-    background: url(images/training/bg6.png) 0% 40% no-repeat;
+  100% {
+    background: url(images/training/bg6.png) 80% 0% no-repeat;
   }
-  30% {
-    background: url(images/training/bg6.png) 0% 60% no-repeat;
-  }
-  40% {
-    background: url(images/training/bg6.png) 0% 100% no-repeat;
-  }
-} */
+}
   </style>
 
   <div class="anim1">
@@ -1371,7 +1365,7 @@
 
 
 
-  <div style="background: url(images/training/bg3.jpg) top/contain no-repeat; height: 800px;"></div>
+  <div style="margin: 0; background: url(images/training/bg3.jpg) top/contain no-repeat; height: 650px;"></div>
 
 
 
@@ -1382,15 +1376,13 @@
       font-weight: 900;
       color: white;
       text-align: center;
-      /* visibility: hidden; */
-      transition: font-size 2s, color 15s;
+      transition: font-size 5s, color 15s;
     }
 
     .wednesday:hover p {
-      font-size: 52px;
+      font-size: 72px;
       color: rgb(61, 5, 106);
-      /* visibility: visible; */
-      transition: font-size 2s, color 15s;
+      transition: font-size 2s, color 15s 2s;
     }
   </style>
   <div class="wednesday" style="max-width: fit-content;"><img src="images/training/img16.png" alt="">
