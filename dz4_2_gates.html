@@ -8,9 +8,12 @@
   <title>dz 4.2 gates</title>
   <style>
     .gates {
+      background: url(images/image151.jpg) 52% 50%/130px no-repeat, url(images/img8.png) 22% 50%/130px no-repeat;
       display: flex;
-      gap: 5px;
+      gap: 3px;
       position: relative;
+      text-align: center;
+      margin: 100px 0 0 250px;
     }
 
     .gates p {
@@ -18,28 +21,37 @@
       top: 30%;
       left: 30%;
       position: absolute;
+      z-index: -1;
+      text-transform: uppercase;
     }
 
     .gateLeft {
       width: 500px;
       height: 350px;
       background-color: rgb(6, 49, 6);
+      transform-origin: left center;
+      transition: 1s;
     }
 
     .gateRight {
       width: 500px;
       height: 350px;
       background-color: rgb(6, 49, 6);
+      transform-origin: right center;
+      transition: 1s;
     }
 
     .gates:hover .gateLeft {
-      transform-origin: 0 0;
-      transform: skewY(15deg);
+      transform: perspective(840px) rotateY(45deg);
+      transition: 2s;
+      /* transform: skewY(15deg); */
     }
 
     .gates:hover .gateRight {
-      transform-origin: 100% 100%;
-      transform: skewY(-15deg);
+      transform: perspective(840px) rotateY(-45deg);
+      transition: 2s;
+
+      /* transform: skewY(-15deg); */
     }
 
 
@@ -77,13 +89,13 @@
     <p><a href="dz4_3_blocks.html"><b>Next &#8658;</b></a></p>
   </div>
 
-  <p style="background-color: #dbd8b5; font-size: 28px; text-align: center;">(в работе)</p>
+  <!-- <p style="background-color: #dbd8b5; font-size: 28px; text-align: center;">(в работе)</p> -->
 
   <div class="gates">
     <p>Hello!</p>
 
-      <div class="gateLeft"></div>
-      <div class="gateRight"></div>
+    <div class="gateLeft"></div>
+    <div class="gateRight"></div>
 
   </div>
 
