@@ -13,20 +13,28 @@
     }
 
     .backgr {
-      /* background: url(images/bg15.png) bottom/cover no-repeat; */
+      background: url(images/bg15.png) top/cover no-repeat;
       max-width: 500px;
-      margin: 0 auto;
+      /* margin: 0 auto; */
       margin-top: 20px;
       background-color: #f5f5f5;
-      padding: 10px 10px 45px;
+      /* padding: 10px 0 10px; */
       box-shadow: 0 0 16px rgba(254, 254, 254, 0.7);
+      border-radius: 0 8px 8px 0;
     }
 
     nav {
-      padding: 20px;
+      width: 266px;
+      height: 458px;
+      padding-top: 20px 0 20px;
+      position: relative;
+      transform: translateX(-257px);
+      transition: 1s;
     }
 
     ul {
+      width: 265px;
+      height: 456px;
       list-style-type: none;
       padding: 0;
       margin: 0;
@@ -72,8 +80,30 @@
       background: #808080 url(icons/settings.png) 5% center/70px no-repeat;
     }
 
+    nav::after {
+      content: 'menu';
+      background: #ffc0cb;
+      font-size: 28px;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-align: center;
+      border-radius: 0 0 8px 8px;
+      padding: 15px 0;
+      width: 458px;
+      position: absolute;
+      left: 260px;
+      top: 458px;
+      transform-origin: 0 0;
+      transform: rotate(-90deg);
+    }
 
-    /* Навигация по другим страницам */
+    nav:hover {
+      transform: translateX(-1px);
+      transition: 1s;
+    }
+
+
+    /* Межстраничная навигация */
     .nav {
       max-width: 850px;
       margin: auto;
@@ -101,8 +131,8 @@
   <!-- /* Навигация по другим страницам */ -->
   <div class="nav">
     <p><a href="index.html"><b>На главную</b></a></p>
-    <p><a href="dz3_1_groceries.html"><b>&#8656; Back</b></a></p>
-    <p><a href="dz3_2_vertical-menu3.html"><b>Next &#8658;</b></a></p>
+    <p><a href="dz3_2_vertical-menu2.html"><b>&#8656; Back</b></a></p>
+    <p><a href="dz3_3_structure.html"><b>Next &#8658;</b></a></p>
   </div>
 
   <div class="backgr">
