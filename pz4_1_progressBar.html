@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcard icon" href="images/pikachu.png">
+  <title>progress-bar</title>
+  <style>
+    .main-decor {
+      background: rgb(255, 251, 251);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .out {
+      background: white;
+      width: 300px;
+      height: 60px;
+      border: 5px solid orange;
+      margin: 50px 0 0 250px;
+    }
+
+    .in {
+      background: orange;
+      width: 60px;
+      height: 60px;
+      animation: imMove 8s linear alternate infinite;
+    }
+
+    @keyframes imMove {
+      from {
+        margin-left: 0px;
+      }
+
+      to {
+       margin-left: 240px;
+      }
+    }
+
+    .out2 {
+      background: url(images/GoodBoy.jpg) center/contain no-repeat;
+      width: 1000px;
+      height: 450px;
+      border: 5px solid rgb(115, 99, 70);
+      margin-top: 50px;
+      animation: imMove2 8s linear alternate infinite;
+    }
+
+    @keyframes imMove2 {
+      from {
+        background-position-x: left;
+      }
+      
+      to {
+        background-position-x: right;
+      }
+    }
+
+/* Навигация по другим страницам */
+.nav {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+
+    .nav a {
+      padding: 10px;
+      color: #686868;
+      box-shadow: -5px -5px 10px #7d7b66;
+      border-radius: 20px;
+    }
+
+    .nav a:hover {
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px #7d7b66;
+    }
+  </style>
+</head>
+
+<body class="main-decor">
+  <div class="nav">
+    <p><a href="index.html"><b>На главную</b></a></p>
+    <p><a href="pz3_3_cats-gallery.html"><b>&#8656; Back</b></a></p>
+    <p><a href="table.html"><b>Next &#8658;</b></a></p>
+  </div>
+
+
+<div class="out">
+  <div class="in"></div>
+</div>
+
+
+<div class="out2">
+</div>
+
+  
+</body>
+</html>
