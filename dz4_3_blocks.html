@@ -8,37 +8,45 @@
   <title>Blocks</title>
   <style>
     body {
-      max-width: 800px;
+      background: url(images/bg30.png) 90% -1%/138px repeat-y, url(images/bg30.png) 10% 105%/145px repeat-y;
+      max-width: 600px;
       margin: 0 auto;
     }
 
-    div {
+    .brightness {
+      max-width: fit-content;
       display: flex;
       overflow: hidden;
+      transition: 1s;
     }
 
-    div div {
+    .brightness div {
+      overflow: hidden;
       width: 300px;
       height: 200px;
-    }
-
-    .text {
-      background-color: rgb(147, 199, 167);
-      text-transform: uppercase;
       justify-content: center;
       align-items: center;
     }
 
-    div:hover {
-      filter: brightness(.5);
-      transition: filter 2s;
+    .text {
+      display: flex;
+      background-color: rgb(147, 199, 167);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-transform: uppercase;
     }
 
-    div img {
+    .brightness:hover {
+      filter: brightness(.5);
+      transition: filter 0.3s;
+    }
+
+    .picture img {
       transition: transform 1s;
     }
 
-    div:hover img {
+    .brightness:hover img {
       transform: scale(1.5);
       transition: transform 1s;
     }
@@ -49,6 +57,8 @@
       justify-content: space-between;
       text-transform: uppercase;
       padding: 10px;
+      padding-bottom: 30px;
+
     }
 
     .nav a {
@@ -66,6 +76,7 @@
 </head>
 
 <body>
+  <!-- межстраничная навигация -->
   <div class="nav">
     <p><a href="index.html"><b>На главную</b></a></p>
     <p><a href="dz4_2_gates.html"><b>&#8656; Back</b></a></p>
@@ -73,23 +84,23 @@
   </div>
 
 
-  <div>
+  <div class="brightness">
     <div class="text">
       <p>Hello, World!</p>
     </div>
-    <div><img src="images/image15.jpg" width="300" height="200" alt="Grass"></div>
+    <div class="picture"><img src="images/image15.jpg" width="300" height="200" alt="Grass"></div>
   </div>
-  <div>
-    <div><img src="images/image15.jpg" width="300" height="200" alt="Grass"></div>
+  <div class="brightness">
+    <div class="picture"><img src="images/image15.jpg" width="300" height="200" alt="Grass"></div>
     <div class="text">
       <p>Hello, World!</p>
     </div>
   </div>
-  <div>
+  <div class="brightness">
     <div class="text">
       <p>Hello, World!</p>
     </div>
-    <div><img src="images/image15.jpg" width="300" height="200" alt="Grass"></div>
+    <div class="picture"><img src="images/image15.jpg" width="300" height="200" alt="Grass"></div>
   </div>
 
 </body>
