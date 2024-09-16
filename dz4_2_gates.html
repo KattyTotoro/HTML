@@ -10,7 +10,7 @@
     .gates {
       background: url(images/image151.jpg) 52% 50%/130px no-repeat, url(images/img8.png) 22% 50%/130px no-repeat;
       display: flex;
-      gap: 3px;
+      gap: 1px;
       position: relative;
       text-align: center;
       margin: 100px 0 0 250px;
@@ -51,6 +51,7 @@
 
     .gates:hover .gateRight {
       transform: perspective(840px) rotateY(-45deg);
+      transform-style: preserve-3d;
       transition: 2s;
 
       /* transform: skewY(-15deg); */
