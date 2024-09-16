@@ -667,7 +667,7 @@
     }
 
     .button4:hover {
-      transform: scaleY(1.2);
+      transform: scaleY(1.2) translate(3px, 15px);
       cursor: pointer;
       /* transition-timing-function: cubic-bezier(.52, 0, .27, 2); */
     }
@@ -1341,11 +1341,27 @@
       background: url(images/training/bg6.png) 0% 0% no-repeat;
       width: 200px;
       height: 110px;
-      animation: cat 1s steps(1) infinite;
+      animation: cat 5.5s steps(1) infinite;
     }
 
-
     @keyframes cat {
+      0% {
+        background-position: 0% 0%;
+      }
+
+      25% {
+        background-position: 0% 33%;
+      }
+
+      50% {
+        background-position: 0% 65%;
+      }
+
+      75% {
+        background-position: 0% 98%;
+      }
+
+      /* @keyframes cat {
       0% {
         background: url(images/training/bg6.png) 0% 0% no-repeat;
       }
@@ -1356,16 +1372,117 @@
 
       75% {
         background: url(images/training/bg6.png) 98% 0% no-repeat;
-      }
+      } */
 
       /* 75% {
     background: url(images/training/bg6.png) 99% 0% no-repeat;
   } */
     }
+
+    .anim2 {
+      background: url(images/training/bg5.png) 0% 3%/300px no-repeat;
+      width: 110px;
+      height: 120px;
+      animation: coin 0.8s steps(1) infinite;
+    }
+
+    @keyframes coin {
+      0% {
+        background-position: 0% 2%;
+
+      }
+
+      16% {
+        background-position: 61% 2%;
+
+      }
+
+      32% {
+        background-position: 113% 3%;
+
+      }
+
+      48% {
+        background-position: 5% 73%;
+
+      }
+
+      64% {
+        background-position: 48% 73%;
+
+      }
+
+      80% {
+        background-position: 100% 73%;
+      }
+    }
+
+    .anim3 {
+      background: url(images/training/bg7.png) 0% 0%/200px no-repeat;
+      width: 200px;
+      height: 100px;
+      animation: cat2 0.8s steps(1) infinite;
+    }
+
+    @keyframes cat2 {
+      0% {
+        background-position-y: -0.5%;
+      }
+
+      9% {
+        background-position-y: 8.5%;
+      }
+
+      17% {
+        background-position-y: 17.5%;
+      }
+
+      25% {
+        background-position-y: 27%;
+      }
+
+      33% {
+        background-position-y: 36%;
+      }
+
+      41% {
+        background-position-y: 45%;
+      }
+
+      49% {
+        background-position-y: 54%;
+      }
+
+      57% {
+        background-position-y: 63%;
+      }
+
+      65% {
+        background-position-y: 72%;
+      }
+
+      73% {
+        background-position-y: 81.1%;
+      }
+
+      81% {
+        background-position-y: 90.3%;
+      }
+
+      90% {
+        background-position-y: 99.4%;
+      }
+
+    }
   </style>
 
   <div class="anim1">
+  </div>
 
+  <div class="anim2">
+  </div>
+
+  <div class="anim3">
   </div>
 
 
