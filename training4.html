@@ -1344,21 +1344,24 @@
       animation: cat 1s steps(1) infinite;
     }
 
-    
-@keyframes cat {
-  0% {
-    background: url(images/training/bg6.png) 0% 0% no-repeat;
-  }
-  25% {
-    background: url(images/training/bg6.png) 50% 0% no-repeat;
-  }
- 75% {
-    background: url(images/training/bg6.png) 98% 0% no-repeat;
-  }
-  /* 75% {
+
+    @keyframes cat {
+      0% {
+        background: url(images/training/bg6.png) 0% 0% no-repeat;
+      }
+
+      25% {
+        background: url(images/training/bg6.png) 50% 0% no-repeat;
+      }
+
+      75% {
+        background: url(images/training/bg6.png) 98% 0% no-repeat;
+      }
+
+      /* 75% {
     background: url(images/training/bg6.png) 99% 0% no-repeat;
   } */
-}
+    }
   </style>
 
   <div class="anim1">
@@ -1373,6 +1376,10 @@
 
 
   <style>
+    .wednesday {
+      display: inline-block;
+    }
+
     .wednesday p {
       display: inline-block;
       font-size: 22px;
@@ -1391,6 +1398,43 @@
   <div class="wednesday" style="max-width: fit-content;"><img src="images/training/img16.png" alt="">
     <p>Среда</p>
   </div>
+
+
+
+  <style>
+    .uzbagoysya {
+      display: inline-block;
+      margin-left: 80px;
+      opacity: 0;
+      animation: uzb 15s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes uzb {
+      0% {
+        opacity: 0;
+      }
+
+      /* 50% {
+        opacity: 1;
+      } */
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <div class="uzbagoysya">
+    <img src="images/training/img9.png" width="500px" alt="">
+  </div>
+
+
+
+
+
+
+
+
 
 </body>
 

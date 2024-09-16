@@ -8,10 +8,21 @@
   <title>Blocks</title>
   <style>
     body {
-      background: url(images/bg30_2.png) 90% -1%/138px repeat-y, url(images/bg30_3.png) 10% 105%/145px repeat-y;
+      background: url(images/bg30_3.png) 90% -1%/140px repeat-y, url(images/bg30_3.png) 10% 105%/140px repeat-y;
       max-width: 600px;
       margin: 0 auto;
+      animation: backgroundAnimals 800s linear infinite;
     }
+
+    @keyframes backgroundAnimals {
+            from {
+                background-position-y: -1333%, 1333%;
+            }
+
+            to {
+                background-position-y: 1333px, -1333px;
+            }
+        }
 
     .brightness {
       max-width: fit-content;
