@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcard icon" href="images/pikachu.png">
+  <title>Heart</title>
+
+  <style>
+    body {
+      background: url(images/back3.jpg) center/cover no-repeat fixed;
+     width: 900px;
+      margin: 0 auto;
+    }
+
+    .hart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+    }
+
+    img {
+      filter: grayscale(1);
+      transition: 1s;
+    }
+
+    .hart div:hover img {
+      transform: scale(2.5);
+      filter: grayscale(0);
+      transition: 5s;
+    }
+
+
+    /* Навигация по другим страницам */
+.nav {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+
+    .nav a {
+      padding: 10px;
+      color: #686868;
+      box-shadow: -5px -5px 10px #7d7b66;
+      border-radius: 20px;
+    }
+
+    .nav a:hover {
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px #7d7b66;
+    }
+  </style>
+</head>
+
+<body>  
+  <div class="nav">
+    <p><a href="index.html"><b>На главную</b></a></p>
+    <p><a href="pz4_1_progressBar.html"><b>&#8656; Back</b></a></p>
+    <p><a href="table.html"><b>Next &#8658;</b></a></p>
+  </div>
+
+
+  <div class="hart">
+    <div>
+    <img src="icons/favorites.png" width="200" height="200" alt="hart">
+    </div>
+  </div>
+
+</body>
+
+</html>
