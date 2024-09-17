@@ -8,18 +8,22 @@
   <title>dz 4.2 gates</title>
   <style>
     .gates {
-      background: url(images/image151.jpg) 52% 50%/130px no-repeat, url(images/img8.png) 22% 50%/130px no-repeat;
+      background: url(images/image151.jpg) 68% 50%/130px no-repeat, url(images/img8.png) 32% 50%/130px no-repeat;
+      max-width: fit-content;
       display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       gap: 1px;
       position: relative;
-      text-align: center;
-      margin: 100px 0 0 250px;
+      margin:  0 auto;
+     margin-top: 100px;
     }
 
     .gates p {
-      font-size: 58px;
-      top: 30%;
-      left: 30%;
+      font-size: 3rem;
+      top: calc(50% - 28.2px);
+      left: calc(50% - 86.65px);
       position: absolute;
       z-index: -1;
       text-transform: uppercase;
@@ -45,16 +49,14 @@
 
     .gates:hover .gateLeft {
       transform: perspective(840px) rotateY(45deg);
+      transform-style: preserve-3d;
       transition: 2s;
-      /* transform: skewY(15deg); */
     }
 
     .gates:hover .gateRight {
       transform: perspective(840px) rotateY(-45deg);
       transform-style: preserve-3d;
       transition: 2s;
-
-      /* transform: skewY(-15deg); */
     }
 
 
