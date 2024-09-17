@@ -8,8 +8,23 @@
   <title>Contents</title>
   <style>
     .decoration {
+      background-color: rgb(255, 255, 255);
       max-width: 800px;
       margin: 0 auto;
+      animation: bgClolor 20s linear alternate infinite;
+    }
+
+    @keyframes bgClolor {
+      0% {
+        background-color: rgb(251, 234, 197);
+      }
+      50% {
+        background-color: rgb(225, 239, 210);
+      }
+
+      100% {
+      background-color: rgb(190, 169, 242);
+      }
     }
 
     .content_background {

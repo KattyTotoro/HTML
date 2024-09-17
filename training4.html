@@ -1482,8 +1482,8 @@
   <div style="background-color: white;">
   </div>
 
-    <div class="anim2">
-    </div>
+  <div class="anim2">
+  </div>
 
   <div class="anim3">
   </div>
@@ -1551,6 +1551,74 @@
 
 
 
+  <style>
+    .flyingPikachu {
+      position: fixed;
+      top: 80%;
+      left: 10%;
+      animation: pikFly 5s ease-in-out 1s forwards;
+    }
+
+    @keyframes pikFly {
+      from {
+        top: 80%;
+        left: 10%;
+      }
+
+      to {
+        top: 10%;
+        left: 10%;
+      }
+    }
+  </style>
+
+  <div class="flyingPikachu">
+    <img src="images/pikachu.png" height="100px" alt="Pikachu">
+  </div>
+
+
+  <style>
+    .flyingPikachu2 {
+      position: fixed;
+      top: 80%;
+      left: 30%;
+      animation: pikFly2 15s linear 1s infinite;
+      /* animation-fill-mode: forwards; */
+      /* animation-iteration-count: calc(2); */
+
+    }
+
+    @keyframes pikFly2 {
+      0% {
+        top: 80%;
+        left: 30%;
+      }
+
+      25% {
+        top: 10%;
+        left: 30%;
+      }
+
+      50% {
+        top: 10%;
+        left: 80%;
+      }
+
+      75% {
+        top: 80%;
+        left: 80%;
+      }
+
+      100% {
+        top: 80%;
+        left: 30%;
+      }
+    }
+  </style>
+
+  <div class="flyingPikachu2">
+    <img src="images/pikachu.png" height="100px" alt="Pikachu">
+  </div>
 
 
 
