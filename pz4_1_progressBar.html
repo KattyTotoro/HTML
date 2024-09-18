@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
       display: flex;
       justify-content: space-around;
       margin: 0 auto;
-margin-top: 50px;
+      margin-top: 50px;
       /* margin: 50px 0 0 50px; */
     }
 
@@ -28,24 +29,24 @@ margin-top: 50px;
       border: 5px solid orange;
       /* margin: 50px 0 0 50px; */
     }
-    
+
     .in {
       background: orange;
       width: 60px;
       height: 60px;
       animation: imMove 8s linear alternate infinite;
     }
-    
+
     @keyframes imMove {
       from {
         margin-left: 0px;
       }
-      
+
       to {
         margin-left: 240px;
       }
     }
-    
+
     .out2 {
       background: url(images/GoodBoy.jpg) center/contain no-repeat;
       width: 900px;
@@ -55,17 +56,17 @@ margin-top: 50px;
       margin-top: 50px;
       animation: imMove2 8s linear alternate infinite;
     }
-    
+
     @keyframes imMove2 {
       from {
         background-position-x: left;
       }
-      
+
       to {
         background-position-x: right;
       }
     }
-    
+
     .out3 {
       display: inline-block;
       background: white;
@@ -90,13 +91,13 @@ margin-top: 50px;
       }
 
       to {
-       left: calc(100% - 60px);
+        left: calc(100% - 60px);
       }
     }
 
 
-/* Навигация по другим страницам */
-.nav {
+    /* Навигация по другим страницам */
+    .nav {
       display: flex;
       justify-content: space-between;
       text-transform: uppercase;
@@ -124,19 +125,20 @@ margin-top: 50px;
     <p><a href="pz4_2_heart.html"><b>Next &#8658;</b></a></p>
   </div>
 
-<div class="twoOuts">
-<div class="out">
-  <div class="in"></div>
-</div>
+  <div class="twoOuts">
+    <div class="out">
+      <div class="in"></div>
+    </div>
 
-<div class="out3">
-  <div class="in3"></div>
-</div>
-</div>
+    <div class="out3">
+      <div class="in3"></div>
+    </div>
+  </div>
 
-<div class="out2">
-</div>
+  <div class="out2">
+  </div>
 
-  
+
 </body>
+
 </html>
