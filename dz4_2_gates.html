@@ -16,8 +16,8 @@
       text-align: center;
       gap: 1px;
       position: relative;
-      margin:  0 auto;
-     margin-top: 100px;
+      margin: 0 auto;
+      margin-top: 100px;
     }
 
     .gates p {
@@ -102,6 +102,86 @@
     <div class="gateLeft"></div>
     <div class="gateRight"></div>
 
+  </div>
+
+  <style>
+    .anim3 {
+      background: url(images/training/bg7.png) 0% 0%/200px no-repeat;
+      width: 200px;
+      height: 100px;
+      animation: cat2 0.8s steps(1) infinite;
+    }
+
+    @keyframes cat2 {
+      0% {
+        background-position-y: -0.5%;
+      }
+
+      9% {
+        background-position-y: 8.5%;
+      }
+
+      17% {
+        background-position-y: 17.5%;
+      }
+
+      25% {
+        background-position-y: 27%;
+      }
+
+      33% {
+        background-position-y: 36%;
+      }
+
+      41% {
+        background-position-y: 45%;
+      }
+
+      49% {
+        background-position-y: 54%;
+      }
+
+      57% {
+        background-position-y: 63%;
+      }
+
+      65% {
+        background-position-y: 72%;
+      }
+
+      73% {
+        background-position-y: 81.1%;
+      }
+
+      81% {
+        background-position-y: 90.3%;
+      }
+
+      90% {
+        background-position-y: 99.4%;
+      }
+    }
+
+    .left {
+      position: fixed;
+      top: 86%;
+      animation: catLeft 9s linear infinite;
+    }
+
+    @keyframes catLeft {
+      from {
+        left: 120%;
+      }
+
+      to {
+        left: -20%;
+      }
+    }
+  </style>
+
+  <div class="left">
+    <div class="anim3">
+    </div>
   </div>
 
 </body>
