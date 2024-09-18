@@ -12,40 +12,50 @@
       margin: 0 auto;
     }
 
+    .twoOuts {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+margin-top: 50px;
+      /* margin: 50px 0 0 50px; */
+    }
+
     .out {
+      display: inline-block;
       background: white;
       width: 300px;
       height: 60px;
       border: 5px solid orange;
-      margin: 50px 0 0 250px;
+      /* margin: 50px 0 0 50px; */
     }
-
+    
     .in {
       background: orange;
       width: 60px;
       height: 60px;
       animation: imMove 8s linear alternate infinite;
     }
-
+    
     @keyframes imMove {
       from {
         margin-left: 0px;
       }
-
+      
       to {
-       margin-left: 240px;
+        margin-left: 240px;
       }
     }
-
+    
     .out2 {
       background: url(images/GoodBoy.jpg) center/contain no-repeat;
-      width: 1000px;
+      width: 900px;
       height: 450px;
       border: 5px solid rgb(115, 99, 70);
+      margin: 0 auto;
       margin-top: 50px;
       animation: imMove2 8s linear alternate infinite;
     }
-
+    
     @keyframes imMove2 {
       from {
         background-position-x: left;
@@ -55,6 +65,35 @@
         background-position-x: right;
       }
     }
+    
+    .out3 {
+      display: inline-block;
+      background: white;
+      width: 300px;
+      height: 60px;
+      border: 5px solid rgb(66, 132, 31);
+      /* margin: 50px 0 0 50px; */
+      position: relative;
+    }
+
+    .in3 {
+      background: rgb(178, 206, 64);
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      animation: imMove3 8s linear alternate infinite;
+    }
+
+    @keyframes imMove3 {
+      from {
+        left: 0%;
+      }
+
+      to {
+       left: calc(100% - 60px);
+      }
+    }
+
 
 /* Навигация по другим страницам */
 .nav {
@@ -85,11 +124,15 @@
     <p><a href="pz4_2_heart.html"><b>Next &#8658;</b></a></p>
   </div>
 
-
+<div class="twoOuts">
 <div class="out">
   <div class="in"></div>
 </div>
 
+<div class="out3">
+  <div class="in3"></div>
+</div>
+</div>
 
 <div class="out2">
 </div>
