@@ -9,9 +9,22 @@
 
   <style>
     body {
-      background: url(images/back3.jpg) center/cover no-repeat fixed;
-     width: 900px;
+      background: url(images/bg16.png) center/300px no-repeat, url(images/back3.jpg) center/cover no-repeat fixed;
+      width: 900px;
       margin: 0 auto;
+      animation: deathStarFlying 25s linear infinite;
+    }
+
+    @keyframes deathStarFlying {
+      from {
+        background-position-x:  70%, 0;
+        background-position-y: -550px, 0;
+      }
+
+      to {
+        background-position-x: 50%, 0;
+        background-position-y: 1000px, 0;
+      }
     }
 
     .hart {
@@ -34,7 +47,7 @@
 
 
     /* Навигация по другим страницам */
-.nav {
+    .nav {
       display: flex;
       justify-content: space-between;
       text-transform: uppercase;
@@ -55,7 +68,7 @@
   </style>
 </head>
 
-<body>  
+<body>
   <div class="nav">
     <p><a href="index.html"><b>На главную</b></a></p>
     <p><a href="pz4_1_progressBar.html"><b>&#8656; Back</b></a></p>
@@ -65,7 +78,7 @@
 
   <div class="hart">
     <div>
-    <img src="icons/favorites.png" width="200" height="200" alt="hart">
+      <img src="icons/favorites.png" width="200" height="200" alt="hart">
     </div>
   </div>
 
