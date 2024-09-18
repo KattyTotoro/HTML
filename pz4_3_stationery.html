@@ -1,16 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcard icon" href="images/pikachu.png">
   <title>Flying stationery</title>
   <style>
-.stationery img {
-  position: absolute;
-}
+    .stationery img {
+      position: fixed;
+    }
 
-/* Навигация по другим страницам */
-.nav {
+    h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .flyingCalc {
+      top: 150%;
+      left: 50%;
+      position: fixed;
+      animation: calcFly 2s ease-in-out 0.5s forwards;
+    }
+
+    @keyframes calcFly {
+      from {
+        top: 150%;
+        left: 50%;
+      }
+
+      to {
+        top: 52%;
+        left: 30%;
+      }
+    }
+
+    .rotateCalc {
+      animation: rotateCalc 1s linear 4.5s forwards;
+    }
+
+    @keyframes rotateCalc {
+      from {
+        rotate: 0deg;
+      }
+      to {
+        rotate: -35deg;
+      }
+    }
+
+    .flyingBook {
+      top: 150%;
+      left: 50%;
+      position: fixed;
+      animation: bookFly 2s ease-in-out 1s forwards;
+    }
+
+    @keyframes bookFly {
+      from {
+        top: 150%;
+        left: 50%;
+      }
+
+      to {
+        top: 40%;
+        left: 40%;
+      }
+    }
+
+    .rotateBook {
+      animation: rotateBook 1s linear 4.5s forwards;
+    }
+
+    @keyframes rotateBook {
+      from {
+        rotate: 0deg;
+      }
+      to {
+        rotate: -20deg;
+      }
+    }
+
+    .flyingPaper {
+      top: 150%;
+      left: 50%;
+      position: fixed;
+      /* transform: rotate(20deg); */
+      animation: paperFly 2s ease-in-out 1.5s forwards;
+    }
+
+    @keyframes paperFly {
+      from {
+        top: 150%;
+        left: 50%;
+      }
+
+      to {
+        top: 40%;
+        left: 52%;
+      }
+    }
+
+    .rotatePaper {
+      animation: rotatePaper 1s linear 4.5s forwards;
+    }
+
+    @keyframes rotatePaper {
+      from {
+        rotate: 0deg;
+      }
+      to {
+        rotate: 20deg;
+      }
+    }
+
+    .flyingPallete {
+      top: 150%;
+      left: 50%;
+      position: fixed;
+      /* transform: rotate(220deg); */
+      animation: palleteFly 2s ease-in-out 2s forwards;
+    }
+
+    @keyframes palleteFly {
+      from {
+        top: 150%;
+        left: 50%;
+      }
+
+      to {
+        top: 53%;
+        left: 63%;
+      }
+    }
+
+    .rotatePallete {
+      animation: rotatePallete 1s linear 4.5s forwards;
+    }
+
+    @keyframes rotatePallete {
+      from {
+        rotate: 0deg;
+      }
+      to {
+        rotate: 220deg;
+      }
+    }
+
+    .flyingPencil {
+      top: 150%;
+      left: 50%;
+      position: fixed;
+      /* transform: rotate(90deg); */
+      animation: pencilFly 2s ease-in-out 2.5s forwards;
+    }
+
+    @keyframes pencilFly {
+      from {
+        top: 150%;
+        left: 50%;
+      }
+
+      to {
+        top: 70%;
+        left: 48%;
+      }
+    }
+
+    .rotatePencil {
+      animation: rotatePencil 1s linear 4.5s forwards;
+    }
+
+    @keyframes rotatePencil {
+      from {
+        rotate: 0deg;
+      }
+      to {
+        rotate: 90deg;
+      }
+    }
+
+
+
+    /* Навигация по другим страницам */
+    .nav {
       display: flex;
       justify-content: space-between;
       text-transform: uppercase;
@@ -39,16 +212,29 @@
   </div>
 
   <div>
-    <img src="icons/calc.png" width="100"alt="hart">
-  </div><div>
-    <img src="icons/book.png" width="150" alt="hart">
-  </div><div>
-    <img src="icons/paper.png" width="150" alt="hart">
-  </div><div>
-    <img src="icons/pallete.png" width="100" alt="hart">
-  </div><div>
-    <img src="icons/pencil.png" width="80" alt="hart">
+    <h1>Hello, my site!</h1>
   </div>
-  
+
+  <div class="stationery">
+    
+    <div class="flyingCalc">
+      <img class="rotateCalc" src="icons/calc.png" width="100" alt="Calc">
+    </div>
+    <div class="flyingBook">
+      <img class="rotateBook" src="icons/book.png" width="150" alt="Book">
+    </div>
+    <div class="flyingPaper">
+      <img class="rotatePaper" src="icons/paper.png" width="150" alt="paper">
+    </div>
+    <div class="flyingPallete">
+      <img class="rotatePallete" src="icons/pallete.png" width="100" alt="pallete">
+    </div>
+    <div class="flyingPencil">
+      <img class="rotatePencil" src="icons/pencil.png" width="80" alt="pencil">
+    </div>
+
+  </div>
+
 </body>
+
 </html>
