@@ -7,143 +7,171 @@
   <link rel="shortcard icon" href="images/pikachu.png">
   <title>Watch</title>
   <style>
-
     .bodyDecor {
       background: url(images/bg31.png) center 20%/cover no-repeat, url(images/cloud61.png) 3% 3%/55% no-repeat, url(images/cloud69.png) 107% 20%/40% no-repeat;
+      height: 500px;
     }
 
     .watch {
-  width: 200px;
-  height: 200px;
-  margin: 20px auto;
-  border: 5px rgb(71, 117, 31) solid;
-  color: green;
-  font-weight: bold;
-  border-radius: 50%;
-  position: relative;
-  margin-top: 80px;
-}
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      border: 5px rgb(71, 117, 31) solid;
+      color: green;
+      font-weight: bold;
+      border-radius: 50%;
+      position: relative;
+      margin-top: 80px;
+    }
 
-.watch div {
-  position: absolute;
-}
+    .watch div {
+      position: absolute;
+    }
 
-.center {
-  width: 7px;
-  height: 7px;
-  top: calc(50% - (5px/2));
-  left: calc(50% - (5px/2));
-  background-color: #5322bd;
-  border-radius: 50%;
-}
+    .center {
+      width: 7px;
+      height: 7px;
+      top: calc(50% - (5px/2));
+      left: calc(50% - (5px/2));
+      background-color: #5322bd;
+      border-radius: 50%;
+    }
 
-.seconds {
-  height: 80px;
-  width: 3px;
-  background-color: #187a41;
-  left: calc(50% - (3px/2));
-  top: 20px;
-  transform-origin: bottom center;
-  animation: time 60s steps(60) infinite;
-}
+    .seconds {
+      height: 80px;
+      width: 3px;
+      background-color: #187a41;
+      left: calc(50% - (3px/2));
+      top: 20px;
+      transform-origin: bottom center;
+      animation: time 60s steps(60) infinite;
+    }
 
-.minutes {
-  height: 60px;
-  width: 3px;
-  background-color: #1b6d5a;
-  left: calc(50% - (3px/2));
-  top: 40px;
-  transform-origin: bottom center;
-  animation: time 3600s linear infinite;
-}
+    .minutes {
+      height: 60px;
+      width: 3px;
+      background-color: #1b6d5a;
+      left: calc(50% - (3px/2));
+      top: 40px;
+      transform-origin: bottom center;
+      animation: time 3600s linear infinite;
+    }
 
-.hours {
-  height: 40px;
-  width: 3px;
-  background-color: #4a24d3;
-  left: calc(50% - (3px/2));
-  top: 60px;
-  transform-origin: bottom center;
-  animation: time 43200s linear infinite;
-}
+    .hours {
+      height: 40px;
+      width: 3px;
+      background-color: #4a24d3;
+      left: calc(50% - (3px/2));
+      top: 60px;
+      transform-origin: bottom center;
+      animation: time 43200s linear infinite;
+    }
 
-@keyframes time {
-  from {
-    transform: rotate(0);
-  }
+    @keyframes time {
+      from {
+        transform: rotate(0);
+      }
 
-  to {
-    transform: rotate(360deg);
-  }
-}
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
-.twelv {
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+    .twelv {
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-.three {
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%) rotate(90deg);
-}
+    .three {
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%) rotate(90deg);
+    }
 
-.six {
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%) rotate(180deg) rotateX(-1);
-}
+    .six {
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%) rotate(180deg) rotateX(-1);
+    }
 
-.nine {
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%) rotate(270deg);
-}
+    .nine {
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%) rotate(270deg);
+    }
 
-.one {
-  transform: rotate(30deg) translateX(-50%);
-  transform-origin: 0px 90px;
-}
+    .one {
+      transform: rotate(30deg) translateX(-50%);
+      transform-origin: 0px 90px;
+    }
 
-.two {
-  transform: rotate(60deg) translateX(-50%);
-  transform-origin: 0px 90px;
-}
+    .two {
+      transform: rotate(60deg) translateX(-50%);
+      transform-origin: 0px 90px;
+    }
 
-.four {
-  transform: rotate(120deg) translateX(-50%);
-  transform-origin: 0px 90px;
-}
+    .four {
+      transform: rotate(120deg) translateX(-50%);
+      transform-origin: 0px 90px;
+    }
 
-.five {
-  transform: rotate(150deg) translateX(-50%);
-  transform-origin: 0px 90px;
-}
+    .five {
+      transform: rotate(150deg) translateX(-50%);
+      transform-origin: 0px 90px;
+    }
 
-.seven {
-  transform: rotate(210deg) translateX(-50%);
-  transform-origin: 0px 90px;
-}
+    .seven {
+      transform: rotate(210deg) translateX(-50%);
+      transform-origin: 0px 90px;
+    }
 
-.eith {
-  transform: rotate(240deg) translateX(-50%);
-  transform-origin: 0px 90px;
-}
+    .eith {
+      transform: rotate(240deg) translateX(-50%);
+      transform-origin: 0px 90px;
+    }
 
-.ten {
-  transform: rotate(300deg) translateX(-50%);
-  transform-origin: 0px 90px;
-}
+    .ten {
+      transform: rotate(300deg) translateX(-50%);
+      transform-origin: 0px 90px;
+    }
 
-.eleven {
-  transform: rotate(330deg) translateX(-50%);
-  transform-origin: 0px 90px;
-}
+    .eleven {
+      transform: rotate(330deg) translateX(-50%);
+      transform-origin: 0px 90px;
+    }
+
+    /* Навигация по другим страницам */
+    .nav {
+      max-width: 850px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      padding: 10px;
+    }
+
+    .nav a {
+      padding: 10px;
+      color: #686868;
+      box-shadow: -5px -5px 10px #7d7b66;
+      border-radius: 20px;
+    }
+
+    .nav a:hover {
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px #7d7b66;
+    }
   </style>
 </head>
 
 <body class="bodyDecor">
+  <!-- Навигация по другим страницам -->
+  <div class="nav">
+    <p><a href="index.html"><b>На главную</b></a></p>
+    <p><a href="dz4_1_watch.html"><b>&#8656; Back</b></a></p>
+    <p><a href="dz4_2_gates.html"><b>Next &#8658;</b></a></p>
+  </div>
 
   <div class="watch">
     <div class="seconds"></div>
