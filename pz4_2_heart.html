@@ -28,10 +28,10 @@
     }
 
     .hart {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 500px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     img {
@@ -39,7 +39,7 @@
       transition: 1s;
     }
 
-    .hart div:hover img {
+    .hart:hover img {
       transform: scale(2.5);
       filter: grayscale(0);
       transition: 5s;
@@ -77,9 +77,7 @@
 
 
   <div class="hart">
-    <div>
       <img src="icons/favorites.png" width="200" alt="hart">
-    </div>
   </div>
 
 </body>
