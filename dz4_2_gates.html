@@ -164,19 +164,40 @@
 
     .left {
       position: fixed;
-      top: 86%;
-      animation: catLeft 9s linear infinite;
+      bottom: 0%;
+      animation: catLeft 20s linear infinite;
     }
 
     @keyframes catLeft {
-      from {
-        left: 120%;
+      0% {
+        left: 110%;
       }
 
-      to {
+      50% {
         left: -20%;
       }
+
+      50% {
+        transform: scaleX(1);
+        transition: 1s;
+      }
+      
+      51% {
+        transform: scaleX(-1);
+        transition: 1s;
+      }
+
+      98% {
+        transform: scaleX(-1);
+      }
+      99% {
+        transform: scaleX(1);
+      }
+      100% {
+        left: 110%;
+      }
     }
+
   </style>
 
   <div class="left">
