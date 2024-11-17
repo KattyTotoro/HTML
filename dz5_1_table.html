@@ -7,16 +7,41 @@
   <link rel="shortcard icon" href="images/pikachu.png">
   <title>DZ 5.1 Table</title>
   <style>
-    div {
+   .backgrTable {
+    background-color: #f4f4f4;
       width: 700px;
-      height: 300px;
+      height: 400px;
+      margin: 0 auto;
+      margin-top: 100px;
       overflow: scroll;
     }
 
-    th {
-      min-width: 100px;
+    .backgrTable table {
+      border-collapse: collapse;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
     }
 
+    .backgrTable table th {
+      position: sticky;
+      top: 0%;
+      left: 0%;
+      background-color: oklab(0.85 -0.04 -0.03);
+      min-width: 100px;
+      height: 40px;
+    }
+
+    .backgrTable table td {
+      background-color: #f4f4f4;
+    }
+    
+    /* .backgrTable table tr: */
+    
+    tr:nth-of-type(even) td {
+      background-color: #e8e8e8;
+    }
+
+    /* межстраничная навигация */
     .nav {
       max-width: 850px;
       margin: auto;
@@ -49,30 +74,31 @@
   </div>
 
 
-  <div>
+  <div class="backgrTable">
     <table>
       <thead>
         <tr>
-          <th>header 1</th>
-          <th>header 2</th>
-          <th>header 3</th>
-          <th>header 4</th>
-          <th>header 5</th>
-          <th>header 6</th>
-          <th>header 7</th>
-          <th>header 8</th>
-          <th>header 9</th>
-          <th>header 10</th>
-          <th>header 11</th>
-          <th>header 12</th>
-          <th>header 13</th>
-          <th>header 14</th>
-          <th>header 15</th>
-          <th>header 16</th>
-          <th>header 17</th>
-          <th>header 18</th>
-          <th>header 19</th>
-          <th>header 20</th>
+          <th></th>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+          <th>Header 4</th>
+          <th>Header 5</th>
+          <th>Header 6</th>
+          <th>Header 7</th>
+          <th>Header 8</th>
+          <th>Header 9</th>
+          <th>Header 10</th>
+          <th>Header 11</th>
+          <th>Header 12</th>
+          <th>Header 13</th>
+          <th>Header 14</th>
+          <th>Header 15</th>
+          <th>Header 16</th>
+          <th>Header 17</th>
+          <th>Header 18</th>
+          <th>Header 19</th>
+          <th>Header 20</th>
         </tr>
       </thead>
       <tbody>
