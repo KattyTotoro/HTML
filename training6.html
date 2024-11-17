@@ -13,7 +13,7 @@
     }
 
     /* внешние границы всей таблицы */
-    table {
+    .table1 {
       /* display: table-cell; */
       /* background-color: rgb(230, 230, 159); */
       background: url(images/bg10_4.jpg);
@@ -24,20 +24,20 @@
     }
 
     /* границы ячеек заголовков столбцов */
-    th {
+    .table1 th {
       background-color: rgb(165, 237, 168);
       border: 2px solid darkorange;
     }
 
     /* границы ячеек основной части */
-    td {
+    .table1 td {
       /* background-color: rgb(165, 218, 237); */
       width: 150px;
       height: 100px;
       border: 2px solid darkseagreen;
     }
 
-    tr {
+    .table1 tr {
       background: url(images/back5_2.jpg);
     }
 
@@ -67,12 +67,188 @@
       width: 200px;
       height: 100px;
     }
+
+    .table3 {
+      border-collapse: collapse;
+      empty-cells: hide;
+    }
+
+    .table3 td,
+    .table3 tr {
+      empty-cells: hide;
+    }
+
+    .table3 td,
+    .table3 th {
+      padding: 20px;
+      border: 8px double darkgreen;
+      empty-cells: hide;
+    }
+
+    .table3 caption {
+      text-align: right;
+      caption-side: bottom;
+      font-size: 28px;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .table4 {
+      border-collapse: collapse;
+      border: 1px solid sandybrown;
+    }
+
+    .table4 td {
+      border: 1px solid sandybrown;
+    }
+
+    .table4 caption {
+      margin-bottom: 2px;
+      font-size: 24px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .col1 {
+      background-color: peru;
+      width: 100px;
+    }
+
+    .col2 {
+      background-color: rgb(212, 134, 152);
+      width: 80px;
+    }
+
+    .col3 {
+      background-color: rgb(182, 207, 241);
+      width: 110px;
+    }
+
+    .table4 thead {
+      color: rgb(10, 76, 31);
+    }
+
+    .table4 tfoot {
+      color: rgb(250, 250, 198);
+    }
+
+    .table5 {
+      width: 80%;
+      min-width: 650px;
+      max-width: 800px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .table5 caption {
+      text-align: right;
+      text-transform: uppercase;
+      color: #666666;
+      font-weight: 700;
+    }
+
+    .table5 th {
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    .table5 tr th:first-child {
+      color: #666666;
+    }
+
+    .table5 td,
+    th {
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .table5 tr td:first-child {
+      text-align: left;
+      color: #666666;
+      padding-left: 0.7em;
+    }
+
+    .table5 span {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.2em;
+      display: inline-block;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+    }
+
+    .col-1 {
+      background-color: #dddddd;
+      width: auto;
+    }
+
+    .col-2 {
+      background-color: #17d0d3;
+      width: 17%;
+    }
+
+    .col-3 {
+      background-color: #8ac149;
+      width: 17%;
+    }
+
+    .col-4 {
+      background-color: #feca28;
+      width: 17%;
+    }
+
+    .col-5 {
+      background-color: #f44236;
+      width: 17%;
+    }
+
+    .table5 thead {
+      border-bottom: 1px solid #ebebeb;
+    }
+
+    .table5 tfoot {
+      border-top: 1px solid #ebebeb;
+    }
+
+    .table6 {
+      border-collapse: collapse;
+      border: 1px solid gray;
+      text-align: center;
+    }
+
+    .table6 td {
+      border: 1px solid gray;
+    }
+
+    .table6 .col-1 {
+      background-color: #feefa2;
+      width: 50px;
+    }
+    .table6 .col-2 {
+      background-color: #d0d0fe;
+      width: 150px;
+    }
+    .table6 .col-3 {
+      background-color: #fec1c1;
+      width: 150px;
+    }
+    .table6 .col-4 {
+      background-color: #b1fed0;
+      width: 150px;
+    }
+    .table6 .col-5 {
+      background-color: #fec1fe;
+      width: 150px;
+    }
   </style>
 </head>
 
 <body>
 
-  <table>
+  <table class="table1">
     <tr>
       <th>Колонка 1</th>
       <th>Колонка 2</th>
@@ -125,7 +301,7 @@
     </tr>
   </table>
 
-  <table>
+  <table class="table1">
     <tr style="height: 100px;">
       <th colspan="4">Колонка 1</th>
       <!-- <th>Колонка 2</th>
@@ -150,6 +326,333 @@
       <td>Ячейка</td>
     </tr>
   </table>
+
+
+  <table class="table3">
+    <caption>Заголовок таблицы</caption>
+    <tr>
+      <th>Колонка 1</th>
+      <th>Колонка 2</th>
+      <th>Колонка 3</th>
+    </tr>
+    <tr>
+      <td>Ячейка 1</td>
+      <td>Ячейка 2</td>
+      <td>Ячейка 3</td>
+    </tr>
+    <tr>
+      <td>Ячейка 1</td>
+      <td>Ячейка 2</td>
+      <td>Ячейка 3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ячейка 2</td>
+      <td></td>
+    </tr>
+  </table>
+
+  <table class="table4">
+    <caption>Заголовок таблицы</caption>
+    <colgroup>
+      <col span="2" class="col1">
+      <col span="4" class="col2">
+      <col class="col3">
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th>Шапка</th>
+        <th>Шапка</th>
+        <th>Шапка</th>
+        <th>Шапка</th>
+        <th>Шапка</th>
+        <th>Шапка</th>
+        <th>Шапка</th>
+      </tr>
+    </thead>
+
+    <tfoot>
+      <tr>
+        <th>Подвал</th>
+        <th>Подвал</th>
+        <th>Подвал</th>
+        <th>Подвал</th>
+        <th>Подвал</th>
+        <th>Подвал</th>
+        <th>Подвал</th>
+      </tr>
+    </tfoot>
+
+    <tbody>
+      <tr>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+      </tr>
+      <tr>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+      </tr>
+      <tr>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+      </tr>
+      <tr>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+      </tr>
+      <tr>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+      </tr>
+      <tr>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+      </tr>
+      <tr>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+      </tr>
+      <tr>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td style="border-top: 2px solid red;">Ячейка</td>
+        <td>Ячейка</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  <table class="table5">
+    <caption>Title table</caption>
+    <colgroup>
+      <col class="col-1">
+      <col class="col-2">
+      <col class="col-3">
+      <col class="col-4">
+      <col class="col-5">
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th>specification</th>
+        <th>free</th>
+        <th>basic</th>
+        <th>standard</th>
+        <th>premium</th>
+      </tr>
+    </thead>
+
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <th>$ 0.00</th>
+        <th>$ 9.99</th>
+        <th>$ 19.99</th>
+        <th>$ 29.99</th>
+      </tr>
+    </tfoot>
+
+    <tbody>
+      <tr>
+        <td>Lorem ipsum dolor</td>
+        <td>+</td>
+        <td>+</td>
+        <td>+</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>Ratione deserunt modi</td>
+        <td>+</td>
+        <td>+</td>
+        <td>+</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>Vel maiores odio</td>
+        <td>-</td>
+        <td>+</td>
+        <td>+</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>Minus vel aperiam natus</td>
+        <td>-</td>
+        <td>-</td>
+        <td>+</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>Provid minima sapiente</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>Eveniet eaque excepturi</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>+</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table6">
+    <colgroup>
+      <col span="2" class="col-1">
+      <col class="col-2">
+      <col class="col-3">
+      <col class="col-4">
+      <col class="col-5">
+    </colgroup>
+
+    <tr>
+      <th colspan="2">Шапка</th>
+      <th>Шапка</th>
+      <th>Шапка</th>
+      <th>Шапка</th>
+      <th>Шапка</th>
+    </tr>
+
+    <tr>
+      <td colspan="2" rowspan="2">Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+
+    <tr>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+
+    <tr>
+      <td colspan="2">Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+
+    <tr>
+      <td rowspan="3">Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+
+    <tr>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+
+    <tr>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
+
+    <tr><td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td></tr>
+    <tr><td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td></tr>
+    <tr><td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td></tr>
+    <tr><td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td></tr>
+    <tr><td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td></tr>
+    <tr><td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td></tr>
+    <tr><td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td></tr>
+    <tr><td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td></tr>
+
+  </table>
+
 
 </body>
 
