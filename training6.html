@@ -8,7 +8,7 @@
   <title>training6</title>
 
   <style>
-    * {
+    .table1, .table2, .table13, .table4, .table5, .table6, .table7 {
       margin: 20px;
     }
 
@@ -244,6 +244,83 @@
       background-color: #fec1fe;
       width: 150px;
     }
+
+    .table7,
+    .table7 td,
+    .table7 th {
+      border-top: 3px dashed #17d0d3;
+      border-left: 3px dotted #314d10;
+      border-right: 3px dashed #feca28;
+      border-bottom: 3px dotted #f44236;
+    }
+
+    .phone {
+      width: 300px;
+      height: 600px;
+      background-color: #fff;
+      border: 5px solid;
+      border-color: #aaa #676767;
+      border-radius: 60px;
+      padding: 10px 20px;
+      margin: 20px auto;
+    }
+
+    .camera {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      border: 4px solid #666;
+      background-color: #4fa3eb;
+      margin: auto;
+      margin-bottom: 15px;
+    }
+
+    .circle {
+      width: 13px;
+      height: 13px;
+      background-color: #333;
+      border-radius: 50%;
+    }
+
+    .dinamic {
+      width: 70px;
+      height: 6px;
+      border: 4px solid #ccc;
+      border-radius: 6px;
+      background-color: #333;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-around;
+      width: 110px;
+      margin: 10px auto 20px 27%;
+      overflow: hidden;
+    }
+    /* Размер width определялся, исходя из размеров эле
+ментов: 13px (width.circle)+8px (2 border.circle)+70px (width.
+ dinamic)+15-20px на отступ между элементами получает
+ся размер в 106 — 111px. */
+/* В данном случае значения отступов будут 10px свер
+ху и 20px снизу, слева — 27%, а справа — значение auto 
+позволит браузеру рассчитать значение отступа самосто
+ятельно. Размер отступа в 27% подбирался с помощью 
+Инструментов разработчика. */
+
+.inner-block {
+    border: 4px solid #505050;
+    border-radius: 8px;
+    background-color: #111;
+    height: 75%;
+ }
+
+ .control {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 4px outset #505050;
+    margin: 25px auto 0;
+ }
   </style>
 </head>
 
@@ -678,10 +755,190 @@
       <th>Заголовок</th>
       <th>Заголовок</th>
     </tr>
-    <tr><td>Строкааааааааааааааааааааааааааааааааааааааааааааааааааа</td></tr>
+    <tr>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+      <td>Ячейка</td>
+    </tr>
   </table>
 
 
+
+  <div style="max-width: 300px; overflow: auto;">
+    <table class="table5">
+      <caption>Title table</caption>
+      <colgroup>
+        <col class="col-1">
+        <col class="col-2">
+        <col class="col-3">
+        <col class="col-4">
+        <col class="col-5">
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th>specification</th>
+          <th>free</th>
+          <th>basic</th>
+          <th>standard</th>
+          <th>premium</th>
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>$ 0.00</th>
+          <th>$ 9.99</th>
+          <th>$ 19.99</th>
+          <th>$ 29.99</th>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>Lorem ipsum dolor</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <td>Ratione deserunt modi</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <td>Vel maiores odio</td>
+          <td>-</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <td>Minus vel aperiam natus</td>
+          <td>-</td>
+          <td>-</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <td>Provid minima sapiente</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <td>Eveniet eaque excepturi</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="max-width: 300px; overflow: scroll;">
+    <table class="table5">
+      <caption>Title table</caption>
+      <colgroup>
+        <col class="col-1">
+        <col class="col-2">
+        <col class="col-3">
+        <col class="col-4">
+        <col class="col-5">
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th>specification</th>
+          <th>free</th>
+          <th>basic</th>
+          <th>standard</th>
+          <th>premium</th>
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>$ 0.00</th>
+          <th>$ 9.99</th>
+          <th>$ 19.99</th>
+          <th>$ 29.99</th>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>Lorem ipsum dolor</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <td>Ratione deserunt modi</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <td>Vel maiores odio</td>
+          <td>-</td>
+          <td>+</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <td>Minus vel aperiam natus</td>
+          <td>-</td>
+          <td>-</td>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <td>Provid minima sapiente</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>+</td>
+        </tr>
+        <tr>
+          <td>Eveniet eaque excepturi</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div style="width: 200px; height: 100px; background-color: #314d10; border-radius: 30px/15px; color: white;">
+    <p style="padding: 20px;">
+      border-radius: 30px/15px;
+    </p>
+  </div>
+
+
+
+  <div class="phone">
+    <div class="camera"></div>
+    <div class="top">
+     <div class="circle"></div>
+     <div class="dinamic"></div>
+    </div>
+    <div class="inner-block"></div>
+    <div class="control"></div>
+  </div>
 
 </body>
 
