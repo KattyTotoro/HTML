@@ -26,7 +26,8 @@
     header {
       background-color: #ff6825;
       text-align: center;
-      height: 150px;
+      min-width: 768px;
+      min-height: 150px;
       padding: 8% 0;
     }
 
@@ -151,6 +152,32 @@
       margin-left: -15px;
       margin-top: -5px;
     }
+
+    footer {
+      background-color: #ccc;
+      border-top: 2px solid #666;
+    }
+
+    .footer-bottom {
+      background-color: #111;
+      color: #fff;
+      border-top: 2px solid #666;
+    }
+
+    .col {
+      width: 30.33%;
+      padding: 1.5%;
+    }
+
+    ul.unstyled {
+      list-style-type: none;
+      padding: 0;
+      line-height: 170%;
+    }
+
+    .text-right {
+      text-align: right;
+    }
   </style>
 </head>
 
@@ -242,6 +269,45 @@
       </div>
     </div>
   </section>
+
+
+  <footer>
+    <div class="container sectionFlex">
+      <div class="col">
+        <h2>Our Courses</h2>
+        <ul class="unstyled">
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Placeat laborum dolor eos.</li>
+          <li>Labore repudiandae doloribus veniam!</li>
+          <li>Vero commodi laborum provident!</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Our Courses</h2>
+        <ul class="unstyled">
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Dolores doloremque asperiores ratione.</li>
+          <li>Est magnam eius itaque.</li>
+          <li>Eligendi cum at praesentium?</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Our Courses</h2>
+        <ul class="unstyled">
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Optio dolorum ea fugiat.</li>
+          <li>Obcaecati aliquam iusto excepturi.</li>
+          <li>Sequi tenetur culpa quasi.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container sectionFlex">
+        <div class="half">&copy; 2018|Simple Page Company &trade;</div>
+        <div class="half text-right">&copy; 2018|Simple Page Company &trade;</div>
+      </div>
+    </div>
+  </footer>
 
 
 </body>
