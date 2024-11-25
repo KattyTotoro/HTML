@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcard icon" href="images/pikachu.png">
+  <title>training7</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* Для проекта */
+    /* h2 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 
+                 0px 8px 13px rgba(0, 0, 0, 0.1), 
+                 0px 18px 23px rgba(0, 0, 0, 0.1);
+    margin: 1.2rem;
+ } */
+
+    header {
+      background-color: #ff6825;
+      text-align: center;
+      height: 150px;
+      padding: 8% 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3.5rem;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      font-family: Cambria, serif;
+    }
+
+    header h2 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+      margin: 1.2rem;
+      text-decoration: none;
+    }
+
+    .sectionFlex {
+      display: flex;
+    }
+
+    .half {
+      width: 47%;
+      padding: 1.5%;
+    }
+
+    .right-block {
+      float: right;
+      padding: 15px;
+      margin-left: 10px;
+    }
+
+    .video {
+      background-color: #e02f2f;
+      width: 20px;
+      height: 20px;
+      padding: 10px 15px 10px 28px;
+      border-radius: 10px/14px;
+      cursor: pointer;
+    }
+
+    .play {
+      border: 10px solid transparent;
+      border-left-color: white;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 90%;
+      min-width: 768px;
+      margin: auto;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .course {
+      width: 17%;
+      /* 20% — 1.5%*2 */
+      padding: 1.5%;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .price:before {
+      content: '$';
+    }
+
+    .top {
+      border: 3px double #666;
+      border-top-right-radius: 20px;
+      background-color: #ff6825;
+      color: #fff;
+      text-align: center;
+      min-height: 100px;
+      padding: 15px;
+      font-family: Cambria, serif;
+    }
+
+    .red {
+      background-color: #900;
+    }
+
+    .blue {
+      background-color: #1b3d89;
+    }
+
+    .violet {
+      background-color: #5a109f;
+    }
+
+    .green {
+      background-color: #18b430;
+    }
+
+    /* то же самое можно сделать с помощью псевдоклассов :nth-child(n) или :nth-of-type(n) */
+
+    .promo {
+      width: 70%;
+      background-color: #ffce00;
+      text-align: left;
+      text-transform: uppercase;
+      border-radius: 0 15px 15px 0;
+      color: #222;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 5px;
+      padding-left: 15px;
+      margin-left: -15px;
+      margin-top: -5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Sample Page</h1>
+    <h2>with CSS Box model</h2>
+    <p>for students</p>
+  </header>
+
+  <section>
+
+    <div class="container sectionFlex">
+      <div class="half">
+        <h2>About Us</h2>
+
+        <div class="right-block">
+          <div class="video" title="Play Video About Us">
+            <div class="play"></div>
+          </div>
+        </div>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet totam dolores laborum atque, eligendi
+          distinctio, assumenda minus maxime ipsam, necessitatibus laboriosam sapiente fugiat natus eum eveniet ea sit
+          aspernatur deleniti.</p>
+        <p>Sit iste et corporis. Commodi tempora saepe, inventore vitae quisquam ratione eligendi dolorem omnis corrupti
+          sint praesentium labore dolor? Sint iure distinctio possimus quidem! Libero obcaecati perferendis perspiciatis
+          eos corrupti.</p>
+      </div>
+
+      <div class="half">
+        <h2>Our mission</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut dolorum itaque magnam amet placeat. Numquam
+          beatae error blanditiis voluptatem nulla architecto nemo, commodi iste aliquam obcaecati consectetur, ipsa
+          labore dignissimos?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur obcaecati nihil, iste, nostrum consequatur
+          placeat laboriosam ut doloribus autem eos ipsa architecto eius molestiae at rerum amet voluptas quisquam?
+          Alias.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ad soluta optio enim vitae doloribus culpa
+          quos animi. Voluptatem tempore illo magni quod qui aspernatur voluptas, fugiat nobis aliquam nisi!</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section>
+    <h2 class="text-center">Popular Courses</h2>
+    <div class="container sectionFlex">
+      <div class="course">
+        <div class="top">
+          <div class="promo">Most popular</div>
+          <h3>Developer</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eius repellendus et!</p>
+        <div class="price">19.99</div>
+      </div>
+      <div class="course">
+        <div class="top red">
+          <div class="promo">Most popular</div>
+          <h3>Developer</h3>
+        </div>
+        <p>Unde mollitia qui reiciendis non laudantium magnam nobis voluptas id quia aliquid.</p>
+        <div class="price">19.99</div>
+      </div>
+      <div class="course">
+        <div class="top blue">
+          <div class="promo">Most popular</div>
+          <h3>Developer</h3>
+        </div>
+        <p>Quam quas possimus sunt debitis nobis? Officia nesciunt esse iure veniam ut.</p>
+        <div class="price">19.99</div>
+      </div>
+      <div class="course">
+        <div class="top violet">
+          <div class="promo">Most popular</div>
+          <h3>Developer</h3>
+        </div>
+        <p>Odio perferendis tenetur est nulla dolor odit repudiandae? Repellat eius quo iure.</p>
+        <div class="price">19.99</div>
+      </div>
+      <div class="course">
+        <div class="top green">
+          <div class="promo">Most popular</div>
+          <h3>Developer</h3>
+        </div>
+        <p>Error voluptatibus quidem ex. Accusamus officia odit laudantium assumenda sapiente quae necessitatibus!</p>
+        <div class="price">19.99</div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
