@@ -8,6 +8,15 @@
   <title>training8</title>
 
   <style>
+    ::selection {
+      background-color: #fcfc6b;
+    }
+
+    p::selection {
+      background-color: #025302;
+      color: #fff;
+    }
+
     .first-line {
       width: 500px;
     }
@@ -38,6 +47,93 @@
       margin-top: 7px;
       float: left;
     }
+
+    .child p:first-child {
+      font-size: 28px;
+      font-style: italic;
+      color: rgb(28, 114, 114);
+    }
+
+    .child p:last-child {
+      font-size: 22px;
+      font-style: italic;
+      color: #2a462a;
+    }
+
+    .child p:nth-child(5) {
+      font-size: 26px;
+      color: #545554;
+    }
+
+    .child p:nth-child(3n) {
+      color: chocolate;
+      font-size: 22px;
+    }
+
+    .child p:nth-last-child(2) {
+      font-size: 32px;
+    }
+
+    .box {
+      max-width: 440px;
+      margin: 20px;
+      padding: 5px;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 10px -10px 10px rgb(230, 209, 230), -10px 10px 10px rgb(230, 209, 230);
+    }
+
+    .box div {
+      min-width: 30px;
+      min-height: 25px;
+      display: inline-block;
+      padding: 20px 20px;
+      margin-top: 10px;
+      margin-right: 10px;
+      border: 2px solid darkslateblue;
+      font-weight: 800;
+      color: rgb(74, 18, 99);
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .box div:nth-child(odd) {
+      background-color: aquamarine;
+    }
+
+    .box div:nth-child(even) {
+      background-color: rgb(255, 249, 127);
+    }
+
+    .mark {
+      margin: 20px;
+      padding: 20px;
+      text-align: justify;
+    }
+
+    .mark mark:only-child {
+      background-color: #45abf5;
+      color: #fff;
+      padding: 3px;
+      font-family: serif;
+      font-style: italic;
+    }
+
+    .span {
+      margin: 20px;
+      padding: 20px;
+      text-align: justify;
+    }
+
+    .span .elem {
+      color: red;
+      text-transform: uppercase;
+    }
+
+    .span .elem:only-child {
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -67,6 +163,94 @@
       suscipit aliquam voluptatum, sapiente iste amet expedita molestias quam pariatur. Impedit unde sit quidem
       voluptatibus exercitationem praesentium expedita, dignissimos pariatur, excepturi provident perspiciatis itaque
       natus amet mollitia nostrum soluta eius laboriosam aut possimus, ratione accusamus.</p>
+  </div>
+
+
+  <div class="child">
+    <p>1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis illo reiciendis error, quos quasi
+      consequuntur corporis aut! Eveniet, provident perspiciatis!</p>
+    <p>2 Maxime, aliquid. Nobis inventore aperiam doloremque. Tempore animi officiis hic sequi quo ullam facere
+      asperiores! Consequatur, laborum! Laborum, illum reprehenderit.</p>
+    <p>3 Et architecto dolores cumque quisquam nemo! Quo perspiciatis quisquam saepe unde et ratione repellendus, eum
+      beatae amet, minima esse ea!</p>
+    <p>4 Assumenda laborum quidem molestias quis quisquam hic vero facilis exercitationem, deserunt recusandae voluptas
+      similique fugit, rem cupiditate aperiam, voluptate enim!</p>
+    <p>5 Dolorem, veritatis. Id beatae corrupti repellat quae qui, quis magni praesentium reprehenderit earum labore
+      voluptatem eius corporis non iusto maxime.</p>
+    <p>6 Assumenda molestiae eaque repellendus sit, earum praesentium amet non adipisci architecto vel ea sequi ad
+      possimus odit quis? Eaque, rem!</p>
+    <p>7 Dolorum dicta natus fugiat ut error eius deleniti voluptatibus quasi. Doloribus et quam, nesciunt incidunt
+      accusamus possimus temporibus eveniet corporis!</p>
+    <p>8 Qui, illum omnis? Repudiandae molestiae voluptate enim sapiente maxime magnam placeat. Esse exercitationem
+      debitis nihil laborum laudantium ab deserunt ad.</p>
+    <p>9 Fugiat necessitatibus, soluta deleniti aut adipisci magnam accusantium earum veniam facere? Qui neque id minus
+      temporibus sunt quisquam, cupiditate reprehenderit?</p>
+    <p>10 Deserunt libero expedita error exercitationem doloremque ullam totam harum, delectus ipsa ab accusantium, in
+      similique vitae repellat eveniet aliquam nam!</p>
+    <p>11 Qui, illum omnis? Repudiandae molestiae voluptate enim sapiente maxime magnam placeat. Esse exercitationem
+      debitis nihil laborum laudantium ab deserunt ad.</p>
+    <p>12 Fugiat necessitatibus, soluta deleniti aut adipisci magnam accusantium earum veniam facere? Qui neque id minus
+      temporibus sunt quisquam, cupiditate reprehenderit?</p>
+    <p>13 Deserunt libero expedita error exercitationem doloremque ullam totam harum, delectus ipsa ab accusantium, in
+      similique vitae repellat eveniet aliquam nam!</p>
+    <p>14 Qui, illum omnis? Repudiandae molestiae voluptate enim sapiente maxime magnam placeat. Esse exercitationem
+      debitis nihil laborum laudantium ab deserunt ad.</p>
+    <p>15 Fugiat necessitatibus, soluta deleniti aut adipisci magnam accusantium earum veniam facere? Qui neque id minus
+      temporibus sunt quisquam, cupiditate reprehenderit?</p>
+    <p>16 Deserunt libero expedita error exercitationem doloremque ullam totam harum, delectus ipsa ab accusantium, in
+      similique vitae repellat eveniet aliquam nam!</p>
+    <p>17 Deserunt libero expedita error exercitationem doloremque ullam totam harum, delectus ipsa ab accusantium, in
+      similique vitae repellat eveniet aliquam nam!</p>
+  </div>
+
+
+
+  <div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+
+
+  <div class="mark">
+    <p>Lorem ipsum dolor <mark>sit amet consectetur adipisicing</mark> elit. Qui eaque cupiditate culpa modi autem
+      reiciendis vitae labore ipsa numquam libero natus debitis obcaecati adipisci quos et <mark>laboriosam
+        incidunt</mark>, ducimus mollitia nostrum facere doloribus! Aperiam aliquid qui illum voluptatum.</p>
+    <p>Eius architecto ea incidunt, accusantium iusto est, animi maiores debitis voluptatem temporibus <mark>dolores
+        tempore officiis</mark> dolore iure illum amet hic maxime. Placeat cum maxime, voluptatibus exercitationem
+      cupiditate, ipsam provident, dignissimos sapiente itaque libero cumque autem explicabo aspernatur tempora?</p>
+    <p>Optio deleniti <mark>quae accusantium</mark> repellendus praesentium reiciendis distinctio? Eius, dicta! Cum
+      necessitatibus veniam quasi minima, qui iusto reprehenderit natus libero, repudiandae numquam enim temporibus quos
+      aperiam blanditiis error earum incidunt beatae amet corrupti ipsum est in. Porro, soluta?</p>
+    <p>At voluptatem <mark>ducimus laborum</mark> sunt reiciendis nemo dolor tempora maxime unde aspernatur! Dolorem
+      repudiandae neque cum, laudantium rem quas blanditiis, nostrum aspernatur impedit ducimus praesentium deserunt sit
+      officiis modi vel in distinctio adipisci quidem! Soluta magnam <mark>ipsa beatae.</mark></p>
+  </div>
+
+
+  <div class="span">
+    <p>Lorem ipsum dolor <span class="elem">sit amet</span> consectetur adipisicing elit. Qui eaque cupiditate culpa
+      modi autem reiciendis vitae labore ipsa numquam libero natus debitis obcaecati adipisci quos et <span
+        class="elem">laboriosam</span> incidunt, ducimus mollitia nostrum facere doloribus! Aperiam aliquid qui illum
+      voluptatum.</p>
+    <p>Eius architecto ea incidunt, accusantium iusto est, animi maiores debitis voluptatem temporibus <span
+        class="elem">dolores tempore</span> officiis dolore iure illum amet hic maxime. Placeat cum maxime, voluptatibus
+      exercitationem cupiditate, ipsam provident, dignissimos sapiente itaque libero cumque autem explicabo aspernatur
+      tempora?</p>
+    <p>Optio deleniti <span class="elem">quae accusantium</span> repellendus praesentium reiciendis distinctio? Eius,
+      dicta! Cum necessitatibus veniam quasi minima, qui iusto reprehenderit natus libero, repudiandae numquam enim
+      temporibus quos aperiam blanditiis error earum incidunt beatae amet corrupti ipsum est in. Porro, soluta?</p>
+    <p>At voluptatem <span class="elem">ducimus laborum</span> sunt reiciendis nemo dolor tempora maxime unde
+      aspernatur! Dolorem repudiandae neque cum, laudantium rem quas blanditiis, nostrum aspernatur impedit ducimus
+      praesentium deserunt sit officiis modi vel in distinctio adipisci quidem! Soluta magnam <span class="elem">ipsa
+        beatae.</span></p>
   </div>
 
 </body>
