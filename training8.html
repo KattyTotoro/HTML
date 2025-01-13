@@ -46,6 +46,8 @@
       margin-right: 10px;
       margin-top: 7px;
       float: left;
+      box-shadow: 0 0 0 2px #fff, 
+      8px 8px 6px rgba(0, 0, 0, 0.4);
     }
 
     .child p:first-child {
@@ -96,6 +98,8 @@
       color: rgb(74, 18, 99);
       text-align: center;
       border-radius: 10px;
+      box-shadow: 0 0 0 3px #fff, 
+      10px 10px 8px rgba(0, 0, 0, 0.4);
     }
 
     .box div:nth-child(odd) {
@@ -134,6 +138,58 @@
     .span .elem:only-child {
       font-weight: bold;
     }
+
+    .block {
+    display: inline-block;
+    width: 18%;
+    height: 150px;
+    line-height: 170%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2%;
+    border: 2px solid;
+    outline: 2px solid;
+    outline-offset: 4px;
+    box-shadow: 0 0 0 6px #fff, 
+    12px 12px 16px rgba(0, 0, 0, 0.4);
+ }
+
+ .block:first-child {
+    background-color: green;
+ }
+ .block:nth-child(2) {
+    background-color: #32c132;
+ }
+ .block:nth-child(3) {
+    background-color: #aff062;
+ }
+ .block:last-child {
+    background-color: #dee863;
+ }
+
+ .container h1, 
+ .container footer,
+ .container2 h1, 
+ .container2 footer {
+  text-align: center;
+ }
+
+ .container2 .block:first-of-type {
+    background-color: green;
+ }
+
+ .container2 .block:nth-of-type(2) {
+    background-color: #32c132;
+ }
+
+ .container2 .block:nth-of-type(3) {
+    background-color: #aff062;
+ }
+
+ .container2 .block:last-of-type {
+    background-color: #dee863;
+ }
   </style>
 </head>
 
@@ -252,6 +308,40 @@
       praesentium deserunt sit officiis modi vel in distinctio adipisci quidem! Soluta magnam <span class="elem">ipsa
         beatae.</span></p>
   </div>
+
+
+  <div class="container">
+    <div class="block"><h2>Block 1</h2></div>
+    <div class="block"><h2>Block 2</h2></div>
+    <div class="block"><h2>Block 3</h2></div>
+    <div class="block"><h2>Block 4</h2></div>
+    </div>
+
+    <div class="container">
+      <h1>Our blocks</h1>
+      <div class="block"><h2>Block 1</h2></div>
+      <div class="block"><h2>Block 2</h2></div>
+      <div class="block"><h2>Block 3</h2></div>
+      <div class="block"><h2>Block 4</h2></div>
+      </div>
+
+      <div class="container">
+        <h1>Our blocks</h1>
+        <div class="block"><h2>Block 1</h2></div>
+        <div class="block"><h2>Block 2</h2></div>
+        <div class="block"><h2>Block 3</h2></div>
+        <div class="block"><h2>Block 4</h2></div>
+        <footer>&copy; nth-child blocks</footer>
+     </div>
+
+      <div class="container2">
+        <h1>Our blocks</h1>
+        <div class="block"><h2>Block 1</h2></div>
+        <div class="block"><h2>Block 2</h2></div>
+        <div class="block"><h2>Block 3</h2></div>
+        <div class="block"><h2>Block 4</h2></div>
+        <footer>&copy; nth-child blocks</footer>
+     </div>
 
 </body>
 
