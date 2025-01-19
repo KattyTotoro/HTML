@@ -46,8 +46,8 @@
       margin-right: 10px;
       margin-top: 4px;
       float: left;
-      box-shadow: 0 0 0 2px #fff, 
-      8px 8px 6px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 0 2px #fff,
+        8px 8px 6px rgba(0, 0, 0, 0.4);
     }
 
     .child p:first-child {
@@ -98,8 +98,8 @@
       color: rgb(74, 18, 99);
       text-align: center;
       border-radius: 10px;
-      box-shadow: 0 0 0 3px #fff, 
-      10px 10px 8px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 0 3px #fff,
+        10px 10px 8px rgba(0, 0, 0, 0.4);
     }
 
     .box div:nth-child(odd) {
@@ -140,63 +140,193 @@
     }
 
     .block {
-    display: inline-block;
-    width: 18%;
-    height: 150px;
-    line-height: 170%;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 2%;
-    border: 2px solid;
-    outline: 2px solid;
-    outline-offset: 4px;
-    box-shadow: 0 0 0 6px #fff, 
-    12px 12px 16px rgba(0, 0, 0, 0.4);
- }
+      display: inline-block;
+      width: 18%;
+      height: 150px;
+      line-height: 170%;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 2%;
+      border: 2px solid;
+      outline: 2px solid;
+      outline-offset: 4px;
+      box-shadow: 0 0 0 6px #fff,
+        12px 12px 16px rgba(0, 0, 0, 0.4);
+    }
 
- .block:first-child {
-    background-color: green;
- }
- .block:nth-child(2) {
-    background-color: #32c132;
- }
- .block:nth-child(3) {
-    background-color: #aff062;
- }
- .block:last-child {
-    background-color: #dee863;
- }
+    .block:first-child {
+      background-color: green;
+    }
 
- .container h1, 
- .container footer,
- .container2 h1, 
- .container2 footer {
-  text-align: center;
- }
+    .block:nth-child(2) {
+      background-color: #32c132;
+    }
 
- .container2 .block:first-of-type {
-    background-color: green;
- }
+    .block:nth-child(3) {
+      background-color: #aff062;
+    }
 
- .container2 .block:nth-of-type(2) {
-    background-color: #32c132;
- }
+    .block:last-child {
+      background-color: #dee863;
+    }
 
- .container2 .block:nth-of-type(3) {
-    background-color: #aff062;
- }
+    .container h1,
+    .container footer,
+    .container2 h1,
+    .container2 footer {
+      text-align: center;
+    }
 
- .container2 .block:last-of-type {
-    background-color: #dee863;
- }
+    .container2 .block:first-of-type {
+      background-color: green;
+    }
+
+    .container2 .block:nth-of-type(2) {
+      background-color: #32c132;
+    }
+
+    .container2 .block:nth-of-type(3) {
+      background-color: #aff062;
+    }
+
+    .container2 .block:last-of-type {
+      background-color: #dee863;
+    }
+
+
+    /* Использование строчно-блочных элементов */
+
+    main {
+      font-size: 0;
+      font-family: sans-serif;
+      box-sizing: border-box;
+
+    }
+
+    .grid-item {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      min-width: 370px;
+      height: 50vmax;
+      /*            height: 50vh;*/
+      font-size: 1rem;
+      padding: 8% 4%;
+      /*            margin-right: -.25em;*/
+      box-sizing: border-box;
+    }
+
+    .post-title {
+      font-size: 3em;
+      font-family: Cambria, serif;
+      margin-bottom: 1.5rem;
+    }
+
+    .grid-item p {
+      margin-bottom: 1rem;
+    }
+
+    .grid-item a {
+      color: inherit;
+      text-decoration-style: dotted;
+    }
+
+    .place1 {
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      border-bottom: 1px solid;
+      width: 50%;
+    }
+
+    .place {
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .place::after {
+      content: "";
+      display: block;
+      width: 50%;
+      border-bottom: 1px solid;
+    }
+
+    .item1 {
+      background-color: #ff0;
+    }
+
+    .item2 {
+      background-color: #f00;
+    }
+
+    .item3 {
+      background-color: #0f0;
+    }
+
+    .item4 {
+      background-color: #37f;
+    }
+
+    .item5 {
+      background-color: #f94;
+    }
+
+    .item6 {
+      background-color: #a944ff;
+    }
+
+
+    .doc2 {
+      background-color: #666666;
+      padding: 20px 20px;
+      box-sizing: border-box;
+    }
+    
+    .box2 {
+      display: inline-block;
+      max-width: 32%;
+      background-color: #fde6b1;
+      border-radius: 15px;
+      padding: 20px;
+      padding-left: 30px;
+      /* margin:  0 auto; */
+      margin-right: 20px;
+      text-align: justify;
+      box-sizing: border-box;
+      box-shadow: 1px 0px 20px 5px black inset;
+    }
+    
+    .box2:last-child {
+      margin-right: 0;
+    }
+
+    .box2::before {
+      content: '';
+      display: block;
+      background-color: #11100d;
+      width: 80px;
+      height: 20px;
+      border: 2px solid black;
+      margin: 0 auto;
+      margin-top: -30px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .box2 h1 {
+      text-align: center;
+      color: #fde6b1;
+      text-shadow: 0px -2px white, 0px 2px 2px rgb(78, 78, 78);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
   </style>
 </head>
 
 
 <body>
 
-  <div><p style="font-size: 25px;">first-line</p></div>
+  <div>
+    <p style="font-size: 25px;">first-line</p>
+  </div>
   <div class="first-line">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt repellat ullam similique quos. Vero
       possimus nesciunt ratione? In aperiam possimus molestias dolores velit veritatis iusto, quibusdam culpa tenetur
@@ -207,7 +337,9 @@
       nisi aut. Suscipit rerum dicta architecto, eligendi inventore dolorum odit impedit, illo quo, est molestias.</p>
   </div>
 
-  <div><p style="font-size: 25px;">first-letter</p></div>
+  <div>
+    <p style="font-size: 25px;">first-letter</p>
+  </div>
   <div class="first-letter">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error vitae et nobis enim inventore exercitationem iure
       ad? Deleniti, impedit. Saepe aperiam laborum, id neque natus in commodi vel molestiae, perspiciatis placeat magni
@@ -223,7 +355,9 @@
       natus amet mollitia nostrum soluta eius laboriosam aut possimus, ratione accusamus.</p>
   </div>
 
-  <div><p style="font-size: 25px;">child</p></div>
+  <div>
+    <p style="font-size: 25px;">child</p>
+  </div>
   <div class="child">
     <p>1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis illo reiciendis error, quos quasi
       consequuntur corporis aut! Eveniet, provident perspiciatis!</p>
@@ -262,7 +396,9 @@
   </div>
 
 
-  <div><p style="font-size: 25px;">nth-child</p></div> 
+  <div>
+    <p style="font-size: 25px;">nth-child</p>
+  </div>
   <div class="box">
     <div>1</div>
     <div>2</div>
@@ -276,7 +412,9 @@
     <div>10</div>
   </div>
 
-  <div><p style="font-size: 25px; margin-top: 50px;">only-child</p></div> 
+  <div>
+    <p style="font-size: 25px; margin-top: 50px;">only-child</p>
+  </div>
   <div class="mark">
     <p>Lorem ipsum dolor <mark>sit amet consectetur adipisicing</mark> elit. Qui eaque cupiditate culpa modi autem
       reiciendis vitae labore ipsa numquam libero natus debitis obcaecati adipisci quos et <mark>laboriosam
@@ -293,7 +431,9 @@
   </div>
 
 
-  <div><p style="font-size: 25px; margin-top: 50px;">only-child</p></div> 
+  <div>
+    <p style="font-size: 25px; margin-top: 50px;">only-child</p>
+  </div>
   <div class="span">
     <p>Lorem ipsum dolor <span class="elem">sit amet</span> consectetur adipisicing elit. Qui eaque cupiditate culpa
       modi autem reiciendis vitae labore ipsa numquam libero natus debitis obcaecati adipisci quos et <span
@@ -312,43 +452,143 @@
         beatae.</span></p>
   </div>
 
-  
-  <div><p style="font-size: 25px; margin-top: 50px;">nth-child, outline, outline-offset</p></div> 
+
+  <div>
+    <p style="font-size: 25px; margin-top: 50px;">nth-child, outline, outline-offset</p>
+  </div>
   <div class="container">
-    <div class="block"><h2>Block 1</h2></div>
-    <div class="block"><h2>Block 2</h2></div>
-    <div class="block"><h2>Block 3</h2></div>
-    <div class="block"><h2>Block 4</h2></div>
+    <div class="block">
+      <h2>Block 1</h2>
     </div>
+    <div class="block">
+      <h2>Block 2</h2>
+    </div>
+    <div class="block">
+      <h2>Block 3</h2>
+    </div>
+    <div class="block">
+      <h2>Block 4</h2>
+    </div>
+  </div>
 
-    <div class="container">
-      <h1>Our blocks</h1>
-      <div class="block"><h2>Block 1</h2></div>
-      <div class="block"><h2>Block 2</h2></div>
-      <div class="block"><h2>Block 3</h2></div>
-      <div class="block"><h2>Block 4</h2></div>
-      </div>
+  <div class="container">
+    <h1>Our blocks</h1>
+    <div class="block">
+      <h2>Block 1</h2>
+    </div>
+    <div class="block">
+      <h2>Block 2</h2>
+    </div>
+    <div class="block">
+      <h2>Block 3</h2>
+    </div>
+    <div class="block">
+      <h2>Block 4</h2>
+    </div>
+  </div>
 
-      <div class="container">
-        <h1>Our blocks</h1>
-        <div class="block"><h2>Block 1</h2></div>
-        <div class="block"><h2>Block 2</h2></div>
-        <div class="block"><h2>Block 3</h2></div>
-        <div class="block"><h2>Block 4</h2></div>
-        <footer>&copy; nth-child blocks</footer>
-     </div>
+  <div class="container">
+    <h1>Our blocks</h1>
+    <div class="block">
+      <h2>Block 1</h2>
+    </div>
+    <div class="block">
+      <h2>Block 2</h2>
+    </div>
+    <div class="block">
+      <h2>Block 3</h2>
+    </div>
+    <div class="block">
+      <h2>Block 4</h2>
+    </div>
+    <footer>&copy; nth-child blocks</footer>
+  </div>
 
 
-     
-     <div><p style="font-size: 25px; margin-top: 50px;">nth-of-type</p></div> 
-      <div class="container2">
-        <h1>Our blocks</h1>
-        <div class="block"><h2>Block 1</h2></div>
-        <div class="block"><h2>Block 2</h2></div>
-        <div class="block"><h2>Block 3</h2></div>
-        <div class="block"><h2>Block 4</h2></div>
-        <footer>&copy; nth-child blocks</footer>
-     </div>
+
+  <div>
+    <p style="font-size: 25px; margin-top: 50px;">nth-of-type</p>
+  </div>
+  <div class="container2">
+    <h1>Our blocks</h1>
+    <div class="block">
+      <h2>Block 1</h2>
+    </div>
+    <div class="block">
+      <h2>Block 2</h2>
+    </div>
+    <div class="block">
+      <h2>Block 3</h2>
+    </div>
+    <div class="block">
+      <h2>Block 4</h2>
+    </div>
+    <footer>&copy; nth-child blocks</footer>
+  </div>
+
+
+  <div>
+    <p style="font-size: 25px; margin-top: 50px;">Использование строчно-блочных элементов</p>
+  </div>
+
+
+  <main>
+    <article class="grid-item item1">
+      <h4 class="place">California</h4>
+      <!-- <h4 class="place1">California: History, Geography, Population, & State Facts</h4>-->
+      <h2 class="post-title">Jumping Around</h2>
+      <p>California's last empty jump spots</p>
+      <a href="#">Discover more</a>
+    </article>
+    <article class="grid-item item2">
+      <h4 class="place">Italy</h4>
+      <!--   <h4 class="place">Italy Tourism, Tourist Places in Italy, Italy Tour and Travel Guide</h4>-->
+      <h2 class="post-title">Calm Sirenity</h2>
+      <p>Italy's secrets meadows and fields</p>
+      <a href="#">Check them out</a>
+    </article>
+    <article class="grid-item item3">
+      <h4 class="place">New York</h4>
+      <h2 class="post-title">Inspiration for Everybody</h2>
+      <p>Muse about, something incredible is waiting to be known, courage of our questions tesseract hearts of the stars
+        great turbulent clouds the only home.</p>
+      <a href="#">Read more</a>
+    </article>
+    <article class="grid-item item4">
+      <h4 class="place">Sweden</h4>
+      <h2 class="post-title">Build it forever</h2>
+      <p>Sweden's famous furniture</p>
+      <a href="#">Discover more</a>
+    </article>
+    <article class="grid-item item5">
+      <h4 class="place">Spain</h4>
+      <h2 class="post-title">Water Wonders</h2>
+      <p>Spain's amazingly colorful lakes</p>
+      <a href="#">Check them out</a>
+    </article>
+    <article class="grid-item item6">
+      <h4 class="place">Morocco</h4>
+      <h2 class="post-title">The Rise of Moroccan Reggae</h2>
+      <p>Concept of the number one two ghostly white figures in coveralls and helmets are soflty dancing.</p>
+      <a href="#">Read more</a>
+    </article>
+  </main>
+
+
+  <div class="doc2">
+    <div class="box2">
+      <h1>Sample 1</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta quis omnis quam ab vel accusantium nobis magni? Consequuntur voluptatibus voluptatem eaque optio expedita eum nulla assumenda ratione dolorem eligendi.</p>
+    </div>
+    <div class="box2">
+      <h1>Sample 2</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta quis omnis quam ab vel accusantium nobis magni? Consequuntur voluptatibus voluptatem eaque optio expedita eum nulla assumenda ratione dolorem eligendi.</p>
+    </div>
+    <div class="box2">
+      <h1>Sample 3</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dicta quis omnis quam ab vel accusantium nobis magni? Consequuntur voluptatibus voluptatem eaque optio expedita eum nulla assumenda ratione dolorem eligendi.</p>
+    </div>
+  </div>
 
 </body>
 
