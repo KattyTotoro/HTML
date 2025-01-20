@@ -8,6 +8,10 @@
   <title>training8</title>
 
   <style>
+    body {
+      margin: 0 auto;
+    }
+
     ::selection {
       background-color: #fcfc6b;
     }
@@ -19,6 +23,7 @@
 
     .first-line {
       width: 500px;
+      margin: auto;
     }
 
     .first-line p {
@@ -27,13 +32,14 @@
     }
 
     .first-line p::first-line {
-      color: red;
+      color: rgb(36, 57, 2);
       text-shadow: 1px 1px1px #333;
       font-family: "Segoe Script", cursive;
     }
 
     .first-letter {
       width: 500px;
+      margin: auto;
     }
 
     .first-letter p::first-letter {
@@ -48,6 +54,10 @@
       float: left;
       box-shadow: 0 0 0 2px #fff,
         8px 8px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .child {
+      margin-left: 20px;
     }
 
     .child p:first-child {
@@ -278,7 +288,7 @@
 
     .doc2 {
       background-color: #666666;
-      padding: 20px 20px;
+      padding: 50px 20px;
       box-sizing: border-box;
     }
     
@@ -303,13 +313,14 @@
     .box2::before {
       content: '';
       display: block;
-      background-color: #11100d;
+      background-color: #82755b;
       width: 80px;
       height: 20px;
-      border: 2px solid black;
+      border: 1px solid rgb(108, 109, 99);
       margin: 0 auto;
       margin-top: -30px;
       border-radius: 5px 5px 0 0;
+      box-shadow: 1px 0px 6px 2px black inset;
     }
 
     .box2 h1 {
@@ -324,9 +335,10 @@
 
 <body>
 
-  <div>
-    <p style="font-size: 25px;">first-line</p>
-  </div>
+  <div style="background-color: rgb(127, 170, 254); padding: 20px;">
+   <div>
+     <p style="font-size: 25px; margin-left: 20px;">first-line</p>
+   </div>
   <div class="first-line">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt repellat ullam similique quos. Vero
       possimus nesciunt ratione? In aperiam possimus molestias dolores velit veritatis iusto, quibusdam culpa tenetur
@@ -336,9 +348,11 @@
     <p>Recusandae suscipit fugit soluta quod, iusto amet sint deleniti dicta repellendus aliquid temporibus velit eos
       nisi aut. Suscipit rerum dicta architecto, eligendi inventore dolorum odit impedit, illo quo, est molestias.</p>
   </div>
+</div>
 
+<div style="background-color: rgb(127, 148, 254); padding: 20px;">
   <div>
-    <p style="font-size: 25px;">first-letter</p>
+    <p style="font-size: 25px; margin-left: 20px;">first-letter</p>
   </div>
   <div class="first-letter">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error vitae et nobis enim inventore exercitationem iure
@@ -354,9 +368,11 @@
       voluptatibus exercitationem praesentium expedita, dignissimos pariatur, excepturi provident perspiciatis itaque
       natus amet mollitia nostrum soluta eius laboriosam aut possimus, ratione accusamus.</p>
   </div>
+  </div>
 
+  <div style="background-color: rgba(195, 250, 170, 0.806); padding: 20px;">
   <div>
-    <p style="font-size: 25px;">child</p>
+    <p style="font-size: 25px; margin-left: 20px;">child</p>
   </div>
   <div class="child">
     <p>1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis illo reiciendis error, quos quasi
@@ -394,10 +410,11 @@
     <p>17 Deserunt libero expedita error exercitationem doloremque ullam totam harum, delectus ipsa ab accusantium, in
       similique vitae repellat eveniet aliquam nam!</p>
   </div>
+  </div>
 
 
   <div>
-    <p style="font-size: 25px;">nth-child</p>
+    <p style="font-size: 25px; margin-left: 20px;">nth-child</p>
   </div>
   <div class="box">
     <div>1</div>
@@ -413,7 +430,7 @@
   </div>
 
   <div>
-    <p style="font-size: 25px; margin-top: 50px;">only-child</p>
+    <p style="font-size: 25px; margin-top: 50px; margin-left: 20px;">only-child</p>
   </div>
   <div class="mark">
     <p>Lorem ipsum dolor <mark>sit amet consectetur adipisicing</mark> elit. Qui eaque cupiditate culpa modi autem
@@ -432,7 +449,7 @@
 
 
   <div>
-    <p style="font-size: 25px; margin-top: 50px;">only-child</p>
+    <p style="font-size: 25px; margin-top: 50px; margin-left: 20px;">only-child</p>
   </div>
   <div class="span">
     <p>Lorem ipsum dolor <span class="elem">sit amet</span> consectetur adipisicing elit. Qui eaque cupiditate culpa
@@ -454,7 +471,7 @@
 
 
   <div>
-    <p style="font-size: 25px; margin-top: 50px;">nth-child, outline, outline-offset</p>
+    <p style="font-size: 25px; margin-top: 50px; margin-left: 20px;">nth-child, outline, outline-offset</p>
   </div>
   <div class="container">
     <div class="block">
@@ -507,7 +524,7 @@
 
 
   <div>
-    <p style="font-size: 25px; margin-top: 50px;">nth-of-type</p>
+    <p style="font-size: 25px; margin-top: 50px; margin-left: 20px;">nth-of-type</p>
   </div>
   <div class="container2">
     <h1>Our blocks</h1>
@@ -528,7 +545,7 @@
 
 
   <div>
-    <p style="font-size: 25px; margin-top: 50px;">Использование строчно-блочных элементов</p>
+    <p style="font-size: 25px; margin-top: 50px; margin-left: 20px;">Использование строчно-блочных элементов</p>
   </div>
 
 
