@@ -7,41 +7,92 @@
   <title>training9</title>
 
   <style>
+        .wrapper {
+            font-family: sans-serif;
+            font-size: 20px;
+            width: 90%;
+            max-width: 1000px;
+            margin: 120px 500px;
+            position: relative;
+            perspective: 600px;
+        }
 
+        .pos {
+            position: absolute;
+            width: 170px;
+            height: 220px;
+            text-align: center;
+            padding: 15px;
+            border: 5px double rgb(106, 148, 190);
+            background-color: rgba(204, 221, 238, 0.548);
+            box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.45), 0 0 12px 3px rgba(0, 0, 0, 0.45) inset;
+            transform: rotateY(15deg);
+            border-radius: 10px;
+        }
+
+        .pos1 {
+            left: 47%;
+            top: 190px;
+            z-index: 2;
+        }
+
+        .pos2 {
+            left: 28%;
+            top: 80px;
+        }
+
+        .pos3 {
+            left: 20%;
+            top: 20px;
+            z-index: -1;
+        }
+
+        .pos4 {
+            left: 36%;
+            top: 140px;
+            z-index: 1;
+        }
   </style>
 </head>
 
 <body>
 
   <div style="position: relative; width: 300px; height: 250px; background-color: aqua; top: 50px; left: 20%; border: 1px solid green;">
-    <p>Блок родителя <br> position: relative;</p>
+    <p><b>1</b> Блок родителя <br> position: relative;</p>
     <div style="position: absolute; width: 200px; height: 150px; background-color: rgb(234, 199, 24); top: -10%; right: -20px; border: 1px solid violet;">
-      <p>Блок ребёнка <br> position: absolute; <br> top: -15px; right: -20px;</p>
+      <p><b>1</b> Блок ребёнка <br> position: absolute; <br> top: -15px; right: -20px;</p>
     </div>
   </div>
 
-  <div style="position: relative; width: 300px; height: 250px; background-color: aqua; top: 150px; left: 20%; border: 1px solid green;">
-    <p>Блок родителя <br> position: relative;</p>
-    <div style="position: fixed; width: 200px; height: 150px; background-color: rgb(234, 199, 24); border: 1px solid violet;">
-      <p>Блок ребёнка <br> position: fixed; <br></p>
+  <div style="position: relative; width: 300px; height: 250px; background-color: rgb(86, 110, 227); top: 150px; left: 20%; border: 1px solid green;">
+    <p><b>2</b> Блок родителя <br> position: relative;</p>
+    <div style="position: fixed; width: 200px; height: 150px; background-color: rgb(245, 243, 140); border: 1px solid violet;">
+      <p><b>2</b> Блок ребёнка <br> position: fixed; <br></p>
     </div>
   </div>
 
-  <div style="position: relative; width: 300px; height: 350px; background-color: aqua; top: 250px; left: 20%; border: 1px solid green;">
-    <p>Блок родителя <br> position: relative;</p>
-    <div style="position: absolute; width: 200px; height: 150px; background-color: rgb(234, 199, 24); top: -10%; right: -20px; border: 1px solid violet;">
-      <p>Блок ребёнка <br> position: absolute; <br> top: -15px; right: -20px;</p>
+  <div style="position: relative; width: 300px; height: 250px; background-color: rgb(111, 255, 0); top: 250px; left: 20%; border: 1px solid green;">
+    <p><b>3</b> Блок родителя <br> position: relative;</p>
+    <div style="position: absolute; width: 200px; height: 150px; background-color: rgb(255, 207, 111); top: -10%; right: -20px; border: 1px solid violet;">
+      <p><b>3</b> Блок ребёнка <br> position: absolute; <br> top: -15px; right: -20px;</p>
     </div>
   </div>
 
-  <div style="position: sticky; width: 300px; height: 350px; background-color: aqua; top: 0; border: 1px solid green;">
-    <p>Блок родителя <br> position: sticky; top: 0;</p>
-    <div style="position: sticky; width: 200px; height: 150px; background-color: rgb(234, 199, 24); top: 0; border: 1px solid violet;">
-      <p>Блок ребёнка <br> position: sticky; <br> </p>
+  <div style="position: sticky; width: 300px; height: 250px; background-color: rgb(138, 141, 238); top: 0; margin-top: 50px; border: 1px solid green;">
+    <p><b>4</b> Блок родителя <br> position: sticky; top: 0;</p>
+    <div style="width: 200px; height: 150px; background-color: rgb(234, 199, 24); border: 1px solid violet;">
+      <p><b>4</b> Блок ребёнка <br> <br> </p>
     </div>
   </div>
 
-  <div>
+  <div style="position: sticky; width: 300px; height: 250px; background-color: rgb(224, 123, 237); bottom: 0; margin-top: 250px; margin-left: 800px; border: 1px solid green;">
+    <p><b>5</b> Блок родителя <br> position: sticky; bottom: 0;</p>
+    <div style="width: 200px; height: 150px; background-color: rgb(133, 234, 24); border: 1px solid violet;">
+      <p><b>5</b> Блок ребёнка <br> <br> </p>
+    </div>
+  </div>
+
+  <div style="max-width: 800px; margin: 50px; padding: 50px;">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eos sint iure id laboriosam non fugiat necessitatibus, debitis numquam asperiores, quidem eum quia et nesciunt sapiente doloribus illum consequatur rerum nostrum, qui quibusdam sed earum enim officiis. Sapiente quo assumenda, corrupti architecto ipsa iste fugiat debitis, accusantium deserunt mollitia sequi.</p>
     <p>Libero officia quisquam, quia exercitationem in mollitia, labore vero odit enim expedita impedit aliquid amet animi repellat magni similique. Voluptas eligendi consequuntur optio facilis, iure iusto. Perferendis iure quae, debitis suscipit velit nulla laboriosam excepturi culpa, facere ad a provident! Consectetur soluta non tempora quo enim facere velit commodi eligendi?</p>
     <p>Hic voluptatem expedita, porro, enim accusamus incidunt, quod at voluptatum placeat repellat fugiat dolorum atque culpa blanditiis exercitationem ducimus esse odit odio quia repudiandae iste et doloribus! Sequi nobis laudantium ea voluptate aperiam porro non eaque iste! Nemo inventore officia dolorum velit quos ab. Cupiditate alias soluta cumque sed animi.</p>
@@ -93,6 +144,15 @@
     <p>Quae impedit recusandae provident asperiores totam, voluptates nisi libero minus mollitia amet perspiciatis? Ab, totam ratione. Neque doloribus aperiam unde eligendi, sit harum quas amet quasi distinctio ab blanditiis laborum, rerum reprehenderit. Consequuntur numquam nulla sapiente eligendi consectetur dolorem. Molestias perspiciatis saepe vel ducimus, beatae expedita incidunt voluptas autem aliquid.</p>
     <p>Inventore nobis dolorem incidunt magni repellendus distinctio nemo sequi dolor maiores iure obcaecati eius dicta expedita voluptatum aperiam praesentium recusandae quasi natus molestias, reiciendis repellat! Fuga eum dolore sunt magni eveniet tenetur voluptas, est nesciunt illo, soluta repellat amet debitis, veritatis officiis. Libero, quae? Laudantium tenetur voluptatibus ratione deleniti vitae.</p>
   </div>
+
+
+
+  <div class="wrapper">
+    <div class="pos pos1">z-index: 2</div>
+    <div class="pos pos2">z-index: auto;</div>
+    <div class="pos pos3">z-index: -1</div>
+    <div class="pos pos4">z-index: 1</div>
+</div>
   
 </body>
 </html>
