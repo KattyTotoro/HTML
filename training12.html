@@ -6,27 +6,56 @@
   <title>training12</title>
 
   <style>
+header {
+  margin-bottom: 50px;
+}
+
 .menu ul {
   display: flex;
+  position: relative;
   background: #4c996b;
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .menu li {
   border: 1px solid #367d52;
+  position: relative;
+  text-align: center;
 }
 
 .menu li ul {
   display: none;
+  position: absolute;
+}
+
+.menu li:hover>ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu .inner {
+  left: 100%;
+  top: 0;
 }
 
 .menu a {
-  /* display: block; */
+  display: block;
+  background: #4c996b;
   text-decoration: none;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 22px;
   font-weight: 600;
+  padding: 20px 40px;
+  margin: 0px;
+  transition: 1s;
+}
+
+.menu a:hover {
+  background: #3e7f58;
+  transition: 1s;
 }
 
 
@@ -129,9 +158,15 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Categories</a>
           <ul>
-            <li><a href="#">Men</a></li>
+            <li><a href="#">Men</a>
+              <ul class="inner">
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Pants</a></li>
+                <li><a href="#">Shoes</a></li>
+              </ul>
+            </li>
             <li><a href="#">Women</a>
-              <ul>
+              <ul class="inner">
                 <li><a href="#">Dresses</a></li>
                 <li><a href="#">Pants</a></li>
                 <li><a href="#">Shoes</a></li>
