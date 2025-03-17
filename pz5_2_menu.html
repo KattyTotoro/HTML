@@ -13,17 +13,67 @@
     }
 
     body {
-      width: 900px;
+      width: 1000px;
       margin: 0 auto;
       padding: 20px;
     }
 
-    ul {
-      list-style: none;
+    header {
+      margin-top: 30px;
+      margin-bottom: 50px;
     }
 
-    li {
-      background-color: #4c996b;
+    .menu ul {
+      display: flex;
+      position: relative;
+      background: #4c996b;
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .menu li {
+      min-width: 200px;
+      border: 1px solid #367d52;
+      position: relative;
+      text-align: center;
+    }
+
+    .menu li ul {
+      display: none;
+      position: absolute;
+    }
+
+    .menu li:hover>ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu .inner {
+      left: 100%;
+      top: 0;
+    }
+
+    .menu a {
+      display: block;
+      background: #4c996b;
+      text-decoration: none;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      padding: 20px 40px;
+      margin: 0px;
+      transition: 1s;
+    }
+
+    .menu a:hover {
+      background: #3e7f58;
+      transition: 1s;
+    }
+
+    li:has(li>a:hover)>a {
+      background: #3e7f58;
     }
 
     /* Навигация по другим страницам */
@@ -51,31 +101,39 @@
 <body>
   <div class="nav">
     <p><a href="index.html"><b>На главную</b></a></p>
-    <p><a href="pz3_2_wikipedia-page.html"><b>&#8656; Back</b></a></p>
-    <p><a href="table.html"><b>Next &#8658;</b></a></p>
+    <p><a href="table.html"><b>&#8656; Back</b></a></p>
+    <p><a href="pz5_3_Shakespeare.html"><b>Next &#8658;</b></a></p>
   </div>
 
 
-  <div>
-    <ul>
-      <li>home</li>
-      <li>categories
-        <ul>
-          <li>man</li>
-          <li>woomen
-            <ul>
-              <li>dress</li>
-              <li>pants</li>
-              <li>shoes</li>
-            </ul>
-          </li>
-          <li>kids</li>
-        </ul>
-      </li>
-      <li>about</li>
-      <li>contacts</li>
-    </ul>
-  </div>
+  <header>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categories</a>
+          <ul>
+            <li><a href="#">Men</a>
+              <ul class="inner">
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Pants</a></li>
+                <li><a href="#">Shoes</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Women</a>
+              <ul class="inner">
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Pants</a></li>
+                <li><a href="#">Shoes</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Kids</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </div>
+  </header>
 
   <div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore explicabo nisi incidunt enim accusamus
