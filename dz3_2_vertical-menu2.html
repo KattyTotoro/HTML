@@ -7,6 +7,10 @@
   <link rel="shortcard icon" href="images/pikachu.png">
   <title>DZ_3_2_Vertical menu 2</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     .decor {
       background: url(images/back10.jpg) center/cover no-repeat;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,11 +38,10 @@
       list-style-type: none;
       padding: 0;
       margin: 0;
-      border-radius: 10px;
     }
 
     li {
-      background-color: #808080;
+      /* background-color: #808080; */
       max-width: 270px;
       text-transform: uppercase;
       /* padding: 15px 10px 15px 20px; */
@@ -47,11 +50,12 @@
     }
 
     ul a {
+      background-color: #808080;
       display: block;
       min-width: 150px;
       text-decoration: none;
       color: white;
-      padding: 35px 20px 35px 100px;
+      padding: 35px 50px 35px 100px;
       margin: 0;
       transition: 1s;
     }

@@ -7,6 +7,10 @@
   <link rel="shortcard icon" href="images/pikachu.png">
   <title>DZ_3_2_Vertical menu 2</title>
   <style>
+        * {
+      box-sizing: border-box;
+    }
+
     .decor {
       background: url(images/image23.png) 60% -5%/300px no-repeat, url(images/back10.jpg) center/cover no-repeat;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -35,16 +39,14 @@
     }
 
     nav {
-      width: 266px;
       height: 458px;
-      padding-top: 20px 0 20px;
       position: relative;
-      transform: translateX(-257px);
+      transform: translateX(-260px);
       transition: 1s;
     }
 
     ul {
-      width: 265px;
+      max-width: 260px;
       height: 456px;
       list-style-type: none;
       padding: 0;
@@ -52,25 +54,28 @@
     }
 
     li {
-      background-color: #2340839a;
-      max-width: 230px;
+      /* background-color: #2340839a; */
       text-transform: uppercase;
-      padding: 15px 10px 15px 20px;
+      padding: 0;
+      margin: 0;
       transition: 1s;
     }
 
     ul a {
+      /* background-color: #2340839a; */
       min-width: 150px;
       text-decoration: none;
       color: white;
       display: block;
-      padding: 20px 0 20px 80px;
+      padding: 35px 10px 35px 100px;
+      transition: 1s;
     }
 
-    ul li:hover {
-      background-color: #1d3368df;
+    ul a:hover {
+      background-color: #1d3468c6;
       box-shadow: 0 0 16px #88d7f38d;
-      transition: 0.8s;
+      /* transition: 0.8s; */
+      transition: 1s;
     }
 
     .edit {
@@ -112,7 +117,7 @@
     }
 
     nav:hover {
-      transform: translateX(-1px);
+      transform: translateX(-8px);
       transition: 1s;
     }
 
@@ -172,11 +177,11 @@
   <div class="backgr">
     <nav>
       <ul>
-        <li class="edit"><a href="#">edit</a></li>
-        <li class="favorites"><a href="#">favorites</a></li>
-        <li class="history"><a href="#">history</a></li>
-        <li class="security"><a href="#">security</a></li>
-        <li class="settings"><a href="#">settings</a></li>
+        <li><a class="edit" href="#">edit</a></li>
+        <li><a class="favorites" href="#">favorites</a></li>
+        <li><a class="history" href="#">history</a></li>
+        <li><a class="security" href="#">security</a></li>
+        <li><a class="settings" href="#">settings</a></li>
       </ul>
     </nav>
   </div>
