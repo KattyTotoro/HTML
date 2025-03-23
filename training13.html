@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>training12</title>
+  <title>training13</title>
 
   <style>
 header {
@@ -154,6 +154,22 @@ li:has(li>a:hover)>a {
   transform: rotate(45deg);
   z-index: -1;
 }
+
+.yuhaa1 :first-child {
+  color: red;
+}
+
+.yuhaa2 :nth-child(1) {
+  color: red;
+}
+
+.yuhaa3 :nth-child(1) {
+  color: red;
+}
+
+.yuhaa4 ul :first-child {
+  color: red;
+}
   </style>
 </head>
 
@@ -203,13 +219,59 @@ li:has(li>a:hover)>a {
 
   <hr style="margin-top: 50px;">
 
-  <div style="display: inline-flex; gap: 5px; background: rgb(119, 235, 119); padding: 20px;">
+  <div style="text-align: center;">
+    <h2>display: inline-flex;</h2>
+  
+
+  <div style="display: inline-flex; gap: 5px; background: rgb(119, 235, 119); padding: 20px; text-align: center; margin: 0 auto;">
     <button>Кнопка 1</button>
     <button>Кнопка 2</button>
     <button>Кнопка 3</button>
     <button>Кнопка 4</button>
     <button>Кнопка 5</button>
   </div>
+
+  <div style="display: inline-flex; background: violet; padding: 20px; gap: 10px; text-align: center;">
+    <div style="width: 100px; height: 50px; background: lightblue;border-radius: 10px;"></div>
+    <div style="width: 100px; height: 50px; background: lightblue;border-radius: 10px;"></div>
+    <div style="width: 100px; height: 50px; background: lightblue;border-radius: 10px;"></div>
+    <div style="width: 100px; height: 50px; background: lightblue;border-radius: 10px;"></div>
+    <div style="width: 100px; height: 50px; background: lightblue;border-radius: 10px;"></div>
+  </div>
+</div>
+
+<div>
+  <p style="text-align: center;">
+    Lorem, ipsum dolor.
+  </p>
+</div>
+
+<h3> :first-child</h3>
+<div class="yuhaa1">
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, repudiandae!</p>
+  <p>Quia voluptas aliquid eveniet vel quos repellendus praesentium hic voluptatum.</p>
+  <p>Neque culpa exercitationem doloremque consequatur perferendis iusto non minus nostrum?</p>
+</div>
+<hr>
+<div class="yuhaa2">
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, repudiandae!</p>
+  <p>Quia voluptas aliquid eveniet vel quos repellendus praesentium hic voluptatum.</p>
+  <p>Neque culpa exercitationem doloremque consequatur perferendis iusto non minus nostrum?</p>
+</div>
+<hr>
+<div class="yuhaa3">
+<h3> :first-child</h3>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, repudiandae!</p>
+  <p>Quia voluptas aliquid eveniet vel quos repellendus praesentium hic voluptatum.</p>
+  <p>Neque culpa exercitationem doloremque consequatur perferendis iusto non minus nostrum?</p>
+</div>
+<div class="yuhaa4">
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+</div>
 
 </body>
 </html>
