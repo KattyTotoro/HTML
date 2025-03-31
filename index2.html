@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcard icon" href="images/pikachu.png">
+    <title>Список работ</title>
+
+    <style>
+        #main_background {
+            background: url(images/sn12.png), url(images/bg11.jpg) center/contain no-repeat;
+            /* background-attachment: fixed; */
+            font-family: cursive;
+            animation: backgroundSnows 100s linear infinite;
+        }
+
+        @keyframes backgroundSnows {
+            from {
+                background-position-y: -500px, 0px;
+            }
+
+            to {
+                background-position-y: 500px, 0px;
+            }
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            /* max-width: 900px; */
+            margin: 0 auto;
+            margin-top: 60px;
+            font-size: 20px;
+            /* color: #445175; !!! Цвет */
+        }
+
+        .flex div {
+            width: 380px;
+            background-color: #dcd9d48e;
+            padding: 0 15px 10px;
+            border-radius: 50px;
+            box-shadow: 5px -5px 5px #e6eaee, -5px 5px 5px #e6eaee;
+        }
+
+
+        h2 {
+            /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+            color: rgb(8, 142, 191);
+            font-style: oblique;
+            text-shadow: 1px -1px 1px rgb(127, 167, 169), 2px -2px 2px rgb(89, 119, 124);
+            /* letter-spacing: 3px; */
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #398ba5;
+            text-decoration: none;
+            border-radius: 8px 20px;
+            text-align: center;
+        }
+
+        .addition {
+            background-color: #dcd9d48e;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 50px;
+            box-shadow: 5px -5px 5px #e6eaee, -5px 5px 5px #e6eaee;
+        }
+
+        .addition h2 {
+            text-align: left;
+            margin: 20px 50px;
+        }
+
+        p {
+            max-width: fit-content;
+            max-height: fit-content;
+            padding: 2px 10px;
+            margin: 5px 0;
+            margin-left: 20px;
+            text-shadow: 1px 1px grey;
+            background-color: #dcd9d48e;
+            border-radius: 8px 20px;
+        }
+
+        a {
+            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+            font-size: 22px;
+            font-weight: bold;
+            color: #398ba5;
+            text-decoration: none;
+            border-radius: 8px 20px;
+            padding: 2px 10px;
+            transition: .7s;
+        }
+
+        a:hover {
+            background-color: #e6eaee;
+            color: #0ba5d4c5;
+            box-shadow: 1px 1px 5px;
+        }
+
+        a:active {
+            font-size: 24px;
+            color: #445175;
+        }
+
+        /* .border {
+            border-style: double;
+        } */
+
+        .filterImg {
+      filter: drop-shadow(4px 4px 10px rgb(49, 47, 47));
+        }
+
+        .snowflakes {
+            color: white;
+            position: absolute;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .snowflake16 {
+            top: 3%;
+            left: 5%;
+            animation-name: s9;
+            animation-duration: 19s;
+        }
+
+        .snowflake13 {
+            font-size: 50px;
+            top: 3%;
+            left: 5%;
+            animation-name: s9;
+            animation-duration: 14s;
+        }
+
+        .snowflake23 {
+            top: 5%;
+            left: 5%;
+            animation-name: s9;
+            animation-duration: 50s;
+        }
+
+        .snowflake6 {
+            top: 3%;
+            left: 10%;
+            animation-name: s6;
+            animation-duration: 21s;
+        }
+
+        .snowflake9 {
+            top: 3%;
+            left: 10%;
+            animation-name: s6;
+            animation-duration: 14s;
+        }
+
+        .snowflake1 {
+            font-size: 30px;
+            top: 3%;
+            left: 20%;
+            animation-name: s1;
+            animation-duration: 15s;
+        }
+
+        .snowflake10 {
+            top: 3%;
+            left: 20%;
+            animation-name: s1;
+            animation-duration: 28s;
+        }
+
+        .snowflake4 {
+            top: 5%;
+            left: 30%;
+            animation-name: s4;
+            animation-duration: 38s;
+        }
+
+        .snowflake11 {
+            top: 5%;
+            left: 30%;
+            animation-name: s4;
+            animation-duration: 25s;
+        }
+
+        .snowflake20 {
+            top: 5%;
+            left: 40%;
+            animation-name: s10;
+            animation-duration: 15s;
+        }
+
+        .snowflake21 {
+            top: 5%;
+            left: 40%;
+            animation-name: s10;
+            animation-duration: 27s;
+        }
+
+        .snowflake22 {
+            top: 5%;
+            left: 40%;
+            animation-name: s10;
+            animation-duration: 47s;
+        }
+
+        .snowflake2 {
+            font-size: 30px;
+            top: 2%;
+            left: 50%;
+            animation-name: s2;
+            animation-duration: 25s;
+        }
+
+        .snowflake7 {
+            top: 2%;
+            left: 50%;
+            animation-name: s2;
+            animation-duration: 45s;
+        }
+
+        .snowflake8 {
+            top: 1%;
+            left: 60%;
+            animation-name: s7;
+            animation-duration: 15s;
+        }
+
+        .snowflake15 {
+            top: 1%;
+            left: 60%;
+            animation-name: s7;
+            animation-duration: 30s;
+        }
+
+        .snowflake3 {
+            font-size: 30px;
+            top: 3%;
+            left: 80%;
+            animation-name: s3;
+            animation-duration: 18s;
+        }
+
+        .snowflake12 {
+            font-size: 50px;
+            top: 3%;
+            left: 85%;
+            animation-name: s3;
+            animation-duration: 26s;
+        }
+
+        .snowflake5 {
+            top: 6%;
+            left: 85%;
+            animation-name: s5;
+            animation-duration: 23s;
+        }
+
+        .snowflake19 {
+            top: 6%;
+            left: 85%;
+            animation-name: s5;
+            animation-duration: 35s;
+        }
+
+        .snowflake18 {
+            top: 3%;
+            left: 95%;
+            animation-name: s8;
+            animation-duration: 20s;
+        }
+
+        .snowflake17 {
+            top: 3%;
+            left: 95%;
+            animation-name: s8;
+            animation-duration: 28s;
+        }
+
+        .snowflake24 {
+            top: 3%;
+            left: 95%;
+            animation-name: s8;
+            animation-duration: 45s;
+        }
+
+
+        @keyframes s1 {
+            0% {
+                top: 3%;
+                left: 20%;
+                opacity: 1;
+            }
+
+            10% {
+                top: 14%;
+                left: 22%;
+            }
+
+            15% {
+                top: 18%;
+                left: 21%;
+            }
+
+            20% {
+                top: 22%;
+                left: 20%;
+            }
+
+            25% {
+                top: 28%;
+                left: 23%;
+            }
+
+            30% {
+                top: 34%;
+                left: 24%;
+            }
+
+            35% {
+                top: 40%;
+                left: 25%;
+            }
+
+            40% {
+                top: 48%;
+                left: 23%;
+            }
+
+            45% {
+                top: 56%;
+                left: 22%;
+            }
+
+            50% {
+                top: 56%;
+                left: 22%;
+            }
+
+            55% {
+                top: 60%;
+                left: 21%;
+            }
+
+            60% {
+                top: 68%;
+                left: 20%;
+            }
+
+            70% {
+                top: 75%;
+                left: 19%;
+            }
+
+            80% {
+                top: 80%;
+                left: 20%;
+                opacity: 0.8;
+            }
+
+            90% {
+                top: 85%;
+                left: 21%;
+            }
+
+            95% {
+                top: 88%;
+                left: 20%;
+            }
+
+            100% {
+                top: 90%;
+                left: 20%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes s2 {
+            0% {
+                top: 2%;
+                left: 50%;
+                opacity: 1;
+            }
+
+            10% {
+                top: 6%;
+                left: 51%;
+            }
+
+            15% {
+                top: 12%;
+                left: 52%;
+            }
+
+            20% {
+                top: 20%;
+                left: 53%;
+            }
+
+            25% {
+                top: 28%;
+                left: 52%;
+            }
+
+            30% {
+                top: 34%;
+                left: 52%;
+            }
+
+            35% {
+                top: 40%;
+                left: 51%;
+            }
+
+            40% {
+                top: 48%;
+                left: 51%;
+            }
+
+            45% {
+                top: 56%;
+                left: 52%;
+            }
+
+            50% {
+                top: 56%;
+                left: 53%;
+            }
+
+            55% {
+                top: 60%;
+                left: 54%;
+            }
+
+            60% {
+                top: 68%;
+                left: 53%;
+            }
+
+            70% {
+                top: 75%;
+                left: 53%;
+                opacity: 0.8;
+            }
+
+            80% {
+                top: 80%;
+                left: 52%;
+            }
+
+            90% {
+                top: 85%;
+                left: 51%;
+                opacity: 0.9;
+            }
+
+            95% {
+                top: 87%;
+                left: 52%;
+            }
+
+            100% {
+                top: 90%;
+                left: 52%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes s3 {
+            0% {
+                top: 3%;
+                left: 80%;
+                opacity: 1;
+            }
+
+            10% {
+                top: 10%;
+                left: 81%;
+            }
+
+            15% {
+                top: 15%;
+                left: 82%;
+            }
+
+            20% {
+                top: 20%;
+                left: 82%;
+            }
+
+            25% {
+                top: 28%;
+                left: 83%;
+            }
+
+            30% {
+                top: 34%;
+                left: 82%;
+            }
+
+            35% {
+                top: 40%;
+                left: 82%;
+            }
+
+            40% {
+                top: 48%;
+                left: 82%;
+            }
+
+            45% {
+                top: 56%;
+                left: 81%;
+            }
+
+            50% {
+                top: 56%;
+                left: 82%;
+            }
+
+            55% {
+                top: 60%;
+                left: 83%;
+            }
+
+            60% {
+                top: 68%;
+                left: 84%;
+            }
+
+            70% {
+                top: 75%;
+                left: 83%;
+            }
+
+            80% {
+                top: 83%;
+                left: 82%;
+            }
+
+            90% {
+                top: 85%;
+                left: 82%;
+                opacity: 0.7;
+            }
+
+            95% {
+                top: 88%;
+                left: 81%;
+            }
+
+            100% {
+                top: 90%;
+                left: 81%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes s4 {
+            0% {
+                top: 5%;
+                left: 30%;
+                opacity: 1;
+            }
+
+            10% {
+                top: 14%;
+                left: 30%;
+            }
+
+            15% {
+                top: 18%;
+                left: 31%;
+            }
+
+            20% {
+                top: 22%;
+                left: 31%;
+            }
+
+            25% {
+                top: 28%;
+                left: 30%;
+            }
+
+            30% {
+                top: 35%;
+                left: 30%;
+            }
+
+            35% {
+                top: 42%;
+                left: 29%;
+            }
+
+            40% {
+                top: 50%;
+                left: 30%;
+            }
+
+            45% {
+                top: 55%;
+                left: 30%;
+            }
+
+            50% {
+                top: 58%;
+                left: 31%;
+            }
+
+            55% {
+                top: 62%;
+                left: 31%;
+            }
+
+            60% {
+                top: 68%;
+                left: 32%;
+            }
+
+            70% {
+                top: 76%;
+                left: 32%;
+            }
+
+            80% {
+                top: 80%;
+                left: 33%;
+                opacity: 0.8;
+            }
+
+            90% {
+                top: 85%;
+                left: 33%;
+            }
+
+            95% {
+                top: 88%;
+                left: 33%;
+            }
+
+            100% {
+                top: 90%;
+                left: 33%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes s5 {
+            0% {
+                top: 6%;
+                left: 85%;
+                opacity: 1;
+            }
+
+            10% {
+                top: 10%;
+                left: 86%;
+            }
+
+            15% {
+                top: 15%;
+                left: 86%;
+            }
+
+            20% {
+                top: 20%;
+                left: 86%;
+            }
+
+            25% {
+                top: 28%;
+                left: 87%;
+            }
+
+            30% {
+                top: 34%;
+                left: 86%;
+            }
+
+            35% {
+                top: 40%;
+                left: 86%;
+            }
+
+            40% {
+                top: 48%;
+                left: 85%;
+            }
+
+            45% {
+                top: 56%;
+                left: 86%;
+            }
+
+            50% {
+                top: 56%;
+                left: 86%;
+            }
+
+            55% {
+                top: 60%;
+                left: 85%;
+            }
+
+            60% {
+                top: 68%;
+                left: 84%;
+            }
+
+            70% {
+                top: 75%;
+                left: 85%;
+            }
+
+            80% {
+                top: 83%;
+                left: 86%;
+            }
+
+            90% {
+                top: 87%;
+                left: 87%;
+                opacity: 0.8;
+            }
+
+            95% {
+                top: 90%;
+                left: 86%;
+            }
+
+            100% {
+                top: 90%;
+                left: 86%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes s6 {
+            0% {
+                top: 3%;
+                left: 10%;
+                opacity: 1;
+            }
+
+            10% {
+                top: 5%;
+                left: 9%;
+            }
+
+            15% {
+                top: 10%;
+                left: 9%;
+            }
+
+            20% {
+                top: 15%;
+                left: 10%;
+            }
+
+            25% {
+                top: 20%;
+                left: 11%;
+            }
+
+            30% {
+                top: 25%;
+                left: 12%;
+            }
+
+            35% {
+                top: 30%;
+                left: 12%;
+            }
+
+            40% {
+                top: 35%;
+                left: 11%;
+            }
+
+            45% {
+                top: 40%;
+                left: 10%;
+            }
+
+            50% {
+                top: 45%;
+                left: 10%;
+            }
+
+            55% {
+                top: 50%;
+                left: 10%;
+            }
+
+            60% {
+                top: 55%;
+                left: 9%;
+            }
+
+            70% {
+                top: 62%;
+                left: 10%;
+            }
+
+            80% {
+                top: 65%;
+                left: 10%;
+                opacity: 0.8;
+            }
+
+            90% {
+                top: 72%;
+                left: 11%;
+            }
+
+            95% {
+                top: 82%;
+                left: 10%;
+            }
+
+            100% {
+                top: 90%;
+                left: 10%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes s7 {
+            0% {
+                top: 1%;
+                left: 60%;
+                opacity: 1;
+            }
+
+            10% {
+                top: 6%;
+                left: 60%;
+            }
+
+            15% {
+                top: 12%;
+                left: 61%;
+            }
+
+            20% {
+                top: 20%;
+                left: 62%;
+            }
+
+            25% {
+                top: 28%;
+                left: 62%;
+            }
+
+            30% {
+                top: 34%;
+                left: 62%;
+            }
+
+            35% {
+                top: 40%;
+                left: 61%;
+            }
+
+            40% {
+                top: 48%;
+                left: 61%;
+            }
+
+            45% {
+                top: 56%;
+                left: 62%;
+            }
+
+            50% {
+                top: 56%;
+                left: 63%;
+            }
+
+            55% {
+                top: 60%;
+                left: 64%;
+            }
+
+            60% {
+                top: 68%;
+                left: 63%;
+            }
+
+            70% {
+                top: 75%;
+                left: 62%;
+                opacity: 0.8;
+            }
+
+            80% {
+                top: 80%;
+                left: 62%;
+            }
+
+            90% {
+                top: 85%;
+                left: 61%;
+                opacity: 0.9;
+            }
+
+            95% {
+                top: 87%;
+                left: 61%;
+            }
+
+            100% {
+                top: 90%;
+                left: 60%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes s8 {
+            0% {
+                top: 3%;
+                left: 95%;
+                opacity: 1;
+            }
+
+            10% {
+                top: 10%;
+                left: 95%;
+            }
+
+            15% {
+                top: 15%;
+                left: 95%;
+            }
+
+            20% {
+                top: 20%;
+                left: 96%;
+            }
+
+            25% {
+                top: 28%;
+                left: 96%;
+            }
+
+            30% {
+                top: 34%;
+                left: 95%;
+            }
+
+            35% {
+                top: 40%;
+                left: 94%;
+            }
+
+            40% {
+                top: 48%;
+                left: 94%;
+            }
+
+            45% {
+                top: 56%;
+                left: 95%;
+            }
+
+            50% {
+                top: 56%;
+                left: 95%;
+            }
+
+            55% {
+                top: 60%;
+                left: 94%;
+            }
+
+            60% {
+                top: 68%;
+                left: 94%;
+            }
+
+            70% {
+                top: 75%;
+                left: 94%;
+            }
+
+            80% {
+                top: 83%;
+                left: 95%;
+                opacity: 0.8;
+            }
+
+            90% {
+                top: 87%;
+                left: 95%;
+            }
+
+            95% {
+                top: 90%;
+                left: 96%;
+            }
+
+            100% {
+                top: 90%;
+                left: 96%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes s9 {
+            0% {
+                top: 3%;
+                left: 5%;
+                opacity: 1;
+            }
+
+            10% {
+                top: 8%;
+                left: 5%;
+            }
+
+            20% {
+                top: 10%;
+                left: 4%;
+            }
+
+            25% {
+                top: 15%;
+                left: 4%;
+            }
+
+            30% {
+                top: 20%;
+                left: 4%;
+            }
+
+            35% {
+                top: 25%;
+                left: 3%;
+            }
+
+            40% {
+                top: 30%;
+                left: 4%;
+            }
+
+            50% {
+                top: 35%;
+                left: 5%;
+            }
+
+            65% {
+                top: 40%;
+                left: 6%;
+            }
+
+            70% {
+                top: 45%;
+                left: 5%;
+            }
+
+            73% {
+                top: 50%;
+                left: 5%;
+            }
+
+            75% {
+                top: 55%;
+                left: 5%;
+            }
+
+            77% {
+                top: 60%;
+                left: 4%;
+            }
+
+            80% {
+                top: 65%;
+                left: 4%;
+            }
+
+            85% {
+                top: 75%;
+                left: 5%;
+            }
+
+            90% {
+                top: 80%;
+                left: 5%;
+                opacity: 0.8;
+            }
+
+            95% {
+                top: 85%;
+                left: 4%;
+            }
+
+            100% {
+                top: 90%;
+                left: 3%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes s10 {
+            0% {
+                top: 5%;
+                left: 40%;
+                opacity: 1;
+            }
+
+            10% {
+                top: 14%;
+                left: 40%;
+            }
+
+            15% {
+                top: 18%;
+                left: 41%;
+            }
+
+            20% {
+                top: 22%;
+                left: 41%;
+            }
+
+            25% {
+                top: 28%;
+                left: 40%;
+            }
+
+            30% {
+                top: 35%;
+                left: 40%;
+            }
+
+            35% {
+                top: 42%;
+                left: 41%;
+            }
+
+            40% {
+                top: 50%;
+                left: 40%;
+            }
+
+            45% {
+                top: 55%;
+                left: 40%;
+            }
+
+            50% {
+                top: 58%;
+                left: 41%;
+            }
+
+            55% {
+                top: 62%;
+                left: 41%;
+            }
+
+            60% {
+                top: 68%;
+                left: 42%;
+            }
+
+            70% {
+                top: 76%;
+                left: 41%;
+            }
+
+            80% {
+                top: 80%;
+                left: 42%;
+                opacity: 0.8;
+            }
+
+            90% {
+                top: 85%;
+                left: 43%;
+            }
+
+            95% {
+                top: 88%;
+                left: 43%;
+            }
+
+            100% {
+                top: 90%;
+                left: 43%;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body id="main_background">
+
+    <div class="flex">
+        <div>
+            <h2>Домашняя работ а</h2>
+
+            <h3>Форматирование текста</h3>    
+
+            <p><a href="romeo.html">1.1 Romeo and Juliet</a></p>
+
+            <p><a href="dz1_2_card_game.html">1.2 Card game</a></p>
+
+            <p><a href="Tutorial.html">1.3 HTML Tutorial</a></p>
+
+            <h3>Форматирование при помощи CSS. Списки</h3>
+
+            <p><a href="dz2_1_fruits.html">2.1 Fruits</a></p>
+
+            <p><a href="dz2_2_todolist.html">2.2 To Do List</a></p>
+
+            <p><a href="dz2_3_tag.html">2.3 Tag</a></p>
+
+            <h3>Графика. Гиперссылки. Навигация web-сайта</h3>
+
+            <p><a href="dz3_1_groceries.html">3.1. Groceries</a></p>
+
+            <p><a href="dz3_2_vertical-menu2.html">3.2. Vertical menu № 1</a></p>
+
+            <p><a href="dz3_2_vertical-menu3.html">3.2. Vertical menu № 2 (Выдвигающееся меню)</a></p>
+
+            <p><a href="dz3_3_structure.html">3.3. Site structure</a></p>
+
+            <p><a href="dz3_4_footer.html">3.4. Footer</a></p>
+
+            <h3>Анимация</h3>
+
+            <p><a href="dz4_1_watch.html">4.1 Watch № 1</a></p>
+
+            <p><a href="watch.html">4.1 Watch № 2</a></p>
+
+            <p><a href="dz4_2_gates.html">4.2 Gates</a></p>
+
+            <p><a href="dz4_3_blocks.html">4.3. Blocks</a></p>
+
+            <h3>Таблицы. Позиционирование. Верстка web-страниц блоками</h3>
+
+            <p><a href="dz5_1_table.html">5.1 Table</a></p>
+
+            <p><a href="dz5_3_subscrip-plan.html">5.3 Subscription plan</a></p>
+
+        </div>
+        <div>
+            <h2>Прак<span style="letter-spacing: 10px;">т</span>ика</h2>
+
+            <h3>Форматирование текста</h3>    
+
+            <p><a href="practic1.html">1.1 Vehicle</a></p>
+
+            <p><a href="practic2.html">1.2 Lorem Ipsum</a></p>
+
+            <p><a href="practic3.html">1.3 Mathematical formulas</a></p>
+
+            <h3>Форматирование при помощи CSS. Списки</h3>
+
+            <p><a href="Seasons.html">2.1 Списки Времена года</a></p>
+
+            <p><a href="contents.html">2.2 Списки Contents</a></p>
+
+            <p><a href="pz2_3_definitions.html">2.3 Список определений</a></p>
+
+            <h3>Графика. Гиперссылки. Навигация web-сайта</h3>
+
+            <p><a href="pz3_1_text_background.html">3.1 Background + text</a></p>
+
+            <p><a href="pz3_2_wikipedia-page.html">3.2 Wikipedia page</a></p>
+
+            <p><a href="pz3_3_cats-gallery.html">3.3 Cats gallery</a></p>
+
+            <h3>Анимация</h3>
+
+            <p><a href="pz4_1_progressBar.html">4.1 Progress-bar</a></p>
+
+            <p><a href="pz4_2_heart.html">4.2 Heart</a></p>
+
+            <p><a href="pz4_3_stationery.html">4.3 Летающие канцтовары</a></p>
+
+            <h3>Таблицы. Позиционирование. Верстка web-страниц блоками</h3>
+
+            <p><a href="table.html">5.1 Table</a></p>
+
+            <p><a href="pz5_2_menu.html">5.2 Menu</a></p>
+
+            <p><a href="pz5_3_Shakespeare.html">5.3 Shakespeare</a></p>
+        </div>
+    </div>
+
+    <img class="filterImg" src="images/gingerbread.png" width="250px" alt="">
+    <img class="filterImg" src="images/gingerbread2.png" width="150px" alt="">
+
+    <div class="addition">
+        <h2>Дополнительно</h2>
+
+        <p><a href="daily-deals.html">Daily Deals</a></p>
+
+        <p><a href="list.html">List</a></p>
+    </div>
+
+    <div class="It-is-snowing">
+        <div class="snowflakes snowflake1">&#10052;</div>
+        <div class="snowflakes snowflake2">&#10053;</div>
+        <div class="snowflakes snowflake3">&#10054;</div>
+        <div class="snowflakes snowflake4"><img src="images/sn7.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake5"><img src="images/sn1.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake6"><img src="images/sn13.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake7"><img src="images/sn13.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake8"><img src="images/sn4.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake9"><img src="images/sn5.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake10"><img src="images/sn10.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake11"><img src="images/sn11.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake12">&#10052;</div>
+        <div class="snowflakes snowflake13">&#10053;</div>
+        <!-- <div class="snowflakes snowflake14">&#10054;</div> -->
+        <div class="snowflakes snowflake15"><img src="images/sn2.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake16"><img src="images/sn3.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake17"><img src="images/sn6.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake18"><img src="images/sn8.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake19"><img src="images/sn9.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake20"><img src="images/sn8.png" alt="" width="40px"></div>
+        <div class="snowflakes snowflake21"><img src="images/sn13.png" alt="" width="30px"></div>
+        <div class="snowflakes snowflake22"><img src="images/sn10.png" alt="" width="30px"></div>
+        <div class="snowflakes snowflake23"><img src="images/sn7.png" alt="" width="50px"></div>
+        <div class="snowflakes snowflake24"><img src="images/sn7.png" alt="" width="50px"></div>
+
+
+    </div>
+</body>
+
+</html>
