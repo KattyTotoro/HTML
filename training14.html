@@ -18,11 +18,11 @@
       color: #ff9900;
     }
 
-    h2  {
+    .project h2, .project p  {
       transition: .5s;
     }
 
-    h3 {
+    .h3 {
       margin-top: 5px;
       color: #8c8c92;
       font-size: 16px;
@@ -43,6 +43,8 @@
     .project {
       min-width: 32%;
       border: 2px solid white;
+      border-bottom: 5px solid white;
+
       box-shadow: 0 0 12px 8px #dfdfdf;
       position: relative;
       overflow: hidden;
@@ -69,22 +71,23 @@
 
     .project:hover {
       border-bottom: 5px solid #ff9900;
+      transition: .5s;
     }
 
     .project:hover div {
       background-color: rgba(0, 0, 0, 0.45);   
       top: 0;
       bottom: 0;
-      text-align: center;  
+      text-align: center;
       color: white;
       transition: .5s;
     }
     
-    .project:hover h3 {
+    .project:hover .h3 {
       color: white;
       transition: .5s;
     }
-
+    
     .project:hover h2 {
       background-color: #ff9900;
       padding: 15px;
@@ -101,35 +104,37 @@
 <h1>our projects</h1>
 
 <div class="projects">
+
   <div class="project">
     <img src="images/training/road1.jpg" alt="">
     <div>
-      <h3>Cobb County, United States</h3>
+      <p class="h3">Cobb County, United States</p>
       <h2>Project 1</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequatur quam amet explicabo doloremque quasi repudiandae aperiam alias?</p>
       <p>Beatae vel, sint non, illo sed voluptatibus, ab maxime commodi et optio omnis animi cumque necessitatibus excepturi officia doloremque enim!</p>
     </div>
   </div>
-
+  
   <div class="project">
     <img src="images/training/road2.jpg" alt="">
     <div>
-      <h3>Southwestern, United States</h3>
+      <p class="h3">Southwestern, United States</p>
       <h2>Project 2</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequatur quam amet explicabo doloremque quasi repudiandae aperiam alias?</p>
       <p>Beatae vel, sint non, illo sed voluptatibus, ab maxime commodi et optio omnis animi cumque necessitatibus excepturi officia doloremque enim!</p>
     </div>
   </div>
-
+  
   <div class="project">
     <img src="images/training/road3.jpg" alt="">
     <div>
-      <h3>Dubai, UAE</h3>
+      <p class="h3">Dubai, UAE</p>
       <h2>Project 3</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequatur quam amet explicabo doloremque quasi repudiandae aperiam alias?</p>
       <p>Beatae vel, sint non, illo sed voluptatibus, ab maxime commodi et optio omnis animi cumque necessitatibus excepturi officia doloremque enim!</p>
     </div>
   </div>
+
 </div>
 
 
