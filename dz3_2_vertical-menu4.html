@@ -7,6 +7,10 @@
   <link rel="shortcard icon" href="images/pikachu.png">
   <title>DZ_3_2_Vertical menu 2</title>
   <style>
+  * {
+      box-sizing: border-box;
+    }
+
     .decor {
       padding-bottom: 500px;
       background: url(images/image23.png) 60% -5%/300px no-repeat, url(images/back10.jpg) center/cover no-repeat;
@@ -31,20 +35,15 @@
       bottom: 0px;
       background: url(images/bg15.png) top/cover no-repeat;
       max-width: 500px;
-      /* margin: 0 auto; */
-      /* margin-top: 100px;
-      background-color: #f5f5f5; */
-      /* padding: 10px 0 10px; */
       box-shadow: 0 0 16px #88d7f38d;
       border-radius: 0 8px 8px 0;
     }
 
     nav {
       width: 266px;
-      /* height: 458px; */
       padding-top: 20px 0 20px;
       position: relative;
-      transform: translateX(-257px);
+      transform: translateX(-180px);
       transition: 1s;
     }
 
@@ -97,7 +96,7 @@
       background: #2340839a url(icons/settings.png) 5% center/70px no-repeat;
     }
 
-    nav::after {
+    /* nav::after {
       content: 'menu';
       background: #50b1d4d4;
       font-size: 28px;
@@ -113,7 +112,7 @@
       top: 458px;
       transform-origin: 0 0;
       transform: rotate(-90deg);
-    }
+    } */
 
     nav:hover {
       transform: translateX(-1px);
