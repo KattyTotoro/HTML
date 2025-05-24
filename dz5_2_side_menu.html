@@ -31,110 +31,111 @@
       top: 0%;
       left: 0%;
       bottom: 0%;
+      overflow: hidden;
+      transition: 1s;
     }
 
     .side_menu h3 {
-      margin-top: 30px;
+      margin: 30px 0px 0px 20px;
       color:  white;
       text-transform: uppercase;
-      text-align: center;
+      /* text-align: center; */
     }
 
     .side_menu ul {
-      height: 100%;
+      /* height: 100%; */
       list-style-type: none;
       padding: 0;
       margin: 0;
-    }    
-    
-    .side_menu .ul_1 {
-      width: 100%;
-      height: 100%;
+      margin-top: 35px;
     }
     
-    .side_menu .ul_1 li {
-      height: 16.67%;
-      /* padding: 5px 10px 5px 20px; */
-    }
-    
-    .side_menu .ul_2 {
-      /* padding-top: 45px; */
-      width: 200px;
-      background: #898989;
-      position: fixed;
-      top: 0%;
-      left: 100px;
-      bottom: 0%;
-    }
-
-    .side_menu .ul_2 li {
-      height: 16.67%;
-    }
-    
-    .side_menu .ul_2 a {
+    .side_menu a {
+      display: block;
       text-decoration: none;
       color: white;
-      display: block;
-      /* padding: 15px 10px 15px 20px; */
+      margin: 0;
+      padding: 50px 20px 50px 100px;
+      text-transform: uppercase;
+    }
+    
+    .side_menu:hover {
+      width: 220px;
+      transition: 1s;
     }
 
-    .side_menu .ul_2 a:hover>li {
+    .side_menu li:hover {
       background-color: #696969;
     }
 
     .edit {
-      background: url(icons/edit.png) 5% center/70px no-repeat;
+      background: url(icons/edit.png) 10px/70px no-repeat;
     }
 
     .favorites {
-      background: url(icons/favorites.png) 5% center/70px no-repeat;
+      background: url(icons/favorites.png) 10px/70px no-repeat;
     }
 
     .history {
-      background: url(icons/history.png) 5% center/70px no-repeat;
+      background: url(icons/history.png) 10px/70px no-repeat;
     }
 
     .security {
-      background: url(icons/security.png) 5% center/70px no-repeat;
+      background: url(icons/security.png) 10px/70px no-repeat;
     }
 
     .settings {
-      background: url(icons/settings.png) 5% center/70px no-repeat;
+      background: url(icons/settings.png) 10px/70px no-repeat;
     }
 
     .main_content {
-      margin: 80px 50px 20px 300px;
+      margin: 80px 50px 20px 200px;
       text-transform: uppercase;
     }
     
+        /* межстраничная навигация */
+    .nav {
+      max-width: 850px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      padding: 10px;
+      overflow: initial;
+    }
+
+    .nav a {
+      padding: 10px;
+      color: #686868;
+      box-shadow: -5px -5px 10px #7d7b66;
+      border-radius: 20px;
+    }
+
+    .nav a:hover {
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px #7d7b66;
+    }
   </style>
 </head>
 
 <body>
+  <div class="nav">
+    <p><a href="index.html"><b>На главную</b></a></p>
+    <p><a href="dz5_1_table.html"><b>&#8656; Back</b></a></p>
+    <p><a href="dz5_3_subscrip-plan.html"><b>Next &#8658;</b></a></p>
+  </div>
 
   <nav class="side_menu">
+
     <h3>menu</h3>
 
-    <div class="ul_1">
       <ul>
-        <li class="edit"></li>
-        <li class="favorites"></li>
-        <li class="history"></li>
-        <li class="security"></li>
-        <li class="settings"></li>
+        <li><a class="edit" href="#">edit</a></li>
+        <li><a class="favorites" href="#">favorites</a></li>
+        <li><a class="history" href="#">history</a></li>
+        <li><a class="security" href="#">security</a></li>
+        <li><a class="settings" href="#">settings</a></li>
       </ul>
-    </div>
-
-    <div class="ul_2">
-      <ul>
-        <li></li>
-        <li><a href="#">edit</a></li>
-        <li><a href="#">favorites</a></li>
-        <li><a href="#">history</a></li>
-        <li><a href="#">security</a></li>
-        <li><a href="#">settings</a></li>
-      </ul>
-    </div>
 
   </nav>
 
