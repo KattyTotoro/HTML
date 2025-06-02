@@ -14,8 +14,18 @@
       position: relative;
       /* top: 50px;
       left: 50%; */
-      margin: 250px auto;
-      /* transform: translate(-50%, -50%) rotate(45deg); */
+      margin: 550px auto;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .container2 {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      top: 250px;
+      left: 50%;
+      /* margin: 350px auto; */
+      transform: translate(-50%, -50%) rotate(45deg);
     }
 
     .container div {
@@ -25,22 +35,29 @@
       background: blueviolet;
     }
 
+    .container2 div {
+      position: absolute;
+      height: 10px;
+      width: 100%;
+      background: #fabbbb;
+    }
+
     .top {
       top: 0px;
       animation: fill 1s linear 1 both;
+      z-index: -1;
     }
 
     .left {
       bottom: 0px;
+      left: 10px;
       transform: rotate(-90deg);
       transform-origin: left bottom;
       animation: fill 1s 3s linear 1 both;
     }
 
     .right {
-      /* top: 0px; */
-
-      right: 0px;
+      right: 10px;
       transform: rotate(-90deg);
       transform-origin: right 0;
       animation: fill 1s 1s linear 1 both;
@@ -50,6 +67,7 @@
       bottom: 0px;
       right: 0px;
       animation: fill 1s 2s linear 1 both;
+      z-index: -1;
       /* transform: rotate(-360deg); */
     }
 
@@ -64,6 +82,7 @@
       width: 300px;
       height: 300px;
       position: relative;
+      top: 150px;
       left: 50%;
       transform: translateX(-50%);
       border: 2px solid #90908fc2;
@@ -71,7 +90,7 @@
       margin-top: 50px;
     }
 
-    .picture3_1 {
+    .picture3 .picture3_1 {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -80,6 +99,19 @@
       width: 200px;
       height: 200px;
       border: 10px solid #efefef;
+      box-shadow: 4px 4px 14px #a1a1a1;
+    }
+
+    .container2 .picture3_1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background: url(images/wedding.jpg) center/cover no-repeat;
+      width: 300px;
+      height: 300px;
+      border: 10px solid #efefef;
+      box-shadow: 4px 4px 14px #a1a1a1;
     }
 
     .border8 {
@@ -91,7 +123,7 @@
       border: 10px solid #fabbbb;
       border-color: transparent #fabbbb transparent #fabbbb;
       transform: translate(-50%, -50%) rotate(45deg);
-      animation: fill_2 1s 1s linear 1 both;
+      /* animation: fill_2 1s 1s linear 1 both; */
     }
 
     .border9 {
@@ -104,7 +136,7 @@
       border-color: #fabbbb transparent #fabbbb transparent;
       transform: translate(-50%, -50%) rotate(45deg);
       z-index: -1;
-      animation: fill_2 1s 2s linear 1 both;
+      /* animation: fill_2 1s 2s linear 1 both; */
     }
 
         @keyframes fill_2 {
@@ -117,12 +149,22 @@
 
 <body>
 
-  <div class="container">
+  <div class="container2">
+    <div class="picture3_1"></div>
     <div class="top"></div>
     <div class="right"></div>
     <div class="bottom"></div>
     <div class="left"></div>
   </div>
+
+
+
+  <!-- <div class="container">
+    <div class="top"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+    <div class="left"></div>
+  </div> -->
 
 
   <div class="picture3">
@@ -131,17 +173,13 @@
     <div class="border9"></div>
   </div>
   
-  <div class="picture3">
+  <!-- <div class="picture3">
     <div class="picture3_1"></div>
     <div class="border8 top"></div>
     <div class="border9 top"></div>
-  </div>
+  </div> -->
 
-  <div class="picture3">
-    <div class="picture3_1"></div>
-    <div class="border8"></div>
-    <div class="border9"></div>
-  </div>
+
 
 </body>
 
