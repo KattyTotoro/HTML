@@ -1,48 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcard icon" href="images/pikachu.png">
   <title>Framed picture</title>
   <style>
+
     .container {
       width: 300px;
       height: 300px;
       position: relative;
-      margin: 50px auto;
+      top: 50px;
+      left: 50%;
+      /* margin: 50px auto; */
+      /* transform: translate(-50%, -50%) rotate(45deg); */
     }
+
     .container div {
       position: absolute;
       height: 10px;
       width: 100%;
       background: blueviolet;
     }
+
     .top {
-      top:0;
+      top: 0;
       animation: fill 1s linear 1 both;
     }
+
     .left {
       bottom: 0px;
       transform: rotate(-90deg);
       transform-origin: left bottom;
       animation: fill 1s 3s linear 1 both;
     }
+
     .right {
       right: 0;
       transform: rotate(-90deg);
       transform-origin: right 0;
       animation: fill 1s 1s linear 1 both;
     }
+
     .bottom {
-      bottom:0;
+      bottom: 0;
       right: 0;
       animation: fill 1s 2s linear 1 both;
       /* transform: rotate(-360deg); */
     }
+
     @keyframes fill {
       from {
         width: 0%;
+      }
+    }
+
+
+    .picture3 {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 2px solid #90908fc2;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .picture3_1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url(images/wedding.jpg) center/cover no-repeat;
+      width: 200px;
+      height: 200px;
+      border: 10px solid #efefef;
+    }
+
+    .border8 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 200px;
+      height: 200px;
+      border: 10px solid #fabbbb;
+      border-color: transparent #fabbbb transparent #fabbbb;
+      transform: translate(-50%, -50%) rotate(45deg);
+      animation: fill_2 1s 1s linear 1 both;
+    }
+
+    .border9 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 200px;
+      height: 200px;
+      border: 10px solid #fabbbb;
+      border-color: #fabbbb transparent #fabbbb transparent;
+      transform: translate(-50%, -50%) rotate(45deg);
+      z-index: -1;
+      animation: fill_2 1s 2s linear 1 both;
+    }
+
+        @keyframes fill_2 {
+      from {
+        width: 0px;
       }
     }
   </style>
@@ -56,6 +121,26 @@
     <div class="bottom"></div>
     <div class="left"></div>
   </div>
+
+
+  <div class="picture3">
+    <div class="picture3_1"></div>
+    <div class="border8"></div>
+    <div class="border9"></div>
+  </div>
   
+  <div class="picture3">
+    <div class="picture3_1"></div>
+    <div class="border8 top"></div>
+    <div class="border9 top"></div>
+  </div>
+
+  <div class="picture3">
+    <div class="picture3_1"></div>
+    <div class="border8"></div>
+    <div class="border9"></div>
+  </div>
+
 </body>
+
 </html>
