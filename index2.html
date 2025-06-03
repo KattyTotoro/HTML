@@ -9,7 +9,7 @@
 
     <style>
         #main_background {
-            background: url(images/sn12.png), url(images/bg11.jpg) center/100% no-repeat;
+            background: url(images/sn12.png);
             /* background-attachment: fixed; */
             font-family: cursive;
             animation: backgroundSnows 100s linear infinite;
@@ -1208,10 +1208,13 @@
 </head>
 
 <body id="main_background">
-
+    <div style="position:fixed; z-index: -1; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden;">
+        <div style="background: url(images/bg11.jpg) center / cover no-repeat; height: 100vh"></div>
+        <div style="background: url(images/bg11.jpg) center / cover no-repeat; height: 1200px"></div>
+    </div>
     <div class="flex">
         <div>
-            <h2>Домашняя работ а</h2>
+            <h2>Домашняя работа</h2>
 
             <h3>Форматирование текста</h3>    
 
