@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcard icon" href="images/pikachu.png">
+  <title>training9</title>
+
+  <style>
+    body {
+      background: url(images/training/bg12.jpg) center/cover no-repeat fixed;
+      margin: 0;
+    }
+
+    .wrapper {
+      font-family: sans-serif;
+      font-size: 20px;
+      width: 90%;
+      height: 800px;
+      max-width: 1000px;
+      position: relative;
+      perspective: 600px;
+    }
+
+    .pos {
+      position: absolute;
+      width: 170px;
+      height: 220px;
+      text-align: center;
+      padding: 15px;
+      border: 5px double rgb(106, 148, 190);
+      background-color: rgba(204, 221, 238, 0.548);
+      box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.45);
+      transform: rotateY(15deg);
+      border-radius: 10px;
+    }
+
+    .pos:hover {
+      box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.45), 0 0 12px 3px rgba(0, 0, 0, 0.45) inset;
+      cursor: pointer;
+    }
+
+    .pos1 {
+      left: 47%;
+      top: 190px;
+      z-index: 2;
+    }
+
+    .pos2 {
+      left: 28%;
+      top: 80px;
+    }
+
+    .pos3 {
+      left: 20%;
+      top: 20px;
+      z-index: -1;
+    }
+
+    .pos4 {
+      left: 36%;
+      top: 140px;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+<div style="background: url(images/training/bg11.jpg) center/cover no-repeat fixed; padding-top: 100px;">
+
+  <div class="wrapper">
+    <div class="pos pos1">z-index: 2</div>
+    <div class="pos pos2">z-index: auto;</div>
+    <div class="pos pos3">z-index: -1</div>
+    <div class="pos pos4">z-index: 1</div>
+  </div>
+</div>
+
+<hr>
+
+
+  <style>
+    .wrapper_2 {
+        width: 90%;
+        max-width: 1000px;
+        margin-top: 150px;
+        margin-left: 200px;
+        position: relative;
+    }
+
+    .pos_2 {
+        position: absolute;
+        border: 3px double #0c800c;
+        border-radius: 8px;
+        padding: 2px;
+        background-color: #fff;
+        box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.45);
+        cursor: pointer;
+    }
+
+    .pos_2:hover {
+        z-index: 1;
+    }
+
+    .pos1_2 {
+        left: 20%;
+        top: 60px;
+    }
+
+    .pos2_2 {
+        left: 28%;
+        top: 130px;
+    }
+
+    .pos3_2 {
+        left: 50%;
+        top: 20px;
+    }
+
+    .pos4_2 {
+        left: 43%;
+        top: 210px;
+    }
+
+    .wrapper_2 img {
+      filter: brightness(80%);
+    }
+
+    .wrapper_2 img:hover {
+      filter: none;
+    }
+</style>
+
+<div class="wrapper_2">
+  <img src="images/training/img15.jpg" width="600px" alt="Nature" class="pos_2 pos1_2" title="1">
+  <img src="images/training/img16.jpg" width="600px" alt="Nature" class="pos_2 pos2_2" title="2">
+  <img src="images/training/img17.jpg" width="600px" alt="Nature" class="pos_2 pos3_2" title="3">
+  <img src="images/training/img18.jpg" width="600px" alt="Nature" class="pos_2 pos4_2" title="4">
+</div>
+
+<hr style="margin-top: 800px;">
+
+<div style="background: url(images/training/bg10.jpg) top/contain no-repeat; height: 1000px;">
+</div>
+
+</body>
+
+</html>
