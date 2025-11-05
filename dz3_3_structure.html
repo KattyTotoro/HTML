@@ -118,6 +118,52 @@
       border-radius: 20px;
       box-shadow: 5px 5px 10px #7d7b66;
     }
+
+    @media screen and (max-width:1026px) {
+      .flex {
+        flex-wrap: wrap;
+      }
+
+      main {
+       min-width: 562px;
+       flex: 1;
+      }
+
+      .aside1 {
+        height: 30%;
+      }
+
+      .aside2 {
+        height: 50%;
+      }
+
+      .aside3 {
+        flex: 1;
+        height: auto;
+        writing-mode: initial;
+      }
+    }
+
+    @media screen and (max-width:878px) {
+      .flex {
+        flex-direction: column;
+      }
+
+      main {
+        order: -1;
+        width: auto;
+      }
+
+      .aside1 {
+        width: auto;
+        min-height: 80px;
+      }
+
+      .aside2 {
+        width: auto;
+        min-height: 80px;
+      }
+    }
   </style>
 </head>
 

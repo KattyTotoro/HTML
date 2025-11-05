@@ -8,6 +8,10 @@
     <title>Список работ</title>
 
     <style>
+        body {
+            margin: 0 auto;
+        }
+
         #main_background {
             background: url(images/sn12.png), url(images/back7.jpg) center/85% no-repeat fixed;
             /* background-attachment: fixed; */
@@ -114,7 +118,15 @@
         } */
 
         .filterImg {
-      filter: drop-shadow(4px 4px 10px rgb(49, 47, 47));
+            filter: drop-shadow(4px 4px 10px rgb(49, 47, 47));
+        }
+
+        filterImg1 {
+            width: 250px;
+        }
+
+        filterImg2 {
+            width: 150px;
         }
 
         .snowflakes {
@@ -1197,6 +1209,59 @@
                 opacity: 0;
             }
         }
+
+    @media screen and (max-width:1120px) {
+        .flex {
+            max-width: 847px;
+        }
+
+        .addition {
+            max-width: 842px;
+        }
+    }
+
+    @media screen and (max-width:1006px) {
+
+        .flex {
+            max-width: 750px;
+        }
+        
+        .flex div {
+            width: 350px;
+        }
+
+        .addition {
+            max-width: 742px;
+        }
+    }
+
+    @media screen and (max-width:912px) {
+        .flex {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            width: 80%;
+        }
+
+        .flex div {
+            width: 80%;
+        }
+
+        .addition {
+            max-width: 70%;
+        }
+    }
+
+     @media screen and (max-width:667px) {
+
+        .filterImg1 {
+            width: 200px;
+        }
+
+        .filterImg2 {
+            width: 100px;
+        }
+     }
     </style>
 </head>
 
@@ -1298,8 +1363,8 @@
         </div>
     </div>
 
-    <img class="filterImg" src="images/gingerbread.png" width="250px" alt="">
-    <img class="filterImg" src="images/gingerbread2.png" width="150px" alt="">
+    <img class="filterImg filterImg1" src="images/gingerbread.png" width="250px" alt="">
+    <img class="filterImg filterImg2" src="images/gingerbread2.png" width="150px" alt="">
 
     <div class="addition">
         <h2>Дополнительно</h2>
