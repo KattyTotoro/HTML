@@ -8,10 +8,20 @@
     body {
       max-width: 800px;
       margin: 0 auto;
-      padding-top: 20px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 16px;
     }
+    
+    .dialogue {
+      background: url(images/training/img141.png), rgb(255, 251, 241);
+      /* background-image:; */
+      background-repeat: space;
+      background-size: 50px;
+      /* background-color: rgba(255, 251, 241, 0.685); */
+      padding-top: 20px;
+      height: 100dvh;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: 1fr 2fr 1fr;
@@ -26,11 +36,11 @@
     }
 
     .from .text {
-      background: pink;
+      background: #feb5c0;
       border-radius: 20px 20px 20px 0px;
     }
     .to .text {
-      background: rgb(144, 144, 239);
+      background: #acd7e5;
       border-radius: 20px 20px 0px 20px;
     }
 
@@ -52,66 +62,67 @@
 
 <body>
 
-  <div class="grid from">
-    <div>
-      <div class="flex">
-        <p><b>Anie Smith</b> <br> <span class="small">4 hours ago</span></p>
-        <img src="/images/training/8/avatar_2.png" alt="">
+  <div class="dialogue">
+    <div class="grid from">
+      <div>
+        <div class="flex">
+          <p><b>Anie Smith</b> <br> <span class="small">4 hours ago</span></p>
+          <img src="/images/training/8/avatar_2.png" alt="">
+        </div>
+      </div>
+      <div class="text">Привет, Джек! &#128521; :) Как дела? Что нового?</div>
+      <div></div>
+    </div>
+    <div class="grid to">
+      <div></div>
+      <div class="text">Привет, Эни! Дела отлично! Купил новую удочку :-D &#128515; собираюсь на рыбалку в выходные. А у тебя как дела?</div>
+      <div>
+        <div class="flex rr">
+          <p><b>Jack Silverston</b> <br> <span class="small">4 hours ago</span></p>
+          <img src="/images/training/8/avatar_1.png" alt="">
+        </div>
       </div>
     </div>
-    <div class="text">Привет, Джек! :) Как дела? Что нового?</div>
-    <div></div>
-  </div>
-  <div class="grid to">
-    <div></div>
-    <div class="text">Привет, Эни! Дела отлично! Купил новую удочку :-D собираюсь на рыбалку в выходные. А у тебя как дела?</div>
-    <div>
-      <div class="flex rr">
-        <p><b>Jack Silverston</b> <br> <span class="small">4 hours ago</span></p>
-        <img src="/images/training/8/avatar_1.png" alt="">
+    <div class="grid from">
+      <div>
+        <div class="flex">
+          <p><b>Anie Smith</b> <br> <span class="small">4 hours ago</span></p>
+          <img src="/images/training/8/avatar_2.png" alt="">
+        </div>
+      </div>
+      <div class="text">Всё хорошо :-) Иду на вечеринку в пятницу. Хочешь со мной? Там будет Люси и Майкл )</div>
+      <div></div>
+    </div>
+    <div class="grid to">
+      <div></div>
+      <div class="text">Оххх... Соблазнительное предложение, но я боюсь проспать рыбалку &#128579; ))</div>
+      <div>
+        <div class="flex rr">
+          <p><b>Jack Silverston</b> <br> <span class="small">3 hours ago</span></p>
+          <img src="/images/training/8/avatar_1.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="grid from">
+      <div>
+        <div class="flex">
+          <p><b>Anie Smith</b> <br> <span class="small">3 hours ago</span></p>
+          <img src="/images/training/8/avatar_2.png" alt="">
+        </div>
+      </div>
+      <div class="text">А ты с вечеринки езжай сразу на рыбалку ))))</div>
+      <div></div>
+    </div>
+    <div class="grid to">
+      <div></div>
+      <div class="text">)))) тогда рыбе не о чем будет беспокоиться, я просто всё просплю на берегу )))</div>
+      <div>
+        <div class="flex rr">
+          <p><b>Jack Silverston</b> <br> <span class="small">2 hours ago</span></p>
+          <img src="/images/training/8/avatar_1.png" alt="">
+        </div>
       </div>
     </div>
   </div>
-  <div class="grid from">
-    <div>
-      <div class="flex">
-        <p><b>Anie Smith</b> <br> <span class="small">4 hours ago</span></p>
-        <img src="/images/training/8/avatar_2.png" alt="">
-      </div>
-    </div>
-    <div class="text">Всё хорошо :-) Иду на вечеринку в пятницу. Хочешь со мной? Там будет Люси и Майкл )</div>
-    <div></div>
-  </div>
-  <div class="grid to">
-    <div></div>
-    <div class="text">Оххх... Соблазнительное предложение, но я боюсь проспать рыбалку ))</div>
-    <div>
-      <div class="flex rr">
-        <p><b>Jack Silverston</b> <br> <span class="small">3 hours ago</span></p>
-        <img src="/images/training/8/avatar_1.png" alt="">
-      </div>
-    </div>
-  </div>
-  <div class="grid from">
-    <div>
-      <div class="flex">
-        <p><b>Anie Smith</b> <br> <span class="small">3 hours ago</span></p>
-        <img src="/images/training/8/avatar_2.png" alt="">
-      </div>
-    </div>
-    <div class="text">А ты с вечеринки езжай сразу на рыбалку ))))</div>
-    <div></div>
-  </div>
-  <div class="grid to">
-    <div></div>
-    <div class="text">)))) тогда рыбе не о чем будет беспокоиться, я просто всё просплю на берегу )))</div>
-    <div>
-      <div class="flex rr">
-        <p><b>Jack Silverston</b> <br> <span class="small">2 hours ago</span></p>
-        <img src="/images/training/8/avatar_1.png" alt="">
-      </div>
-    </div>
-  </div>
-  
 </body>
 </html>
